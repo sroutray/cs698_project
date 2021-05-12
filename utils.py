@@ -11,7 +11,12 @@ def normal_logpdf(x, mu, log_sigma_sq):
 
 def stdnormal_logpdf(x):
 
-	return ( - 0.5 * ( logc + torch.square( x ) ) )
+	return ( - 0.5 * ( logc + x**2 ) )
+
+def bernoulli_logpdf(x, mu, const=1e-10):
+
+	return ( x * torch.log( torch.clamp(mu, const, 1.0) ) + \
+			(1.0 - x) * torch.log( torch.clamp(1.0 - mu, const, 1.0) ) )
 
 # def tf_gaussian_ent(log_sigma_sq):
 
