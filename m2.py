@@ -22,6 +22,18 @@ class M2(nn.Module):
         self.num_batches = num_batches
         self.batch_size = batch_size
 
+        # self.theta_g = nn.Sequential(nn.Linear(dim_z+dim_y, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
+        #                              nn.Linear(500, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
+        #                              nn.Linear(500, dim_x))
+                                    
+        # self.phi_z = nn.Sequential(nn.Linear(dim_x+dim_y, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
+        #                            nn.Linear(500, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
+        #                            nn.Linear(500, 2*dim_z))
+
+        # self.phi_y = nn.Sequential(nn.Linear(dim_x, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
+        #                            nn.Linear(500, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
+        #                            nn.Linear(500, dim_y))
+
         self.theta_g = nn.Sequential(nn.Linear(dim_z+dim_y, 500), nn.ReLU(inplace=True),
                                      nn.Linear(500, 500), nn.ReLU(inplace=True),
                                      nn.Linear(500, dim_x))
@@ -41,6 +53,7 @@ class M2(nn.Module):
         """
         
         ## LABELLED PART ##
+        # self.eval()
 
         # Binarize labelled images
         with torch.no_grad():
@@ -77,7 +90,7 @@ class M2(nn.Module):
         
         
         ## UNLABELLED PART ##
-
+        # self.train()
 
         # Binarize unlabelled images
         with torch.no_grad():

@@ -1,3 +1,4 @@
+from datetime import datetime
 import numpy as np
 import data.mnist as mnist
 import torch
@@ -81,12 +82,12 @@ if __name__ == '__main__':
     dim_z = 100              #Dimensionality of latent variable (z)
     epochs = 1001           #Number of epochs through the full dataset
     learning_rate = 3e-4    #Learning rate of ADAM
-    weight_dis = 0.1             #Discriminatory factor (see equation (9) of http://arxiv.org/pdf/1406.5298v2.pdf)
+    weight_dis = 5.0             #Discriminatory factor (see equation (9) of http://arxiv.org/pdf/1406.5298v2.pdf)
     num_workers = 4
-    stop_iter = 100
+    stop_iter = 50
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print_every = 1
-
+    chkpt_str = datetime.now().strftime('%b%d_%H-%M-%S')
 
     ## Load Dataset ##
 
@@ -151,15 +152,32 @@ if __name__ == '__main__':
     ## Training ##
 
     best_valid_acc = 0.
+    stop_iter_count = 0
 
     for epoch in range(epochs):
    
         train_loss = train( model, optimizer, device,
                             loader_ulab, loader_lab)
 
+        if np.isnan(train_loss):
+            chkpt = torch.load('./checkpoints/best_val_acc.pt')
+            model.load_state_dict(chkpt['model'])
+            optimizer.load_state_dict(chkpt['optimizer'])
+
         model.eval()
         valid_loss, valid_acc = evaluate(model, device, loader_valid)
-        model.train() 
+        model.train()
+
+        stop_iter_count += 1
+        if stop_iter_count > stop_iter:
+            break
+
+        if best_valid_acc <= valid_acc:
+            stop_iter_count = 0
+            best_valid_acc = valid_acc
+            torch.save({'model': model.state_dict(),
+                        'optimizer': optimizer.state_dict()},
+                        './checkpoints/best_val_acc_'+chkpt_str+'.pt') 
         
         if epoch % print_every == 0:
             utils.print_metrics( 	epoch,
