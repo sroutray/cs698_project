@@ -63,8 +63,9 @@ def evaluate(model, device, loader_valid):
         
         x, y = loader_valid.next()
         x, y = x.to(device), y.to(device)
-
-        loss_its, acc_its = model.predict(x, y)
+        with torch.no_grad():
+            loss_its, acc_its = model.predict(x, y)
+        
         loss += loss_its.item()
         acc += acc_its.item()
 

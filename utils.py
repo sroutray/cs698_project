@@ -18,13 +18,13 @@ def bernoulli_logpdf(x, mu, const=1e-10):
 	return ( x * torch.log( torch.clamp(mu, const, 1.0) ) + \
 			(1.0 - x) * torch.log( torch.clamp(1.0 - mu, const, 1.0) ) )
 
-# def tf_gaussian_ent(log_sigma_sq):
+def gaussian_ent(log_sigma_sq):
 
-# 	return ( - 0.5 * ( logc + 1.0 + log_sigma_sq ) )
+	return ( - 0.5 * ( logc + 1.0 + log_sigma_sq ) )
 
-# def tf_gaussian_marg(mu, log_sigma_sq):
+def gaussian_marg(mu, log_sigma_sq):
 
-# 	return ( - 0.5 * ( logc + ( tf.square( mu ) + tf.exp( log_sigma_sq ) ) ) )
+	return ( - 0.5 * ( logc + ( mu**2  + torch.exp( log_sigma_sq ) ) ) )
 
 # def tf_binary_xentropy(x, y, const = 1e-10):
 

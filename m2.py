@@ -61,7 +61,8 @@ class M2(nn.Module):
         # px_l_param = self.theta_g(torch.cat([z_l_sample, y_l], dim=1))
         # px_l_mu = px_l_param[:, :self.dim_x]
         # px_l_log_sigma_sq = px_l_param[:, self.dim_x:]
-        px_l_mu = self.theta_g(torch.cat([z_l_sample, y_l], dim=1))
+        px_l_param = self.theta_g(torch.cat([z_l_sample, y_l], dim=1))
+        px_l_mu = torch.sigmoid(px_l_param)
 
         # Compute L_l(x, y) in Eq (2)
         L_l = self._L(x_l, px_l_mu, y_l, z_l_sample, qz_l_mu, qz_l_log_sigma_sq)
@@ -109,14 +110,21 @@ class M2(nn.Module):
             # px_u_param = self.theta_g(torch.cat([z_u_sample, yhat], dim=1))
             # px_u_mu = px_u_param[:, :self.dim_x]
             # px_u_log_sigma_sq = px_u_param[:, self.dim_x:]
-            px_u_mu = self.theta_g(torch.cat([z_u_sample, yhat], dim=1))
+            px_u_param = self.theta_g(torch.cat([z_u_sample, yhat], dim=1))
+            px_u_mu = torch.sigmoid(px_u_param)
 
             # Compute L_l(x, yhat) in Eq (2)
             _L_lhat = self._L(x_u, px_u_mu, yhat, z_u_sample, qz_u_mu, qz_u_log_sigma_sq)
-            _L_lhat = _L_lhat
-            L_lhat[:, label] = _L_lhat      
+            _L_lhat = _L_lhat.unsqueeze(1)
+
+            if label == 0:
+                L_lhat = _L_lhat
+            else:
+                L_lhat = torch.cat([L_lhat, _L_lhat], dim=1)
 
         # Compute L_U(x) in Eq (3)
+        # print(L_lhat)
+        assert L_lhat.size() == y_u.size()
         L_u = y_u * (L_lhat - torch.log(y_u))
         L_u = L_u.sum(1).sum()
 
@@ -145,9 +153,11 @@ class M2(nn.Module):
 
         log_lik =  utils.bernoulli_logpdf(x_l, px_mu)
 
-        log_prior_z = utils.stdnormal_logpdf(z_sample)
+        # log_prior_z = utils.stdnormal_logpdf(z_sample)
+        log_prior_z = utils.gaussian_marg(qz_mu, qz_log_sigma_sq)
 
-        log_post_z = utils.normal_logpdf(z_sample, qz_mu, qz_log_sigma_sq)
+        # log_post_z = utils.normal_logpdf(z_sample, qz_mu, qz_log_sigma_sq)
+        log_post_z = utils.gaussian_ent(qz_log_sigma_sq)
 
         # print(torch.max(px_mu), torch.min(px_mu))
         # print(log_prior_y.sum()/self.batch_size , log_lik.sum(1).sum()/self.batch_size , log_prior_z.sum(1).sum()/self.batch_size, - log_post_z.sum(1).sum()/self.batch_size)
