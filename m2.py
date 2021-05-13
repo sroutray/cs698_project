@@ -168,7 +168,7 @@ class M2(nn.Module):
 
         # log_prior_z = utils.stdnormal_logpdf(z_sample)
         log_prior_z = utils.gaussian_marg(qz_mu, qz_log_sigma_sq)
-
+        
         # log_post_z = utils.normal_logpdf(z_sample, qz_mu, qz_log_sigma_sq)
         log_post_z = utils.gaussian_ent(qz_log_sigma_sq)
 
