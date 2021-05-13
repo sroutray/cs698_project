@@ -175,10 +175,10 @@ class M2(nn.Module):
         # Compute L(x, y) in Eq (4)
         L_tot = L_l +  self.gamma*D_l + L_u 
         # print(L_tot)
-        L_tot += L_prior
+        L_tot = (L_tot*self.num_batches + L_prior)
         # print(L_prior)
         # print('###',L_tot)
-        loss = - L_tot / self.batch_size
+        loss = - L_tot / (self.batch_size*self.num_batches)
 
 
         return loss 

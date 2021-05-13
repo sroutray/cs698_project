@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 import torch.optim
 import torch.nn as nn
 import utils
-from m2 import M2
+from m2_b import M2
 
 
 class MNIST(Dataset):
