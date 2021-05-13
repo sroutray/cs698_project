@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import utils
+import numpy as np
 
 class M2(nn.Module):
 
@@ -87,7 +88,7 @@ class M2(nn.Module):
         L_l = L_l.sum()
 
         # Discriminator term
-        ypred_l_logits = self.phi_y(x_l)
+        # ypred_l_logits = self.phi_y(x_l)
         ypred_l_disriminative_logits = self.theta_d(x_l)
 
         D_l = - F.cross_entropy(ypred_l_disriminative_logits, y_l.argmax(1), reduction='none')
@@ -97,9 +98,12 @@ class M2(nn.Module):
         L_prior = 0.
         for i,weight in enumerate(self.theta_d):
             if 'Linear' in str(weight.type):
+                alpha = 0.1
+                lambda_d = (1-alpha)/(alpha)
                 flattened_weight = weight.weight.reshape((-1,))
                 flattened_mean = self.phi_y[i].weight.reshape((-1,))
-                L_prior += utils.stdnormal_logpdf(9*(flattened_weight - flattened_mean)).sum()
+                d = flattened_weight.shape[0]
+                L_prior += (d/2)*np.log(lambda_d) + utils.stdnormal_logpdf(np.sqrt(lambda_d)*(flattened_weight - flattened_mean)).sum()
         
         for i,weight in enumerate(self.theta_g):
             if 'Linear' in str(weight.type):
@@ -176,10 +180,10 @@ class M2(nn.Module):
         # Compute L(x, y) in Eq (4)
         L_tot = L_l +  self.gamma*D_l + L_u 
         # print(L_tot)
-        L_tot += L_prior
+        L_tot = (L_tot*self.num_batches + L_prior)
         # print(L_prior)
         # print('###',L_tot)
-        loss = - L_tot / self.batch_size
+        loss = - L_tot / (self.batch_size*self.num_batches)
 
 
         return loss 
