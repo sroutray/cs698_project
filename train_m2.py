@@ -168,9 +168,9 @@ if __name__ == '__main__':
         valid_loss, valid_acc = evaluate(model, device, loader_valid)
         model.train()
 
-        stop_iter_count += 1
-        if stop_iter_count > stop_iter:
-            break
+        # stop_iter_count += 1
+        # if stop_iter_count > stop_iter:
+        #     break
 
         if best_valid_acc <= valid_acc:
             stop_iter_count = 0

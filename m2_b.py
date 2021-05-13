@@ -87,7 +87,7 @@ class M2(nn.Module):
         L_l = L_l.sum()
 
         # Discriminator term
-        ypred_l_logits = self.phi_y(x_l)
+        # ypred_l_logits = self.phi_y(x_l)
         ypred_l_disriminative_logits = self.theta_d(x_l)
 
         D_l = - F.cross_entropy(ypred_l_disriminative_logits, y_l.argmax(1), reduction='none')
@@ -104,14 +104,14 @@ class M2(nn.Module):
             if 'Linear' in str(weight.type):
                 flattened_weight = weight.weight.reshape((-1,))
                 L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
-        for i,weight in enumerate(self.phi_z):
-            if 'Linear' in str(weight.type):
-                flattened_weight = weight.weight.reshape((-1,))
-                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
-        for i,weight in enumerate(self.phi_y):
-            if 'Linear' in str(weight.type):
-                flattened_weight = weight.weight.reshape((-1,))
-                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+        # for i,weight in enumerate(self.phi_z):
+        #     if 'Linear' in str(weight.type):
+        #         flattened_weight = weight.weight.reshape((-1,))
+        #         L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+        # for i,weight in enumerate(self.phi_y):
+        #     if 'Linear' in str(weight.type):
+        #         flattened_weight = weight.weight.reshape((-1,))
+        #         L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
  
         # print(L_prior)
         

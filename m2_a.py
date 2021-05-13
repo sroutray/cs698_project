@@ -95,28 +95,35 @@ class M2(nn.Module):
         
         D_l = D_l.sum()  
 
+        ## PRIOR PART ##
+        
         L_prior = 0.
+
         for i,weight in enumerate(self.theta_d):
             if 'Linear' in str(weight.type):
                 alpha = 0.1
                 lambda_d = (1-alpha)/(alpha)
-                flattened_weight = weight.weight.reshape((-1,))
-                flattened_mean = self.phi_y[i].weight.reshape((-1,))
-                d = flattened_weight.shape[0]
-                L_prior += (d/2)*np.log(lambda_d) + utils.stdnormal_logpdf(np.sqrt(lambda_d)*(flattened_weight - flattened_mean)).sum()
-        
+                flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
+                flattened_mean = torch.cat([self.phi_y[i].weight.reshape((-1,)), self.phi_y[i].bias.reshape((-1,))], dim=0)
+                flattened_sigma_sq = (torch.ones(flattened_mean.size()) / lambda_d ).to(self.device)
+                flattened_log_sigma_sq = torch.log(flattened_sigma_sq)
+                L_prior += utils.normal_logpdf(flattened_weight, flattened_mean, flattened_log_sigma_sq).sum()
+                # d = flattened_weight.shape[0]
+                # L_prior += (d/2)*np.log(lambda_d) + utils.stdnormal_logpdf(np.sqrt(lambda_d)*(flattened_weight - flattened_mean)).sum()
+
         for i,weight in enumerate(self.theta_g):
             if 'Linear' in str(weight.type):
-                flattened_weight = weight.weight.reshape((-1,))
+                flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
                 L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
-        for i,weight in enumerate(self.phi_z):
-            if 'Linear' in str(weight.type):
-                flattened_weight = weight.weight.reshape((-1,))
-                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
-        for i,weight in enumerate(self.phi_y):
-            if 'Linear' in str(weight.type):
-                flattened_weight = weight.weight.reshape((-1,))
-                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+
+        # for i,weight in enumerate(self.phi_z):
+        #     if 'Linear' in str(weight.type):
+        #         flattened_weight = weight.weight.reshape((-1,))
+        #         L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+        # for i,weight in enumerate(self.phi_y):
+        #     if 'Linear' in str(weight.type):
+        #         flattened_weight = weight.weight.reshape((-1,))
+        #         L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
  
         # print(L_prior)
         
@@ -178,7 +185,7 @@ class M2(nn.Module):
 
 
         # Compute L(x, y) in Eq (4)
-        L_tot = L_l +  self.gamma*D_l + L_u 
+        L_tot = L_l +  D_l + L_u 
         # print(L_tot)
         L_tot = (L_tot*self.num_batches + L_prior)
         # print(L_prior)
