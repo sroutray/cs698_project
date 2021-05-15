@@ -158,7 +158,8 @@ class M2(nn.Module):
                 alpha = 0.1
                 lambda_d = (1-alpha)/(alpha)
                 flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
-                flattened_mean = torch.cat([self.phi_y[i].weight.reshape((-1,)), self.phi_y[i].bias.reshape((-1,))], dim=0)
+                # flattened_mean = torch.cat([self.phi_y[i].weight.reshape((-1,)), self.phi_y[i].bias.reshape((-1,))], dim=0)
+                flattened_mean = torch.zeros(flattened_mean.size()).to(self.device)
                 flattened_sigma_sq = (torch.ones(flattened_mean.size()) / lambda_d ).to(self.device)
                 flattened_log_sigma_sq = torch.log(flattened_sigma_sq)
                 L_prior += utils.normal_logpdf(flattened_weight, flattened_mean, flattened_log_sigma_sq).sum()
