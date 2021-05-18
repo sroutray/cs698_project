@@ -189,35 +189,34 @@ class M2(nn.Module):
             ypred_logits = self.phi_y(x)
             ypred = F.softmax(ypred_logits, 1)
             
-            ypredsamples = torch.multinomial(ypred, S , replacement=True)
+            ypredsamples = torch.multinomial(ypred, S , replacement=True).to(self.device)
 
-            ml = 0
+            ml = 0.
             
             for i in range(S):
-                y_sample = F.one_hot(ypredsamples[:,i].reshape(-1,), num_classes = self.dim_y)
-                y_sample = torch.FloatTensor(y_sample)
+                y_sample = F.one_hot(ypredsamples[:,i].reshape(-1,), num_classes = self.dim_y).float()
                 
                 #distribution for q_z
                 qz_param = self.phi_z(torch.cat([x, y_sample], dim=1))
                 qz_mu = qz_param[:, :self.dim_z]
                 qz_log_sigma_sq = qz_param[:, self.dim_z:]
                 
-                for _ in range(S):
 
-                    z_sample = self._draw_sample(qz_mu, qz_log_sigma_sq)
-                    #distribution p(x|y,z)
-                    px_param = self.theta_g(torch.cat([z_sample, y_sample], dim=1))
-                    px_mu = torch.sigmoid(px_param)
-                    
-                    
-                    log_lik =  utils.bernoulli_logpdf(x, px_mu).sum()
-                    log_prior_z = utils.stdnormal_logpdf(z_sample).sum()
-                    prior_y = 1/self.dim_y
 
-                    log_posterior_z = utils.normal_logpdf(z_sample, qz_mu, qz_l_log_sigma_sq).sum()
-                    log_posterior_y = F.cross_entropy(ypred, ypredsamples, reduction='none').sum()
-                    
-                    ml += prior_y*torch.exp(log_lik +  log_prior_z - log_posterior_z - log_posterior_y)
+                z_sample = self._draw_sample(qz_mu, qz_log_sigma_sq)
+                #distribution p(x|y,z)
+                px_param = self.theta_g(torch.cat([z_sample, y_sample], dim=1))
+                px_mu = torch.sigmoid(px_param)
+                
+                
+                log_lik =  utils.bernoulli_logpdf(x, px_mu).sum()
+                log_prior_z = utils.stdnormal_logpdf(z_sample).sum()
+                prior_y = 1/self.dim_y
+
+                log_posterior_z = utils.normal_logpdf(z_sample, qz_mu, qz_log_sigma_sq).sum()
+                log_posterior_y = - F.cross_entropy(ypred, ypredsamples[:,i], reduction='none').sum()
+                
+                ml += prior_y*torch.exp(log_lik +  log_prior_z - log_posterior_z - log_posterior_y)
                 
 
 
