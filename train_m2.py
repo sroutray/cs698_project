@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 import torch.optim
 import torch.nn as nn
 import utils
-from m2_c import M2
+from m2 import M2
 
 
 class MNIST(Dataset):
@@ -53,7 +53,7 @@ def train(  model, optimizer, device,
     return train_loss / num_iters
 
 
-def evaluate(model, device, loader_valid):
+def evaluate(model, device, loader_valid, loader_train = None):
 
     num_iters = len(loader_valid)
     acc = 0
@@ -70,7 +70,23 @@ def evaluate(model, device, loader_valid):
         loss += loss_its.item()
         acc += acc_its.item()
 
-    return loss / num_iters, acc / num_iters
+    #compute marginal likelihood if loader_train is passed
+    if loader_train:
+        loader_train = iter(loader_train)
+        num_iters = len(loader_train)
+        marginal_likelihood = 0
+        for its in range(num_iters):
+            x, y = loader_train.next()
+            x, y = x.to(device), y.to(device)
+            with torch.no_grad():
+                loss_its, acc_its, ml = model.predict(x, y, compute_ml = True)
+
+            marginal_likelihood += ml.item()
+    
+    if not loader_train:
+        return loss / num_iters, acc / num_iters
+    else:
+        return loss / num_iters, acc / num_iters, marginal_likelihood
 
 
 if __name__ == '__main__':
@@ -165,7 +181,7 @@ if __name__ == '__main__':
             optimizer.load_state_dict(chkpt['optimizer'])
 
         model.eval()
-        valid_loss, valid_acc = evaluate(model, device, loader_valid)
+        valid_loss, valid_acc, marginal_likelihood = evaluate(model, device, loader_valid, loader_lab)
         model.train()
 
         # stop_iter_count += 1
@@ -183,7 +199,8 @@ if __name__ == '__main__':
             utils.print_metrics( 	epoch,
                                     ['Training', 'cost', train_loss],
                                     ['Validation', 'accuracy', valid_acc],
-                                    ['Validation', 'cross-entropy', valid_loss] )       
+                                    ['Validation', 'cross-entropy', valid_loss],
+                                    ['Training', 'Marginal Likelihood', marginal_likelihood] )       
 
             
     
