@@ -1,0 +1,4487 @@
+Training on cuda
+Unlabelled: (49000, 784) (49000, 10)
+Labelled: (1000, 784) (1000, 10)
+Validation: (10000, 784) (10000, 10)
+Test: (10000, 784) (10000, 10)
+-------------------------
+[0] Training cost: 549.1456909179688
+[0] Validation accuracy: 0.652099996805191
+[0] Validation cross-entropy: 2.1163982152938843
+[0] Validation log-likelihood: -440.34986877441406
+[0] Inference accuracy: 0.1030999980866909
+[0] Inference cross-entropy: 2.3325369358062744
+[0] Test accuracy: 0.6471999883651733
+-------------------------
+-------------------------
+[1] Training cost: 390.437646484375
+[1] Validation accuracy: 0.7693999707698822
+[1] Validation cross-entropy: 1.7155587077140808
+[1] Validation log-likelihood: -247.09786224365234
+[1] Inference accuracy: 0.10639999806880951
+[1] Inference cross-entropy: 2.3395475149154663
+[1] Test accuracy: 0.7646999657154083
+-------------------------
+-------------------------
+[2] Training cost: 273.55621337890625
+[2] Validation accuracy: 0.8080999851226807
+[2] Validation cross-entropy: 1.2117963433265686
+[2] Validation log-likelihood: -215.96729278564453
+[2] Inference accuracy: 0.16459999233484268
+[2] Inference cross-entropy: 2.3090460300445557
+[2] Test accuracy: 0.798799991607666
+-------------------------
+-------------------------
+[3] Training cost: 250.2118377685547
+[3] Validation accuracy: 0.8130999803543091
+[3] Validation cross-entropy: 0.8619818687438965
+[3] Validation log-likelihood: -206.60281372070312
+[3] Inference accuracy: 0.16579999774694443
+[3] Inference cross-entropy: 2.305593967437744
+[3] Test accuracy: 0.7973999679088593
+-------------------------
+-------------------------
+[4] Training cost: 244.5759765625
+[4] Validation accuracy: 0.8317999839782715
+[4] Validation cross-entropy: 0.6918375492095947
+[4] Validation log-likelihood: -204.3364715576172
+[4] Inference accuracy: 0.12059999629855156
+[4] Inference cross-entropy: 2.302708625793457
+[4] Test accuracy: 0.8190999925136566
+-------------------------
+-------------------------
+[5] Training cost: 242.47425384521483
+[5] Validation accuracy: 0.8562999665737152
+[5] Validation cross-entropy: 0.5845167338848114
+[5] Validation log-likelihood: -202.47157287597656
+[5] Inference accuracy: 0.15359999239444733
+[5] Inference cross-entropy: 2.3027642965316772
+[5] Test accuracy: 0.8434000015258789
+-------------------------
+-------------------------
+[6] Training cost: 241.37970886230468
+[6] Validation accuracy: 0.8609999716281891
+[6] Validation cross-entropy: 0.5353420525789261
+[6] Validation log-likelihood: -201.49115753173828
+[6] Inference accuracy: 0.14660000056028366
+[6] Inference cross-entropy: 2.304294228553772
+[6] Test accuracy: 0.851099967956543
+-------------------------
+-------------------------
+[7] Training cost: 240.29447021484376
+[7] Validation accuracy: 0.8724999725818634
+[7] Validation cross-entropy: 0.5015628784894943
+[7] Validation log-likelihood: -200.3083267211914
+[7] Inference accuracy: 0.12449999898672104
+[7] Inference cross-entropy: 2.306236147880554
+[7] Test accuracy: 0.865699976682663
+-------------------------
+-------------------------
+[8] Training cost: 239.00645446777344
+[8] Validation accuracy: 0.8744999766349792
+[8] Validation cross-entropy: 0.4757322371006012
+[8] Validation log-likelihood: -198.91957092285156
+[8] Inference accuracy: 0.14469999819993973
+[8] Inference cross-entropy: 2.30538272857666
+[8] Test accuracy: 0.8681999742984772
+-------------------------
+-------------------------
+[9] Training cost: 237.85908050537108
+[9] Validation accuracy: 0.8844999670982361
+[9] Validation cross-entropy: 0.45653218030929565
+[9] Validation log-likelihood: -197.85478973388672
+[9] Inference accuracy: 0.17479999363422394
+[9] Inference cross-entropy: 2.3028050661087036
+[9] Test accuracy: 0.8737999796867371
+-------------------------
+-------------------------
+[10] Training cost: 236.7067901611328
+[10] Validation accuracy: 0.8789999783039093
+[10] Validation cross-entropy: 0.4442044198513031
+[10] Validation log-likelihood: -196.3309326171875
+[10] Inference accuracy: 0.1540999934077263
+[10] Inference cross-entropy: 2.2976651191711426
+[10] Test accuracy: 0.8732999563217163
+-------------------------
+-------------------------
+[11] Training cost: 235.2235321044922
+[11] Validation accuracy: 0.8831999599933624
+[11] Validation cross-entropy: 0.4413753002882004
+[11] Validation log-likelihood: -194.29447174072266
+[11] Inference accuracy: 0.15959999710321426
+[11] Inference cross-entropy: 2.2912811040878296
+[11] Test accuracy: 0.8759999573230743
+-------------------------
+-------------------------
+[12] Training cost: 233.6112075805664
+[12] Validation accuracy: 0.8816999793052673
+[12] Validation cross-entropy: 0.4290510416030884
+[12] Validation log-likelihood: -192.92120361328125
+[12] Inference accuracy: 0.18689999729394913
+[12] Inference cross-entropy: 2.2849912643432617
+[12] Test accuracy: 0.8733999729156494
+-------------------------
+-------------------------
+[13] Training cost: 232.3573974609375
+[13] Validation accuracy: 0.8864999711513519
+[13] Validation cross-entropy: 0.415452778339386
+[13] Validation log-likelihood: -192.10416412353516
+[13] Inference accuracy: 0.22369999438524246
+[13] Inference cross-entropy: 2.270774722099304
+[13] Test accuracy: 0.8771999776363373
+-------------------------
+-------------------------
+[14] Training cost: 231.40353698730468
+[14] Validation accuracy: 0.8871999979019165
+[14] Validation cross-entropy: 0.4118697792291641
+[14] Validation log-likelihood: -191.00543212890625
+[14] Inference accuracy: 0.21709999442100525
+[14] Inference cross-entropy: 2.2649805545806885
+[14] Test accuracy: 0.8807999789714813
+-------------------------
+-------------------------
+[15] Training cost: 230.67242431640625
+[15] Validation accuracy: 0.8903999626636505
+[15] Validation cross-entropy: 0.40553349256515503
+[15] Validation log-likelihood: -189.7256088256836
+[15] Inference accuracy: 0.19659999758005142
+[15] Inference cross-entropy: 2.265911102294922
+[15] Test accuracy: 0.8795999586582184
+-------------------------
+-------------------------
+[16] Training cost: 229.97041931152344
+[16] Validation accuracy: 0.8904999792575836
+[16] Validation cross-entropy: 0.39771899580955505
+[16] Validation log-likelihood: -188.87660217285156
+[16] Inference accuracy: 0.22009999305009842
+[16] Inference cross-entropy: 2.274768114089966
+[16] Test accuracy: 0.8849999606609344
+-------------------------
+-------------------------
+[17] Training cost: 229.29876708984375
+[17] Validation accuracy: 0.890999972820282
+[17] Validation cross-entropy: 0.39468611776828766
+[17] Validation log-likelihood: -187.78473663330078
+[17] Inference accuracy: 0.21769999712705612
+[17] Inference cross-entropy: 2.2795528173446655
+[17] Test accuracy: 0.8801999688148499
+-------------------------
+-------------------------
+[18] Training cost: 228.47405242919922
+[18] Validation accuracy: 0.8924999833106995
+[18] Validation cross-entropy: 0.3898244798183441
+[18] Validation log-likelihood: -186.50012969970703
+[18] Inference accuracy: 0.18689999729394913
+[18] Inference cross-entropy: 2.2785459756851196
+[18] Test accuracy: 0.8857999742031097
+-------------------------
+-------------------------
+[19] Training cost: 227.42522583007812
+[19] Validation accuracy: 0.8875999748706818
+[19] Validation cross-entropy: 0.3877146989107132
+[19] Validation log-likelihood: -184.88549041748047
+[19] Inference accuracy: 0.218299999833107
+[19] Inference cross-entropy: 2.2707430124282837
+[19] Test accuracy: 0.8810999691486359
+-------------------------
+-------------------------
+[20] Training cost: 226.14691162109375
+[20] Validation accuracy: 0.8899999856948853
+[20] Validation cross-entropy: 0.38309459388256073
+[20] Validation log-likelihood: -183.3233184814453
+[20] Inference accuracy: 0.20989999175071716
+[20] Inference cross-entropy: 2.27238667011261
+[20] Test accuracy: 0.8854999840259552
+-------------------------
+-------------------------
+[21] Training cost: 224.72244873046876
+[21] Validation accuracy: 0.8916999697685242
+[21] Validation cross-entropy: 0.3746350258588791
+[21] Validation log-likelihood: -181.53316497802734
+[21] Inference accuracy: 0.1704999953508377
+[21] Inference cross-entropy: 2.2710152864456177
+[21] Test accuracy: 0.8861999809741974
+-------------------------
+-------------------------
+[22] Training cost: 223.17315216064452
+[22] Validation accuracy: 0.8899999856948853
+[22] Validation cross-entropy: 0.3815549165010452
+[22] Validation log-likelihood: -179.4802703857422
+[22] Inference accuracy: 0.20749999582767487
+[22] Inference cross-entropy: 2.269545793533325
+[22] Test accuracy: 0.8847999572753906
+-------------------------
+-------------------------
+[23] Training cost: 221.5490264892578
+[23] Validation accuracy: 0.891899973154068
+[23] Validation cross-entropy: 0.3709529936313629
+[23] Validation log-likelihood: -177.22030639648438
+[23] Inference accuracy: 0.2076999917626381
+[23] Inference cross-entropy: 2.273019552230835
+[23] Test accuracy: 0.8868999779224396
+-------------------------
+-------------------------
+[24] Training cost: 219.93648529052734
+[24] Validation accuracy: 0.8901999592781067
+[24] Validation cross-entropy: 0.37947213649749756
+[24] Validation log-likelihood: -175.3121109008789
+[24] Inference accuracy: 0.15469999611377716
+[24] Inference cross-entropy: 2.2793442010879517
+[24] Test accuracy: 0.8813999593257904
+-------------------------
+-------------------------
+[25] Training cost: 218.1132827758789
+[25] Validation accuracy: 0.8937999904155731
+[25] Validation cross-entropy: 0.36610274016857147
+[25] Validation log-likelihood: -172.7128448486328
+[25] Inference accuracy: 0.16990000009536743
+[25] Inference cross-entropy: 2.282142162322998
+[25] Test accuracy: 0.885299950838089
+-------------------------
+-------------------------
+[26] Training cost: 216.04821166992187
+[26] Validation accuracy: 0.8934999704360962
+[26] Validation cross-entropy: 0.3623315542936325
+[26] Validation log-likelihood: -170.2361068725586
+[26] Inference accuracy: 0.17029999196529388
+[26] Inference cross-entropy: 2.2852498292922974
+[26] Test accuracy: 0.8889999985694885
+-------------------------
+-------------------------
+[27] Training cost: 213.88634338378907
+[27] Validation accuracy: 0.8951999843120575
+[27] Validation cross-entropy: 0.36082637310028076
+[27] Validation log-likelihood: -167.71887969970703
+[27] Inference accuracy: 0.18199999630451202
+[27] Inference cross-entropy: 2.2812118530273438
+[27] Test accuracy: 0.8872999846935272
+-------------------------
+-------------------------
+[28] Training cost: 211.6493133544922
+[28] Validation accuracy: 0.8951999843120575
+[28] Validation cross-entropy: 0.3603436201810837
+[28] Validation log-likelihood: -164.44676971435547
+[28] Inference accuracy: 0.16259999573230743
+[28] Inference cross-entropy: 2.2792510986328125
+[28] Test accuracy: 0.890099972486496
+-------------------------
+-------------------------
+[29] Training cost: 208.936865234375
+[29] Validation accuracy: 0.8958999812602997
+[29] Validation cross-entropy: 0.35527269542217255
+[29] Validation log-likelihood: -160.93106842041016
+[29] Inference accuracy: 0.19059999287128448
+[29] Inference cross-entropy: 2.267905354499817
+[29] Test accuracy: 0.8901999890804291
+-------------------------
+-------------------------
+[30] Training cost: 206.03761596679686
+[30] Validation accuracy: 0.8919999897480011
+[30] Validation cross-entropy: 0.37008431553840637
+[30] Validation log-likelihood: -158.0142593383789
+[30] Inference accuracy: 0.23239999264478683
+[30] Inference cross-entropy: 2.2490369081497192
+[30] Test accuracy: 0.8825999796390533
+-------------------------
+-------------------------
+[31] Training cost: 203.61519775390624
+[31] Validation accuracy: 0.896699994802475
+[31] Validation cross-entropy: 0.3521528095006943
+[31] Validation log-likelihood: -155.28018951416016
+[31] Inference accuracy: 0.23809999227523804
+[31] Inference cross-entropy: 2.25713849067688
+[31] Test accuracy: 0.8905999958515167
+-------------------------
+-------------------------
+[32] Training cost: 201.41793518066407
+[32] Validation accuracy: 0.8980999886989594
+[32] Validation cross-entropy: 0.3500978797674179
+[32] Validation log-likelihood: -152.63890075683594
+[32] Inference accuracy: 0.21199999004602432
+[32] Inference cross-entropy: 2.258363127708435
+[32] Test accuracy: 0.8928999602794647
+-------------------------
+-------------------------
+[33] Training cost: 199.32526245117188
+[33] Validation accuracy: 0.8989000022411346
+[33] Validation cross-entropy: 0.347203329205513
+[33] Validation log-likelihood: -150.1924591064453
+[33] Inference accuracy: 0.19189999997615814
+[33] Inference cross-entropy: 2.2572821378707886
+[33] Test accuracy: 0.8935999870300293
+-------------------------
+-------------------------
+[34] Training cost: 197.3955505371094
+[34] Validation accuracy: 0.8975999653339386
+[34] Validation cross-entropy: 0.3488730639219284
+[34] Validation log-likelihood: -147.99845123291016
+[34] Inference accuracy: 0.2248999923467636
+[34] Inference cross-entropy: 2.263319730758667
+[34] Test accuracy: 0.8914999663829803
+-------------------------
+-------------------------
+[35] Training cost: 195.67671661376954
+[35] Validation accuracy: 0.8935999870300293
+[35] Validation cross-entropy: 0.3569442480802536
+[35] Validation log-likelihood: -146.09002685546875
+[35] Inference accuracy: 0.21249999105930328
+[35] Inference cross-entropy: 2.262706995010376
+[35] Test accuracy: 0.888299971818924
+-------------------------
+-------------------------
+[36] Training cost: 194.2373031616211
+[36] Validation accuracy: 0.8951999843120575
+[36] Validation cross-entropy: 0.35631318390369415
+[36] Validation log-likelihood: -144.40455627441406
+[36] Inference accuracy: 0.19379999488592148
+[36] Inference cross-entropy: 2.2557594776153564
+[36] Test accuracy: 0.8887999951839447
+-------------------------
+-------------------------
+[37] Training cost: 192.84557647705077
+[37] Validation accuracy: 0.8908999860286713
+[37] Validation cross-entropy: 0.3568134158849716
+[37] Validation log-likelihood: -142.92818450927734
+[37] Inference accuracy: 0.21379999816417694
+[37] Inference cross-entropy: 2.244377851486206
+[37] Test accuracy: 0.8901999890804291
+-------------------------
+-------------------------
+[38] Training cost: 191.73969421386718
+[38] Validation accuracy: 0.8992999792098999
+[38] Validation cross-entropy: 0.34931574761867523
+[38] Validation log-likelihood: -141.4807891845703
+[38] Inference accuracy: 0.2581999897956848
+[38] Inference cross-entropy: 2.2461005449295044
+[38] Test accuracy: 0.8912999927997589
+-------------------------
+-------------------------
+[39] Training cost: 190.58761138916014
+[39] Validation accuracy: 0.8955999612808228
+[39] Validation cross-entropy: 0.34915533661842346
+[39] Validation log-likelihood: -140.56331634521484
+[39] Inference accuracy: 0.28859998285770416
+[39] Inference cross-entropy: 2.2397619485855103
+[39] Test accuracy: 0.8910000026226044
+-------------------------
+-------------------------
+[40] Training cost: 189.5687240600586
+[40] Validation accuracy: 0.8924999833106995
+[40] Validation cross-entropy: 0.3483690470457077
+[40] Validation log-likelihood: -138.95770263671875
+[40] Inference accuracy: 0.29179999232292175
+[40] Inference cross-entropy: 2.2342569828033447
+[40] Test accuracy: 0.88919997215271
+-------------------------
+-------------------------
+[41] Training cost: 188.49240417480468
+[41] Validation accuracy: 0.895499974489212
+[41] Validation cross-entropy: 0.35535015165805817
+[41] Validation log-likelihood: -137.79078674316406
+[41] Inference accuracy: 0.2848999947309494
+[41] Inference cross-entropy: 2.239455223083496
+[41] Test accuracy: 0.8879999816417694
+-------------------------
+-------------------------
+[42] Training cost: 187.44833374023438
+[42] Validation accuracy: 0.8977999985218048
+[42] Validation cross-entropy: 0.34132009744644165
+[42] Validation log-likelihood: -136.72789764404297
+[42] Inference accuracy: 0.2856999933719635
+[42] Inference cross-entropy: 2.2358814477920532
+[42] Test accuracy: 0.8951999545097351
+-------------------------
+-------------------------
+[43] Training cost: 186.44774932861327
+[43] Validation accuracy: 0.8978999853134155
+[43] Validation cross-entropy: 0.3415108621120453
+[43] Validation log-likelihood: -135.40345764160156
+[43] Inference accuracy: 0.25599999725818634
+[43] Inference cross-entropy: 2.225483536720276
+[43] Test accuracy: 0.8923999667167664
+-------------------------
+-------------------------
+[44] Training cost: 185.33546600341796
+[44] Validation accuracy: 0.9005999863147736
+[44] Validation cross-entropy: 0.33950352668762207
+[44] Validation log-likelihood: -134.40806579589844
+[44] Inference accuracy: 0.2574999928474426
+[44] Inference cross-entropy: 2.2340701818466187
+[44] Test accuracy: 0.8937000036239624
+-------------------------
+-------------------------
+[45] Training cost: 184.30577087402344
+[45] Validation accuracy: 0.898999959230423
+[45] Validation cross-entropy: 0.3367847204208374
+[45] Validation log-likelihood: -133.44335174560547
+[45] Inference accuracy: 0.25029999017715454
+[45] Inference cross-entropy: 2.248939037322998
+[45] Test accuracy: 0.896399974822998
+-------------------------
+-------------------------
+[46] Training cost: 183.19551544189454
+[46] Validation accuracy: 0.9023999869823456
+[46] Validation cross-entropy: 0.3336489051580429
+[46] Validation log-likelihood: -132.2191619873047
+[46] Inference accuracy: 0.2483999952673912
+[46] Inference cross-entropy: 2.2448397874832153
+[46] Test accuracy: 0.8946999609470367
+-------------------------
+-------------------------
+[47] Training cost: 182.15375366210938
+[47] Validation accuracy: 0.902899980545044
+[47] Validation cross-entropy: 0.33324170112609863
+[47] Validation log-likelihood: -130.71749877929688
+[47] Inference accuracy: 0.27049998939037323
+[47] Inference cross-entropy: 2.245422124862671
+[47] Test accuracy: 0.8957999646663666
+-------------------------
+-------------------------
+[48] Training cost: 181.0170684814453
+[48] Validation accuracy: 0.901199996471405
+[48] Validation cross-entropy: 0.3336619883775711
+[48] Validation log-likelihood: -129.5354232788086
+[48] Inference accuracy: 0.28139999508857727
+[48] Inference cross-entropy: 2.24313747882843
+[48] Test accuracy: 0.8933999538421631
+-------------------------
+-------------------------
+[49] Training cost: 179.91240844726562
+[49] Validation accuracy: 0.9031999707221985
+[49] Validation cross-entropy: 0.33169175684452057
+[49] Validation log-likelihood: -128.16060638427734
+[49] Inference accuracy: 0.25369998812675476
+[49] Inference cross-entropy: 2.2357290983200073
+[49] Test accuracy: 0.8953999876976013
+-------------------------
+-------------------------
+[50] Training cost: 178.93144836425782
+[50] Validation accuracy: 0.9038999676704407
+[50] Validation cross-entropy: 0.3346392810344696
+[50] Validation log-likelihood: -126.93429565429688
+[50] Inference accuracy: 0.2906000018119812
+[50] Inference cross-entropy: 2.2227994203567505
+[50] Test accuracy: 0.895499974489212
+-------------------------
+-------------------------
+[51] Training cost: 177.9802703857422
+[51] Validation accuracy: 0.8949999809265137
+[51] Validation cross-entropy: 0.34471553564071655
+[51] Validation log-likelihood: -126.48633575439453
+[51] Inference accuracy: 0.31709998846054077
+[51] Inference cross-entropy: 2.2184364795684814
+[51] Test accuracy: 0.894599974155426
+-------------------------
+-------------------------
+[52] Training cost: 176.97386627197267
+[52] Validation accuracy: 0.9013999700546265
+[52] Validation cross-entropy: 0.3407594859600067
+[52] Validation log-likelihood: -125.30477523803711
+[52] Inference accuracy: 0.3385999947786331
+[52] Inference cross-entropy: 2.223661184310913
+[52] Test accuracy: 0.8915999829769135
+-------------------------
+-------------------------
+[53] Training cost: 176.1381591796875
+[53] Validation accuracy: 0.9011999666690826
+[53] Validation cross-entropy: 0.3350400924682617
+[53] Validation log-likelihood: -124.26599884033203
+[53] Inference accuracy: 0.3439999967813492
+[53] Inference cross-entropy: 2.2187470197677612
+[53] Test accuracy: 0.896399974822998
+-------------------------
+-------------------------
+[54] Training cost: 175.24409942626954
+[54] Validation accuracy: 0.8990999758243561
+[54] Validation cross-entropy: 0.3330860882997513
+[54] Validation log-likelihood: -123.44312286376953
+[54] Inference accuracy: 0.31610000133514404
+[54] Inference cross-entropy: 2.2098305225372314
+[54] Test accuracy: 0.8970999717712402
+-------------------------
+-------------------------
+[55] Training cost: 174.37466125488282
+[55] Validation accuracy: 0.9048999845981598
+[55] Validation cross-entropy: 0.3278968036174774
+[55] Validation log-likelihood: -122.63901901245117
+[55] Inference accuracy: 0.3228999823331833
+[55] Inference cross-entropy: 2.205895185470581
+[55] Test accuracy: 0.8976999819278717
+-------------------------
+-------------------------
+[56] Training cost: 173.5452865600586
+[56] Validation accuracy: 0.9014999866485596
+[56] Validation cross-entropy: 0.3293693959712982
+[56] Validation log-likelihood: -121.65047836303711
+[56] Inference accuracy: 0.3237999826669693
+[56] Inference cross-entropy: 2.209691643714905
+[56] Test accuracy: 0.8962999880313873
+-------------------------
+-------------------------
+[57] Training cost: 172.7513916015625
+[57] Validation accuracy: 0.9036999642848969
+[57] Validation cross-entropy: 0.33431828022003174
+[57] Validation log-likelihood: -120.88636016845703
+[57] Inference accuracy: 0.2824999839067459
+[57] Inference cross-entropy: 2.217069983482361
+[57] Test accuracy: 0.8931999802589417
+-------------------------
+-------------------------
+[58] Training cost: 171.90772857666016
+[58] Validation accuracy: 0.9026999771595001
+[58] Validation cross-entropy: 0.3290860056877136
+[58] Validation log-likelihood: -119.88985824584961
+[58] Inference accuracy: 0.28859999775886536
+[58] Inference cross-entropy: 2.2178069353103638
+[58] Test accuracy: 0.8983999788761139
+-------------------------
+-------------------------
+[59] Training cost: 171.15054779052736
+[59] Validation accuracy: 0.9014999568462372
+[59] Validation cross-entropy: 0.3308330476284027
+[59] Validation log-likelihood: -119.91332626342773
+[59] Inference accuracy: 0.31199999153614044
+[59] Inference cross-entropy: 2.219111919403076
+[59] Test accuracy: 0.8946999907493591
+-------------------------
+-------------------------
+[60] Training cost: 170.3976303100586
+[60] Validation accuracy: 0.9009999632835388
+[60] Validation cross-entropy: 0.33600400388240814
+[60] Validation log-likelihood: -119.01724243164062
+[60] Inference accuracy: 0.32109998166561127
+[60] Inference cross-entropy: 2.2159653902053833
+[60] Test accuracy: 0.8947999775409698
+-------------------------
+-------------------------
+[61] Training cost: 169.60486755371093
+[61] Validation accuracy: 0.9041999578475952
+[61] Validation cross-entropy: 0.321642205119133
+[61] Validation log-likelihood: -118.18758010864258
+[61] Inference accuracy: 0.34459999203681946
+[61] Inference cross-entropy: 2.2100563049316406
+[61] Test accuracy: 0.8982999920845032
+-------------------------
+-------------------------
+[62] Training cost: 168.97745056152343
+[62] Validation accuracy: 0.902899980545044
+[62] Validation cross-entropy: 0.3275689035654068
+[62] Validation log-likelihood: -117.21944808959961
+[62] Inference accuracy: 0.34929999709129333
+[62] Inference cross-entropy: 2.2081475257873535
+[62] Test accuracy: 0.898499995470047
+-------------------------
+-------------------------
+[63] Training cost: 168.1814926147461
+[63] Validation accuracy: 0.9062999784946442
+[63] Validation cross-entropy: 0.32914212346076965
+[63] Validation log-likelihood: -116.6475830078125
+[63] Inference accuracy: 0.3317999839782715
+[63] Inference cross-entropy: 2.2102054357528687
+[63] Test accuracy: 0.8961999714374542
+-------------------------
+-------------------------
+[64] Training cost: 167.6115737915039
+[64] Validation accuracy: 0.9018999934196472
+[64] Validation cross-entropy: 0.3288174867630005
+[64] Validation log-likelihood: -115.68173599243164
+[64] Inference accuracy: 0.3179999887943268
+[64] Inference cross-entropy: 2.2120379209518433
+[64] Test accuracy: 0.8980999886989594
+-------------------------
+-------------------------
+[65] Training cost: 166.82151794433594
+[65] Validation accuracy: 0.9060999751091003
+[65] Validation cross-entropy: 0.3274567276239395
+[65] Validation log-likelihood: -114.88166809082031
+[65] Inference accuracy: 0.31949998438358307
+[65] Inference cross-entropy: 2.2142289876937866
+[65] Test accuracy: 0.8993999660015106
+-------------------------
+-------------------------
+[66] Training cost: 166.04085845947264
+[66] Validation accuracy: 0.9003999829292297
+[66] Validation cross-entropy: 0.3296606093645096
+[66] Validation log-likelihood: -114.70937728881836
+[66] Inference accuracy: 0.3537999838590622
+[66] Inference cross-entropy: 2.20804226398468
+[66] Test accuracy: 0.8962999880313873
+-------------------------
+-------------------------
+[67] Training cost: 165.44480590820314
+[67] Validation accuracy: 0.9062999784946442
+[67] Validation cross-entropy: 0.3239804059267044
+[67] Validation log-likelihood: -113.50075149536133
+[67] Inference accuracy: 0.32419998943805695
+[67] Inference cross-entropy: 2.2100404500961304
+[67] Test accuracy: 0.8986999690532684
+-------------------------
+-------------------------
+[68] Training cost: 164.7427215576172
+[68] Validation accuracy: 0.9041999578475952
+[68] Validation cross-entropy: 0.32432474195957184
+[68] Validation log-likelihood: -112.63592147827148
+[68] Inference accuracy: 0.3422999978065491
+[68] Inference cross-entropy: 2.2042473554611206
+[68] Test accuracy: 0.8990999758243561
+-------------------------
+-------------------------
+[69] Training cost: 164.08892364501952
+[69] Validation accuracy: 0.905299961566925
+[69] Validation cross-entropy: 0.32643067836761475
+[69] Validation log-likelihood: -112.77555084228516
+[69] Inference accuracy: 0.35029999911785126
+[69] Inference cross-entropy: 2.196915030479431
+[69] Test accuracy: 0.8987999856472015
+-------------------------
+-------------------------
+[70] Training cost: 163.49187469482422
+[70] Validation accuracy: 0.9049999713897705
+[70] Validation cross-entropy: 0.32115601003170013
+[70] Validation log-likelihood: -111.44783401489258
+[70] Inference accuracy: 0.33719998598098755
+[70] Inference cross-entropy: 2.1940510272979736
+[70] Test accuracy: 0.8991999626159668
+-------------------------
+-------------------------
+[71] Training cost: 162.8845947265625
+[71] Validation accuracy: 0.9067999720573425
+[71] Validation cross-entropy: 0.3215591609477997
+[71] Validation log-likelihood: -110.53008651733398
+[71] Inference accuracy: 0.353999987244606
+[71] Inference cross-entropy: 2.1906579732894897
+[71] Test accuracy: 0.8983999788761139
+-------------------------
+-------------------------
+[72] Training cost: 162.41529541015626
+[72] Validation accuracy: 0.9076999723911285
+[72] Validation cross-entropy: 0.3190031945705414
+[72] Validation log-likelihood: -110.43486022949219
+[72] Inference accuracy: 0.35589998960494995
+[72] Inference cross-entropy: 2.1869866847991943
+[72] Test accuracy: 0.8976999819278717
+-------------------------
+-------------------------
+[73] Training cost: 161.86465301513672
+[73] Validation accuracy: 0.9063999652862549
+[73] Validation cross-entropy: 0.31835779547691345
+[73] Validation log-likelihood: -110.04280853271484
+[73] Inference accuracy: 0.3897999972105026
+[73] Inference cross-entropy: 2.1888644695281982
+[73] Test accuracy: 0.9002999663352966
+-------------------------
+-------------------------
+[74] Training cost: 161.20274353027344
+[74] Validation accuracy: 0.9077999591827393
+[74] Validation cross-entropy: 0.3203570544719696
+[74] Validation log-likelihood: -109.30819702148438
+[74] Inference accuracy: 0.384799987077713
+[74] Inference cross-entropy: 2.189114212989807
+[74] Test accuracy: 0.8986999690532684
+-------------------------
+-------------------------
+[75] Training cost: 160.67705078125
+[75] Validation accuracy: 0.9067999720573425
+[75] Validation cross-entropy: 0.31563790142536163
+[75] Validation log-likelihood: -108.1522445678711
+[75] Inference accuracy: 0.3685999810695648
+[75] Inference cross-entropy: 2.198981761932373
+[75] Test accuracy: 0.9013999700546265
+-------------------------
+-------------------------
+[76] Training cost: 160.16246337890624
+[76] Validation accuracy: 0.9068999886512756
+[76] Validation cross-entropy: 0.31896884739398956
+[76] Validation log-likelihood: -108.41332244873047
+[76] Inference accuracy: 0.36249999701976776
+[76] Inference cross-entropy: 2.202322483062744
+[76] Test accuracy: 0.8994999527931213
+-------------------------
+-------------------------
+[77] Training cost: 159.67559967041015
+[77] Validation accuracy: 0.9057999551296234
+[77] Validation cross-entropy: 0.31765827536582947
+[77] Validation log-likelihood: -107.16491317749023
+[77] Inference accuracy: 0.3661999851465225
+[77] Inference cross-entropy: 2.1993727684020996
+[77] Test accuracy: 0.8986999690532684
+-------------------------
+-------------------------
+[78] Training cost: 159.23153076171874
+[78] Validation accuracy: 0.9066999554634094
+[78] Validation cross-entropy: 0.31627868115901947
+[78] Validation log-likelihood: -107.06207656860352
+[78] Inference accuracy: 0.3628999888896942
+[78] Inference cross-entropy: 2.2016067504882812
+[78] Test accuracy: 0.901199996471405
+-------------------------
+-------------------------
+[79] Training cost: 158.68573608398438
+[79] Validation accuracy: 0.90829998254776
+[79] Validation cross-entropy: 0.3158699870109558
+[79] Validation log-likelihood: -106.3344497680664
+[79] Inference accuracy: 0.35179999470710754
+[79] Inference cross-entropy: 2.201726198196411
+[79] Test accuracy: 0.9005999863147736
+-------------------------
+-------------------------
+[80] Training cost: 158.42769775390624
+[80] Validation accuracy: 0.9076999723911285
+[80] Validation cross-entropy: 0.3155197352170944
+[80] Validation log-likelihood: -105.46706008911133
+[80] Inference accuracy: 0.3531999886035919
+[80] Inference cross-entropy: 2.202856421470642
+[80] Test accuracy: 0.8992999792098999
+-------------------------
+-------------------------
+[81] Training cost: 158.17596130371095
+[81] Validation accuracy: 0.9043999910354614
+[81] Validation cross-entropy: 0.31974418461322784
+[81] Validation log-likelihood: -105.44199752807617
+[81] Inference accuracy: 0.3642999827861786
+[81] Inference cross-entropy: 2.205986738204956
+[81] Test accuracy: 0.8987999856472015
+-------------------------
+-------------------------
+[82] Training cost: 157.5710922241211
+[82] Validation accuracy: 0.9087999761104584
+[82] Validation cross-entropy: 0.31541694700717926
+[82] Validation log-likelihood: -105.57875061035156
+[82] Inference accuracy: 0.3715999871492386
+[82] Inference cross-entropy: 2.2033443450927734
+[82] Test accuracy: 0.8988999724388123
+-------------------------
+-------------------------
+[83] Training cost: 157.14521026611328
+[83] Validation accuracy: 0.9036999940872192
+[83] Validation cross-entropy: 0.32838764786720276
+[83] Validation log-likelihood: -104.67832946777344
+[83] Inference accuracy: 0.36799998581409454
+[83] Inference cross-entropy: 2.206822991371155
+[83] Test accuracy: 0.8958999812602997
+-------------------------
+-------------------------
+[84] Training cost: 156.70268859863282
+[84] Validation accuracy: 0.9078999757766724
+[84] Validation cross-entropy: 0.31644193828105927
+[84] Validation log-likelihood: -104.51276779174805
+[84] Inference accuracy: 0.35189998149871826
+[84] Inference cross-entropy: 2.206157088279724
+[84] Test accuracy: 0.8995999693870544
+-------------------------
+-------------------------
+[85] Training cost: 156.3722351074219
+[85] Validation accuracy: 0.9061999917030334
+[85] Validation cross-entropy: 0.3175240010023117
+[85] Validation log-likelihood: -104.08758163452148
+[85] Inference accuracy: 0.3519999831914902
+[85] Inference cross-entropy: 2.200470209121704
+[85] Test accuracy: 0.8993999660015106
+-------------------------
+-------------------------
+[86] Training cost: 156.02743835449218
+[86] Validation accuracy: 0.9061999619007111
+[86] Validation cross-entropy: 0.31311941146850586
+[86] Validation log-likelihood: -103.53987503051758
+[86] Inference accuracy: 0.36229997873306274
+[86] Inference cross-entropy: 2.1948323249816895
+[86] Test accuracy: 0.9005999565124512
+-------------------------
+-------------------------
+[87] Training cost: 155.69499816894532
+[87] Validation accuracy: 0.9076999723911285
+[87] Validation cross-entropy: 0.31545041501522064
+[87] Validation log-likelihood: -102.91423797607422
+[87] Inference accuracy: 0.37929999828338623
+[87] Inference cross-entropy: 2.1936827898025513
+[87] Test accuracy: 0.9001999795436859
+-------------------------
+-------------------------
+[88] Training cost: 155.40481719970703
+[88] Validation accuracy: 0.9087999761104584
+[88] Validation cross-entropy: 0.3143805265426636
+[88] Validation log-likelihood: -102.62655639648438
+[88] Inference accuracy: 0.3732999861240387
+[88] Inference cross-entropy: 2.2055416107177734
+[88] Test accuracy: 0.9004999697208405
+-------------------------
+-------------------------
+[89] Training cost: 155.16575469970704
+[89] Validation accuracy: 0.9069999754428864
+[89] Validation cross-entropy: 0.3109405040740967
+[89] Validation log-likelihood: -102.26926803588867
+[89] Inference accuracy: 0.35819998383522034
+[89] Inference cross-entropy: 2.202000617980957
+[89] Test accuracy: 0.9022999703884125
+-------------------------
+-------------------------
+[90] Training cost: 154.72900848388673
+[90] Validation accuracy: 0.9080999493598938
+[90] Validation cross-entropy: 0.3173061013221741
+[90] Validation log-likelihood: -102.06048583984375
+[90] Inference accuracy: 0.37129999697208405
+[90] Inference cross-entropy: 2.1998543739318848
+[90] Test accuracy: 0.8996999561786652
+-------------------------
+-------------------------
+[91] Training cost: 154.38364868164064
+[91] Validation accuracy: 0.9084999561309814
+[91] Validation cross-entropy: 0.3075500726699829
+[91] Validation log-likelihood: -101.88258743286133
+[91] Inference accuracy: 0.3682999908924103
+[91] Inference cross-entropy: 2.19718074798584
+[91] Test accuracy: 0.9018999636173248
+-------------------------
+-------------------------
+[92] Training cost: 154.10970001220704
+[92] Validation accuracy: 0.9088999927043915
+[92] Validation cross-entropy: 0.3105800151824951
+[92] Validation log-likelihood: -101.4737777709961
+[92] Inference accuracy: 0.3398999869823456
+[92] Inference cross-entropy: 2.1954615116119385
+[92] Test accuracy: 0.9027999639511108
+-------------------------
+-------------------------
+[93] Training cost: 153.79200439453126
+[93] Validation accuracy: 0.9081999659538269
+[93] Validation cross-entropy: 0.3173939436674118
+[93] Validation log-likelihood: -101.26831817626953
+[93] Inference accuracy: 0.35249999165534973
+[93] Inference cross-entropy: 2.194290518760681
+[93] Test accuracy: 0.8994999825954437
+-------------------------
+-------------------------
+[94] Training cost: 153.5931594848633
+[94] Validation accuracy: 0.9064999520778656
+[94] Validation cross-entropy: 0.3156772255897522
+[94] Validation log-likelihood: -101.10624694824219
+[94] Inference accuracy: 0.39239999651908875
+[94] Inference cross-entropy: 2.1933095455169678
+[94] Test accuracy: 0.9036999642848969
+-------------------------
+-------------------------
+[95] Training cost: 153.3009292602539
+[95] Validation accuracy: 0.9095999896526337
+[95] Validation cross-entropy: 0.3118308484554291
+[95] Validation log-likelihood: -100.51115798950195
+[95] Inference accuracy: 0.3976999819278717
+[95] Inference cross-entropy: 2.1844067573547363
+[95] Test accuracy: 0.9000999629497528
+-------------------------
+-------------------------
+[96] Training cost: 153.01546783447264
+[96] Validation accuracy: 0.9102999866008759
+[96] Validation cross-entropy: 0.3061160296201706
+[96] Validation log-likelihood: -100.23909378051758
+[96] Inference accuracy: 0.4010999947786331
+[96] Inference cross-entropy: 2.185700297355652
+[96] Test accuracy: 0.9057999849319458
+-------------------------
+-------------------------
+[97] Training cost: 152.60437774658203
+[97] Validation accuracy: 0.9068999886512756
+[97] Validation cross-entropy: 0.3167755454778671
+[97] Validation log-likelihood: -100.17952346801758
+[97] Inference accuracy: 0.37529999017715454
+[97] Inference cross-entropy: 2.1918004751205444
+[97] Test accuracy: 0.9001999795436859
+-------------------------
+-------------------------
+[98] Training cost: 152.39798583984376
+[98] Validation accuracy: 0.9085999727249146
+[98] Validation cross-entropy: 0.3111496865749359
+[98] Validation log-likelihood: -99.61359024047852
+[98] Inference accuracy: 0.37449999153614044
+[98] Inference cross-entropy: 2.198251962661743
+[98] Test accuracy: 0.902599960565567
+-------------------------
+-------------------------
+[99] Training cost: 152.1449752807617
+[99] Validation accuracy: 0.9104999601840973
+[99] Validation cross-entropy: 0.3042767345905304
+[99] Validation log-likelihood: -98.85974884033203
+[99] Inference accuracy: 0.36579999327659607
+[99] Inference cross-entropy: 2.204667091369629
+[99] Test accuracy: 0.904699981212616
+-------------------------
+-------------------------
+[100] Training cost: 151.80652313232423
+[100] Validation accuracy: 0.9083999693393707
+[100] Validation cross-entropy: 0.3074427843093872
+[100] Validation log-likelihood: -98.95172882080078
+[100] Inference accuracy: 0.38019998371601105
+[100] Inference cross-entropy: 2.202342987060547
+[100] Test accuracy: 0.9019999802112579
+-------------------------
+-------------------------
+[101] Training cost: 151.59740142822267
+[101] Validation accuracy: 0.9097999930381775
+[101] Validation cross-entropy: 0.3092490881681442
+[101] Validation log-likelihood: -98.68458938598633
+[101] Inference accuracy: 0.3507999926805496
+[101] Inference cross-entropy: 2.202261447906494
+[101] Test accuracy: 0.9033999741077423
+-------------------------
+-------------------------
+[102] Training cost: 151.35369415283202
+[102] Validation accuracy: 0.9115999937057495
+[102] Validation cross-entropy: 0.30287234485149384
+[102] Validation log-likelihood: -98.06486511230469
+[102] Inference accuracy: 0.37459999322891235
+[102] Inference cross-entropy: 2.194486975669861
+[102] Test accuracy: 0.9047999978065491
+-------------------------
+-------------------------
+[103] Training cost: 151.1360290527344
+[103] Validation accuracy: 0.9077999591827393
+[103] Validation cross-entropy: 0.3147246539592743
+[103] Validation log-likelihood: -98.016357421875
+[103] Inference accuracy: 0.4008999764919281
+[103] Inference cross-entropy: 2.1948283910751343
+[103] Test accuracy: 0.9012999832630157
+-------------------------
+-------------------------
+[104] Training cost: 150.88407135009766
+[104] Validation accuracy: 0.9132999777793884
+[104] Validation cross-entropy: 0.3033481538295746
+[104] Validation log-likelihood: -97.58446502685547
+[104] Inference accuracy: 0.3756999969482422
+[104] Inference cross-entropy: 2.1988993883132935
+[104] Test accuracy: 0.90379998087883
+-------------------------
+-------------------------
+[105] Training cost: 150.7573455810547
+[105] Validation accuracy: 0.9116999804973602
+[105] Validation cross-entropy: 0.3081393241882324
+[105] Validation log-likelihood: -98.48261642456055
+[105] Inference accuracy: 0.3538999855518341
+[105] Inference cross-entropy: 2.202479839324951
+[105] Test accuracy: 0.9029999673366547
+-------------------------
+-------------------------
+[106] Training cost: 150.47864532470703
+[106] Validation accuracy: 0.9115999639034271
+[106] Validation cross-entropy: 0.3046332895755768
+[106] Validation log-likelihood: -97.95185852050781
+[106] Inference accuracy: 0.39159999787807465
+[106] Inference cross-entropy: 2.187971830368042
+[106] Test accuracy: 0.9040999710559845
+-------------------------
+-------------------------
+[107] Training cost: 150.13782806396483
+[107] Validation accuracy: 0.9106999635696411
+[107] Validation cross-entropy: 0.30733761191368103
+[107] Validation log-likelihood: -96.8907699584961
+[107] Inference accuracy: 0.3636999875307083
+[107] Inference cross-entropy: 2.20149827003479
+[107] Test accuracy: 0.9022999703884125
+-------------------------
+-------------------------
+[108] Training cost: 149.87097778320313
+[108] Validation accuracy: 0.9130999743938446
+[108] Validation cross-entropy: 0.3032413572072983
+[108] Validation log-likelihood: -96.83372116088867
+[108] Inference accuracy: 0.3163999915122986
+[108] Inference cross-entropy: 2.211353898048401
+[108] Test accuracy: 0.904399961233139
+-------------------------
+-------------------------
+[109] Training cost: 149.66725158691406
+[109] Validation accuracy: 0.911799967288971
+[109] Validation cross-entropy: 0.30196085572242737
+[109] Validation log-likelihood: -96.82131576538086
+[109] Inference accuracy: 0.34389999508857727
+[109] Inference cross-entropy: 2.2108083963394165
+[109] Test accuracy: 0.9041999578475952
+-------------------------
+-------------------------
+[110] Training cost: 149.47820587158202
+[110] Validation accuracy: 0.9109999537467957
+[110] Validation cross-entropy: 0.306332603096962
+[110] Validation log-likelihood: -96.38350677490234
+[110] Inference accuracy: 0.38089998066425323
+[110] Inference cross-entropy: 2.198717474937439
+[110] Test accuracy: 0.9035999774932861
+-------------------------
+-------------------------
+[111] Training cost: 149.24552307128906
+[111] Validation accuracy: 0.9104999601840973
+[111] Validation cross-entropy: 0.30751799046993256
+[111] Validation log-likelihood: -95.80550384521484
+[111] Inference accuracy: 0.3733999878168106
+[111] Inference cross-entropy: 2.201452374458313
+[111] Test accuracy: 0.9016999900341034
+-------------------------
+-------------------------
+[112] Training cost: 148.93765106201172
+[112] Validation accuracy: 0.9125999808311462
+[112] Validation cross-entropy: 0.30353304743766785
+[112] Validation log-likelihood: -96.0138053894043
+[112] Inference accuracy: 0.3654000014066696
+[112] Inference cross-entropy: 2.1908419132232666
+[112] Test accuracy: 0.9059999585151672
+-------------------------
+-------------------------
+[113] Training cost: 148.83381195068358
+[113] Validation accuracy: 0.9122999608516693
+[113] Validation cross-entropy: 0.3036045730113983
+[113] Validation log-likelihood: -96.31488800048828
+[113] Inference accuracy: 0.37359999120235443
+[113] Inference cross-entropy: 2.201283812522888
+[113] Test accuracy: 0.9027999639511108
+-------------------------
+-------------------------
+[114] Training cost: 148.60045623779297
+[114] Validation accuracy: 0.9115999639034271
+[114] Validation cross-entropy: 0.30164316296577454
+[114] Validation log-likelihood: -95.17910766601562
+[114] Inference accuracy: 0.3887999951839447
+[114] Inference cross-entropy: 2.192210555076599
+[114] Test accuracy: 0.9038999676704407
+-------------------------
+-------------------------
+[115] Training cost: 148.27395782470703
+[115] Validation accuracy: 0.9076999723911285
+[115] Validation cross-entropy: 0.3113442361354828
+[115] Validation log-likelihood: -95.02154922485352
+[115] Inference accuracy: 0.39799998700618744
+[115] Inference cross-entropy: 2.187942147254944
+[115] Test accuracy: 0.9001999795436859
+-------------------------
+-------------------------
+[116] Training cost: 148.14989776611327
+[116] Validation accuracy: 0.9151999950408936
+[116] Validation cross-entropy: 0.2974899709224701
+[116] Validation log-likelihood: -94.87771987915039
+[116] Inference accuracy: 0.39639998972415924
+[116] Inference cross-entropy: 2.1942334175109863
+[116] Test accuracy: 0.9048999845981598
+-------------------------
+-------------------------
+[117] Training cost: 147.9408706665039
+[117] Validation accuracy: 0.9115999639034271
+[117] Validation cross-entropy: 0.3035019785165787
+[117] Validation log-likelihood: -94.81762313842773
+[117] Inference accuracy: 0.38179998099803925
+[117] Inference cross-entropy: 2.1916109323501587
+[117] Test accuracy: 0.9050999879837036
+-------------------------
+-------------------------
+[118] Training cost: 147.8464385986328
+[118] Validation accuracy: 0.9105999767780304
+[118] Validation cross-entropy: 0.3024675101041794
+[118] Validation log-likelihood: -94.59779739379883
+[118] Inference accuracy: 0.3702999949455261
+[118] Inference cross-entropy: 2.1997742652893066
+[118] Test accuracy: 0.9056999981403351
+-------------------------
+-------------------------
+[119] Training cost: 147.57171783447265
+[119] Validation accuracy: 0.9142999947071075
+[119] Validation cross-entropy: 0.3013595789670944
+[119] Validation log-likelihood: -94.084716796875
+[119] Inference accuracy: 0.37459999322891235
+[119] Inference cross-entropy: 2.203064799308777
+[119] Test accuracy: 0.9059999883174896
+-------------------------
+-------------------------
+[120] Training cost: 147.3743423461914
+[120] Validation accuracy: 0.9106999933719635
+[120] Validation cross-entropy: 0.30213744938373566
+[120] Validation log-likelihood: -93.84311294555664
+[120] Inference accuracy: 0.3837999850511551
+[120] Inference cross-entropy: 2.195562720298767
+[120] Test accuracy: 0.9036999642848969
+-------------------------
+-------------------------
+[121] Training cost: 147.20971221923827
+[121] Validation accuracy: 0.9124999642372131
+[121] Validation cross-entropy: 0.3011154383420944
+[121] Validation log-likelihood: -93.93003463745117
+[121] Inference accuracy: 0.365899994969368
+[121] Inference cross-entropy: 2.1917349100112915
+[121] Test accuracy: 0.9040999710559845
+-------------------------
+-------------------------
+[122] Training cost: 146.99534912109374
+[122] Validation accuracy: 0.9129999876022339
+[122] Validation cross-entropy: 0.30553223192691803
+[122] Validation log-likelihood: -93.7398796081543
+[122] Inference accuracy: 0.3634999841451645
+[122] Inference cross-entropy: 2.1961573362350464
+[122] Test accuracy: 0.9042999744415283
+-------------------------
+-------------------------
+[123] Training cost: 146.81949157714843
+[123] Validation accuracy: 0.9108999669551849
+[123] Validation cross-entropy: 0.30264608561992645
+[123] Validation log-likelihood: -93.09276962280273
+[123] Inference accuracy: 0.369499996304512
+[123] Inference cross-entropy: 2.2042624950408936
+[123] Test accuracy: 0.9020999670028687
+-------------------------
+-------------------------
+[124] Training cost: 146.6318161010742
+[124] Validation accuracy: 0.9124999940395355
+[124] Validation cross-entropy: 0.3059287816286087
+[124] Validation log-likelihood: -92.92607116699219
+[124] Inference accuracy: 0.37359999120235443
+[124] Inference cross-entropy: 2.1933014392852783
+[124] Test accuracy: 0.9022999703884125
+-------------------------
+-------------------------
+[125] Training cost: 146.46206512451172
+[125] Validation accuracy: 0.9116999804973602
+[125] Validation cross-entropy: 0.30046142637729645
+[125] Validation log-likelihood: -93.14466857910156
+[125] Inference accuracy: 0.3852999806404114
+[125] Inference cross-entropy: 2.1894423961639404
+[125] Test accuracy: 0.9042999744415283
+-------------------------
+-------------------------
+[126] Training cost: 146.28357696533203
+[126] Validation accuracy: 0.9130999743938446
+[126] Validation cross-entropy: 0.3063446432352066
+[126] Validation log-likelihood: -92.86244201660156
+[126] Inference accuracy: 0.40049998462200165
+[126] Inference cross-entropy: 2.193155884742737
+[126] Test accuracy: 0.9041999578475952
+-------------------------
+-------------------------
+[127] Training cost: 146.2010711669922
+[127] Validation accuracy: 0.9135999977588654
+[127] Validation cross-entropy: 0.3032199442386627
+[127] Validation log-likelihood: -92.52130508422852
+[127] Inference accuracy: 0.38109998404979706
+[127] Inference cross-entropy: 2.2058889865875244
+[127] Test accuracy: 0.9034999907016754
+-------------------------
+-------------------------
+[128] Training cost: 146.06926574707032
+[128] Validation accuracy: 0.9138999879360199
+[128] Validation cross-entropy: 0.30066874623298645
+[128] Validation log-likelihood: -92.25452423095703
+[128] Inference accuracy: 0.3671000003814697
+[128] Inference cross-entropy: 2.2080272436141968
+[128] Test accuracy: 0.904699981212616
+-------------------------
+-------------------------
+[129] Training cost: 145.83588104248048
+[129] Validation accuracy: 0.913599967956543
+[129] Validation cross-entropy: 0.2986140549182892
+[129] Validation log-likelihood: -91.96683883666992
+[129] Inference accuracy: 0.3458999991416931
+[129] Inference cross-entropy: 2.211516499519348
+[129] Test accuracy: 0.9054999649524689
+-------------------------
+-------------------------
+[130] Training cost: 145.71925048828126
+[130] Validation accuracy: 0.913599967956543
+[130] Validation cross-entropy: 0.30459852516651154
+[130] Validation log-likelihood: -92.36530685424805
+[130] Inference accuracy: 0.37059998512268066
+[130] Inference cross-entropy: 2.203683614730835
+[130] Test accuracy: 0.902599960565567
+-------------------------
+-------------------------
+[131] Training cost: 145.61147766113282
+[131] Validation accuracy: 0.9099999666213989
+[131] Validation cross-entropy: 0.31184133887290955
+[131] Validation log-likelihood: -91.98893737792969
+[131] Inference accuracy: 0.3700999915599823
+[131] Inference cross-entropy: 2.202602982521057
+[131] Test accuracy: 0.9001999795436859
+-------------------------
+-------------------------
+[132] Training cost: 145.4992889404297
+[132] Validation accuracy: 0.90829998254776
+[132] Validation cross-entropy: 0.3141885846853256
+[132] Validation log-likelihood: -91.97752380371094
+[132] Inference accuracy: 0.39239998161792755
+[132] Inference cross-entropy: 2.20102596282959
+[132] Test accuracy: 0.8991999626159668
+-------------------------
+-------------------------
+[133] Training cost: 145.336767578125
+[133] Validation accuracy: 0.9104999899864197
+[133] Validation cross-entropy: 0.30686911940574646
+[133] Validation log-likelihood: -91.44799041748047
+[133] Inference accuracy: 0.38019999861717224
+[133] Inference cross-entropy: 2.1965830326080322
+[133] Test accuracy: 0.9016999900341034
+-------------------------
+-------------------------
+[134] Training cost: 145.2217544555664
+[134] Validation accuracy: 0.9084999561309814
+[134] Validation cross-entropy: 0.31786592304706573
+[134] Validation log-likelihood: -91.69505310058594
+[134] Inference accuracy: 0.37549999356269836
+[134] Inference cross-entropy: 2.202737808227539
+[134] Test accuracy: 0.9026999771595001
+-------------------------
+-------------------------
+[135] Training cost: 145.0819519042969
+[135] Validation accuracy: 0.910999983549118
+[135] Validation cross-entropy: 0.305147260427475
+[135] Validation log-likelihood: -91.16612243652344
+[135] Inference accuracy: 0.3730999827384949
+[135] Inference cross-entropy: 2.202707052230835
+[135] Test accuracy: 0.9030999541282654
+-------------------------
+-------------------------
+[136] Training cost: 144.96829376220703
+[136] Validation accuracy: 0.9142999649047852
+[136] Validation cross-entropy: 0.299177885055542
+[136] Validation log-likelihood: -91.56485748291016
+[136] Inference accuracy: 0.34299999475479126
+[136] Inference cross-entropy: 2.2088027000427246
+[136] Test accuracy: 0.9064999520778656
+-------------------------
+-------------------------
+[137] Training cost: 144.84174346923828
+[137] Validation accuracy: 0.9112999737262726
+[137] Validation cross-entropy: 0.31008613109588623
+[137] Validation log-likelihood: -91.11406326293945
+[137] Inference accuracy: 0.33560000360012054
+[137] Inference cross-entropy: 2.212931275367737
+[137] Test accuracy: 0.902899980545044
+-------------------------
+-------------------------
+[138] Training cost: 144.65232849121094
+[138] Validation accuracy: 0.9143999814987183
+[138] Validation cross-entropy: 0.3018452227115631
+[138] Validation log-likelihood: -90.66494750976562
+[138] Inference accuracy: 0.37519998848438263
+[138] Inference cross-entropy: 2.200238823890686
+[138] Test accuracy: 0.9072999656200409
+-------------------------
+-------------------------
+[139] Training cost: 144.53358154296876
+[139] Validation accuracy: 0.9138999879360199
+[139] Validation cross-entropy: 0.30163130164146423
+[139] Validation log-likelihood: -90.96621704101562
+[139] Inference accuracy: 0.376800000667572
+[139] Inference cross-entropy: 2.1991173028945923
+[139] Test accuracy: 0.9040999710559845
+-------------------------
+-------------------------
+[140] Training cost: 144.5478530883789
+[140] Validation accuracy: 0.9139999747276306
+[140] Validation cross-entropy: 0.29922643303871155
+[140] Validation log-likelihood: -90.68830108642578
+[140] Inference accuracy: 0.39169998466968536
+[140] Inference cross-entropy: 2.191272020339966
+[140] Test accuracy: 0.9063999652862549
+-------------------------
+-------------------------
+[141] Training cost: 144.3787612915039
+[141] Validation accuracy: 0.9129999876022339
+[141] Validation cross-entropy: 0.30217643082141876
+[141] Validation log-likelihood: -91.12823104858398
+[141] Inference accuracy: 0.3969999849796295
+[141] Inference cross-entropy: 2.191244602203369
+[141] Test accuracy: 0.9050999879837036
+-------------------------
+-------------------------
+[142] Training cost: 144.23482666015624
+[142] Validation accuracy: 0.9103999733924866
+[142] Validation cross-entropy: 0.30758215487003326
+[142] Validation log-likelihood: -90.33155059814453
+[142] Inference accuracy: 0.39469999074935913
+[142] Inference cross-entropy: 2.185996890068054
+[142] Test accuracy: 0.905599981546402
+-------------------------
+-------------------------
+[143] Training cost: 144.0942138671875
+[143] Validation accuracy: 0.9132999777793884
+[143] Validation cross-entropy: 0.2952941209077835
+[143] Validation log-likelihood: -90.18115615844727
+[143] Inference accuracy: 0.3628999888896942
+[143] Inference cross-entropy: 2.191698908805847
+[143] Test accuracy: 0.906499981880188
+-------------------------
+-------------------------
+[144] Training cost: 144.02256927490234
+[144] Validation accuracy: 0.9114999771118164
+[144] Validation cross-entropy: 0.31165778636932373
+[144] Validation log-likelihood: -89.70340347290039
+[144] Inference accuracy: 0.3791999965906143
+[144] Inference cross-entropy: 2.19063138961792
+[144] Test accuracy: 0.9045999944210052
+-------------------------
+-------------------------
+[145] Training cost: 143.90662841796876
+[145] Validation accuracy: 0.9116999804973602
+[145] Validation cross-entropy: 0.30360667407512665
+[145] Validation log-likelihood: -89.95019149780273
+[145] Inference accuracy: 0.3797999918460846
+[145] Inference cross-entropy: 2.19429874420166
+[145] Test accuracy: 0.9036999940872192
+-------------------------
+-------------------------
+[146] Training cost: 143.78016967773436
+[146] Validation accuracy: 0.911799967288971
+[146] Validation cross-entropy: 0.3072888255119324
+[146] Validation log-likelihood: -90.02531051635742
+[146] Inference accuracy: 0.36869998276233673
+[146] Inference cross-entropy: 2.203245520591736
+[146] Test accuracy: 0.9031999707221985
+-------------------------
+-------------------------
+[147] Training cost: 143.62943420410156
+[147] Validation accuracy: 0.9115999639034271
+[147] Validation cross-entropy: 0.3099626749753952
+[147] Validation log-likelihood: -89.85287475585938
+[147] Inference accuracy: 0.3360999971628189
+[147] Inference cross-entropy: 2.20546293258667
+[147] Test accuracy: 0.9042999744415283
+-------------------------
+-------------------------
+[148] Training cost: 143.56236114501954
+[148] Validation accuracy: 0.9145999848842621
+[148] Validation cross-entropy: 0.297621488571167
+[148] Validation log-likelihood: -89.3227653503418
+[148] Inference accuracy: 0.35989999771118164
+[148] Inference cross-entropy: 2.211389422416687
+[148] Test accuracy: 0.9068999886512756
+-------------------------
+-------------------------
+[149] Training cost: 143.51864318847657
+[149] Validation accuracy: 0.9106999933719635
+[149] Validation cross-entropy: 0.30653849244117737
+[149] Validation log-likelihood: -88.81621551513672
+[149] Inference accuracy: 0.3715999871492386
+[149] Inference cross-entropy: 2.200121283531189
+[149] Test accuracy: 0.9044999778270721
+-------------------------
+-------------------------
+[150] Training cost: 143.49085083007813
+[150] Validation accuracy: 0.9096999764442444
+[150] Validation cross-entropy: 0.30300386250019073
+[150] Validation log-likelihood: -89.54323959350586
+[150] Inference accuracy: 0.3871999979019165
+[150] Inference cross-entropy: 2.1920130252838135
+[150] Test accuracy: 0.9052999913692474
+-------------------------
+-------------------------
+[151] Training cost: 143.2988296508789
+[151] Validation accuracy: 0.9148999750614166
+[151] Validation cross-entropy: 0.2975679486989975
+[151] Validation log-likelihood: -89.323974609375
+[151] Inference accuracy: 0.3717000037431717
+[151] Inference cross-entropy: 2.1918344497680664
+[151] Test accuracy: 0.9087999761104584
+-------------------------
+-------------------------
+[152] Training cost: 143.18226928710936
+[152] Validation accuracy: 0.9147000014781952
+[152] Validation cross-entropy: 0.2961071878671646
+[152] Validation log-likelihood: -89.06666564941406
+[152] Inference accuracy: 0.38359999656677246
+[152] Inference cross-entropy: 2.194905400276184
+[152] Test accuracy: 0.9081999659538269
+-------------------------
+-------------------------
+[153] Training cost: 143.12840881347657
+[153] Validation accuracy: 0.9133999645709991
+[153] Validation cross-entropy: 0.29432590305805206
+[153] Validation log-likelihood: -88.94268035888672
+[153] Inference accuracy: 0.3905999958515167
+[153] Inference cross-entropy: 2.19931697845459
+[153] Test accuracy: 0.9085999727249146
+-------------------------
+-------------------------
+[154] Training cost: 142.98004150390625
+[154] Validation accuracy: 0.9123999774456024
+[154] Validation cross-entropy: 0.30171649158000946
+[154] Validation log-likelihood: -88.3591423034668
+[154] Inference accuracy: 0.36789998412132263
+[154] Inference cross-entropy: 2.197111487388611
+[154] Test accuracy: 0.9049999713897705
+-------------------------
+-------------------------
+[155] Training cost: 142.87943420410156
+[155] Validation accuracy: 0.9120000004768372
+[155] Validation cross-entropy: 0.29873858392238617
+[155] Validation log-likelihood: -88.73825073242188
+[155] Inference accuracy: 0.36229999363422394
+[155] Inference cross-entropy: 2.20215380191803
+[155] Test accuracy: 0.9061999917030334
+-------------------------
+-------------------------
+[156] Training cost: 142.85075988769532
+[156] Validation accuracy: 0.9132999777793884
+[156] Validation cross-entropy: 0.2945328503847122
+[156] Validation log-likelihood: -88.3824691772461
+[156] Inference accuracy: 0.35259999334812164
+[156] Inference cross-entropy: 2.2057639360427856
+[156] Test accuracy: 0.9063999950885773
+-------------------------
+-------------------------
+[157] Training cost: 142.65133514404297
+[157] Validation accuracy: 0.9152999818325043
+[157] Validation cross-entropy: 0.2909552901983261
+[157] Validation log-likelihood: -88.87057876586914
+[157] Inference accuracy: 0.33550000190734863
+[157] Inference cross-entropy: 2.207160234451294
+[157] Test accuracy: 0.9066999554634094
+-------------------------
+-------------------------
+[158] Training cost: 142.587841796875
+[158] Validation accuracy: 0.9137999713420868
+[158] Validation cross-entropy: 0.3021647185087204
+[158] Validation log-likelihood: -88.5223274230957
+[158] Inference accuracy: 0.3399999886751175
+[158] Inference cross-entropy: 2.217004895210266
+[158] Test accuracy: 0.9048999845981598
+-------------------------
+-------------------------
+[159] Training cost: 142.46761169433594
+[159] Validation accuracy: 0.9104999601840973
+[159] Validation cross-entropy: 0.3023667633533478
+[159] Validation log-likelihood: -88.01077651977539
+[159] Inference accuracy: 0.38449999690055847
+[159] Inference cross-entropy: 2.198566436767578
+[159] Test accuracy: 0.9040999710559845
+-------------------------
+-------------------------
+[160] Training cost: 142.37212982177735
+[160] Validation accuracy: 0.9119999706745148
+[160] Validation cross-entropy: 0.30141106247901917
+[160] Validation log-likelihood: -88.10443496704102
+[160] Inference accuracy: 0.3864999860525131
+[160] Inference cross-entropy: 2.189265012741089
+[160] Test accuracy: 0.9017999768257141
+-------------------------
+-------------------------
+[161] Training cost: 142.28780364990234
+[161] Validation accuracy: 0.9084999859333038
+[161] Validation cross-entropy: 0.3063054382801056
+[161] Validation log-likelihood: -87.8080940246582
+[161] Inference accuracy: 0.37059998512268066
+[161] Inference cross-entropy: 2.2002177238464355
+[161] Test accuracy: 0.902599960565567
+-------------------------
+-------------------------
+[162] Training cost: 142.1613296508789
+[162] Validation accuracy: 0.9068999588489532
+[162] Validation cross-entropy: 0.3211837112903595
+[162] Validation log-likelihood: -88.01689910888672
+[162] Inference accuracy: 0.358599990606308
+[162] Inference cross-entropy: 2.1915258169174194
+[162] Test accuracy: 0.9002999663352966
+-------------------------
+-------------------------
+[163] Training cost: 142.20527038574218
+[163] Validation accuracy: 0.9138999879360199
+[163] Validation cross-entropy: 0.2979773133993149
+[163] Validation log-likelihood: -87.98156356811523
+[163] Inference accuracy: 0.3788999915122986
+[163] Inference cross-entropy: 2.192431092262268
+[163] Test accuracy: 0.90829998254776
+-------------------------
+-------------------------
+[164] Training cost: 142.0442642211914
+[164] Validation accuracy: 0.9090999960899353
+[164] Validation cross-entropy: 0.30462369322776794
+[164] Validation log-likelihood: -87.67200469970703
+[164] Inference accuracy: 0.35669998824596405
+[164] Inference cross-entropy: 2.2078983783721924
+[164] Test accuracy: 0.9023999869823456
+-------------------------
+-------------------------
+[165] Training cost: 141.9664794921875
+[165] Validation accuracy: 0.9148999750614166
+[165] Validation cross-entropy: 0.2951492667198181
+[165] Validation log-likelihood: -87.2538070678711
+[165] Inference accuracy: 0.3458999842405319
+[165] Inference cross-entropy: 2.2146254777908325
+[165] Test accuracy: 0.90829998254776
+-------------------------
+-------------------------
+[166] Training cost: 141.84395294189454
+[166] Validation accuracy: 0.9136999845504761
+[166] Validation cross-entropy: 0.29794545471668243
+[166] Validation log-likelihood: -87.28217315673828
+[166] Inference accuracy: 0.33799998462200165
+[166] Inference cross-entropy: 2.20724356174469
+[166] Test accuracy: 0.9059000015258789
+-------------------------
+-------------------------
+[167] Training cost: 141.7976516723633
+[167] Validation accuracy: 0.9159999787807465
+[167] Validation cross-entropy: 0.29322685301303864
+[167] Validation log-likelihood: -87.65208435058594
+[167] Inference accuracy: 0.35499998927116394
+[167] Inference cross-entropy: 2.2007439136505127
+[167] Test accuracy: 0.9069999754428864
+-------------------------
+-------------------------
+[168] Training cost: 141.70097961425782
+[168] Validation accuracy: 0.9138000011444092
+[168] Validation cross-entropy: 0.29895760118961334
+[168] Validation log-likelihood: -87.24008178710938
+[168] Inference accuracy: 0.3553999960422516
+[168] Inference cross-entropy: 2.206609010696411
+[168] Test accuracy: 0.9058999717235565
+-------------------------
+-------------------------
+[169] Training cost: 141.56015167236328
+[169] Validation accuracy: 0.918099969625473
+[169] Validation cross-entropy: 0.2863532453775406
+[169] Validation log-likelihood: -87.16325378417969
+[169] Inference accuracy: 0.36659999191761017
+[169] Inference cross-entropy: 2.2095671892166138
+[169] Test accuracy: 0.9090999662876129
+-------------------------
+-------------------------
+[170] Training cost: 141.50287322998048
+[170] Validation accuracy: 0.916299968957901
+[170] Validation cross-entropy: 0.2934373915195465
+[170] Validation log-likelihood: -87.02936553955078
+[170] Inference accuracy: 0.3569999933242798
+[170] Inference cross-entropy: 2.2079895734786987
+[170] Test accuracy: 0.9072999656200409
+-------------------------
+-------------------------
+[171] Training cost: 141.40862121582032
+[171] Validation accuracy: 0.916299968957901
+[171] Validation cross-entropy: 0.2945060729980469
+[171] Validation log-likelihood: -87.05630874633789
+[171] Inference accuracy: 0.3990999907255173
+[171] Inference cross-entropy: 2.198828339576721
+[171] Test accuracy: 0.90829998254776
+-------------------------
+-------------------------
+[172] Training cost: 141.27938079833984
+[172] Validation accuracy: 0.9155999720096588
+[172] Validation cross-entropy: 0.2935484051704407
+[172] Validation log-likelihood: -86.72464370727539
+[172] Inference accuracy: 0.36809998750686646
+[172] Inference cross-entropy: 2.1954425573349
+[172] Test accuracy: 0.907399982213974
+-------------------------
+-------------------------
+[173] Training cost: 141.23197174072266
+[173] Validation accuracy: 0.9150999784469604
+[173] Validation cross-entropy: 0.2919474095106125
+[173] Validation log-likelihood: -86.56867980957031
+[173] Inference accuracy: 0.36709998548030853
+[173] Inference cross-entropy: 2.2066468000411987
+[173] Test accuracy: 0.9060999751091003
+-------------------------
+-------------------------
+[174] Training cost: 141.14441375732423
+[174] Validation accuracy: 0.9167999625205994
+[174] Validation cross-entropy: 0.29164180159568787
+[174] Validation log-likelihood: -87.16883087158203
+[174] Inference accuracy: 0.35509999096393585
+[174] Inference cross-entropy: 2.208315134048462
+[174] Test accuracy: 0.9076999723911285
+-------------------------
+-------------------------
+[175] Training cost: 141.06553802490234
+[175] Validation accuracy: 0.9176999926567078
+[175] Validation cross-entropy: 0.2894662171602249
+[175] Validation log-likelihood: -86.3512191772461
+[175] Inference accuracy: 0.3489999920129776
+[175] Inference cross-entropy: 2.205077052116394
+[175] Test accuracy: 0.9060999751091003
+-------------------------
+-------------------------
+[176] Training cost: 141.05445251464843
+[176] Validation accuracy: 0.9154999554157257
+[176] Validation cross-entropy: 0.29551568627357483
+[176] Validation log-likelihood: -86.43576431274414
+[176] Inference accuracy: 0.3626999855041504
+[176] Inference cross-entropy: 2.196271300315857
+[176] Test accuracy: 0.9072999954223633
+-------------------------
+-------------------------
+[177] Training cost: 140.83780670166016
+[177] Validation accuracy: 0.9160999953746796
+[177] Validation cross-entropy: 0.29046741127967834
+[177] Validation log-likelihood: -86.1352767944336
+[177] Inference accuracy: 0.37049999833106995
+[177] Inference cross-entropy: 2.203884482383728
+[177] Test accuracy: 0.9068000018596649
+-------------------------
+-------------------------
+[178] Training cost: 140.8209442138672
+[178] Validation accuracy: 0.9139999747276306
+[178] Validation cross-entropy: 0.2929542660713196
+[178] Validation log-likelihood: -86.32385635375977
+[178] Inference accuracy: 0.40209999680519104
+[178] Inference cross-entropy: 2.188752055168152
+[178] Test accuracy: 0.9075999855995178
+-------------------------
+-------------------------
+[179] Training cost: 140.81481170654297
+[179] Validation accuracy: 0.9165999889373779
+[179] Validation cross-entropy: 0.2903689742088318
+[179] Validation log-likelihood: -85.90216445922852
+[179] Inference accuracy: 0.3864999860525131
+[179] Inference cross-entropy: 2.1911498308181763
+[179] Test accuracy: 0.9066999852657318
+-------------------------
+-------------------------
+[180] Training cost: 140.68057098388672
+[180] Validation accuracy: 0.9157999753952026
+[180] Validation cross-entropy: 0.291943296790123
+[180] Validation log-likelihood: -86.2403564453125
+[180] Inference accuracy: 0.3839000016450882
+[180] Inference cross-entropy: 2.1897213459014893
+[180] Test accuracy: 0.9077999889850616
+-------------------------
+-------------------------
+[181] Training cost: 140.5606246948242
+[181] Validation accuracy: 0.9147999584674835
+[181] Validation cross-entropy: 0.29058095812797546
+[181] Validation log-likelihood: -86.1138801574707
+[181] Inference accuracy: 0.4043999910354614
+[181] Inference cross-entropy: 2.1848968267440796
+[181] Test accuracy: 0.9078999757766724
+-------------------------
+-------------------------
+[182] Training cost: 140.54947357177736
+[182] Validation accuracy: 0.9170999825000763
+[182] Validation cross-entropy: 0.28928881883621216
+[182] Validation log-likelihood: -85.50885772705078
+[182] Inference accuracy: 0.40389999747276306
+[182] Inference cross-entropy: 2.1859188079833984
+[182] Test accuracy: 0.9090999662876129
+-------------------------
+-------------------------
+[183] Training cost: 140.57436981201172
+[183] Validation accuracy: 0.9159999787807465
+[183] Validation cross-entropy: 0.2886291891336441
+[183] Validation log-likelihood: -86.4365119934082
+[183] Inference accuracy: 0.3755999952554703
+[183] Inference cross-entropy: 2.1954586505889893
+[183] Test accuracy: 0.9092999994754791
+-------------------------
+-------------------------
+[184] Training cost: 140.4920196533203
+[184] Validation accuracy: 0.9169999957084656
+[184] Validation cross-entropy: 0.2870207279920578
+[184] Validation log-likelihood: -85.59268188476562
+[184] Inference accuracy: 0.35909999907016754
+[184] Inference cross-entropy: 2.203668475151062
+[184] Test accuracy: 0.9079999923706055
+-------------------------
+-------------------------
+[185] Training cost: 140.37559356689454
+[185] Validation accuracy: 0.9177999794483185
+[185] Validation cross-entropy: 0.287794791162014
+[185] Validation log-likelihood: -85.58501052856445
+[185] Inference accuracy: 0.37039999663829803
+[185] Inference cross-entropy: 2.194706439971924
+[185] Test accuracy: 0.9086000025272369
+-------------------------
+-------------------------
+[186] Training cost: 140.28375396728515
+[186] Validation accuracy: 0.9167999625205994
+[186] Validation cross-entropy: 0.2891622632741928
+[186] Validation log-likelihood: -85.5794792175293
+[186] Inference accuracy: 0.38009999692440033
+[186] Inference cross-entropy: 2.192831039428711
+[186] Test accuracy: 0.9080999791622162
+-------------------------
+-------------------------
+[187] Training cost: 140.24685821533203
+[187] Validation accuracy: 0.9166999757289886
+[187] Validation cross-entropy: 0.2898494452238083
+[187] Validation log-likelihood: -85.85776138305664
+[187] Inference accuracy: 0.3643999993801117
+[187] Inference cross-entropy: 2.1959816217422485
+[187] Test accuracy: 0.9077999591827393
+-------------------------
+-------------------------
+[188] Training cost: 140.18345489501954
+[188] Validation accuracy: 0.9159999787807465
+[188] Validation cross-entropy: 0.29100392758846283
+[188] Validation log-likelihood: -85.67958068847656
+[188] Inference accuracy: 0.33969998359680176
+[188] Inference cross-entropy: 2.1972076892852783
+[188] Test accuracy: 0.907399982213974
+-------------------------
+-------------------------
+[189] Training cost: 140.1314468383789
+[189] Validation accuracy: 0.9178999960422516
+[189] Validation cross-entropy: 0.28798316419124603
+[189] Validation log-likelihood: -85.56046676635742
+[189] Inference accuracy: 0.33959999680519104
+[189] Inference cross-entropy: 2.2000675201416016
+[189] Test accuracy: 0.9092999696731567
+-------------------------
+-------------------------
+[190] Training cost: 140.05723724365234
+[190] Validation accuracy: 0.9173999726772308
+[190] Validation cross-entropy: 0.28785136342048645
+[190] Validation log-likelihood: -85.35110473632812
+[190] Inference accuracy: 0.38579998910427094
+[190] Inference cross-entropy: 2.1967021226882935
+[190] Test accuracy: 0.9083999693393707
+-------------------------
+-------------------------
+[191] Training cost: 139.94434051513673
+[191] Validation accuracy: 0.9133999943733215
+[191] Validation cross-entropy: 0.29441092908382416
+[191] Validation log-likelihood: -84.98098754882812
+[191] Inference accuracy: 0.36729998886585236
+[191] Inference cross-entropy: 2.1963549852371216
+[191] Test accuracy: 0.9071999788284302
+-------------------------
+-------------------------
+[192] Training cost: 139.89753112792968
+[192] Validation accuracy: 0.9166999757289886
+[192] Validation cross-entropy: 0.2873668372631073
+[192] Validation log-likelihood: -85.46521377563477
+[192] Inference accuracy: 0.3797999918460846
+[192] Inference cross-entropy: 2.1945488452911377
+[192] Test accuracy: 0.9097999930381775
+-------------------------
+-------------------------
+[193] Training cost: 139.86648254394532
+[193] Validation accuracy: 0.9140999913215637
+[193] Validation cross-entropy: 0.2962271720170975
+[193] Validation log-likelihood: -85.09413528442383
+[193] Inference accuracy: 0.3854999840259552
+[193] Inference cross-entropy: 2.193597674369812
+[193] Test accuracy: 0.9054999649524689
+-------------------------
+-------------------------
+[194] Training cost: 139.86740417480468
+[194] Validation accuracy: 0.9183999598026276
+[194] Validation cross-entropy: 0.2892269641160965
+[194] Validation log-likelihood: -85.16740417480469
+[194] Inference accuracy: 0.392999991774559
+[194] Inference cross-entropy: 2.1801743507385254
+[194] Test accuracy: 0.9085999727249146
+-------------------------
+-------------------------
+[195] Training cost: 139.81304779052735
+[195] Validation accuracy: 0.9163999855518341
+[195] Validation cross-entropy: 0.2925911545753479
+[195] Validation log-likelihood: -85.4032211303711
+[195] Inference accuracy: 0.38659998774528503
+[195] Inference cross-entropy: 2.1838806867599487
+[195] Test accuracy: 0.9076999723911285
+-------------------------
+-------------------------
+[196] Training cost: 139.73602142333985
+[196] Validation accuracy: 0.9167999625205994
+[196] Validation cross-entropy: 0.2892799824476242
+[196] Validation log-likelihood: -84.8630599975586
+[196] Inference accuracy: 0.37939998507499695
+[196] Inference cross-entropy: 2.1850950717926025
+[196] Test accuracy: 0.9065999686717987
+-------------------------
+-------------------------
+[197] Training cost: 139.6087905883789
+[197] Validation accuracy: 0.9151999652385712
+[197] Validation cross-entropy: 0.29558032751083374
+[197] Validation log-likelihood: -84.81661987304688
+[197] Inference accuracy: 0.3780999928712845
+[197] Inference cross-entropy: 2.190814971923828
+[197] Test accuracy: 0.9057999551296234
+-------------------------
+-------------------------
+[198] Training cost: 139.58822479248047
+[198] Validation accuracy: 0.9138999581336975
+[198] Validation cross-entropy: 0.29277782142162323
+[198] Validation log-likelihood: -84.98527526855469
+[198] Inference accuracy: 0.36569999158382416
+[198] Inference cross-entropy: 2.191526770591736
+[198] Test accuracy: 0.90379998087883
+-------------------------
+-------------------------
+[199] Training cost: 139.52556762695312
+[199] Validation accuracy: 0.9184999763965607
+[199] Validation cross-entropy: 0.28797462582588196
+[199] Validation log-likelihood: -84.65759658813477
+[199] Inference accuracy: 0.36329999566078186
+[199] Inference cross-entropy: 2.193039059638977
+[199] Test accuracy: 0.9078999757766724
+-------------------------
+-------------------------
+[200] Training cost: 139.45750732421874
+[200] Validation accuracy: 0.9137999713420868
+[200] Validation cross-entropy: 0.29198259115219116
+[200] Validation log-likelihood: -84.54178237915039
+[200] Inference accuracy: 0.34129999577999115
+[200] Inference cross-entropy: 2.204244613647461
+[200] Test accuracy: 0.9069999754428864
+-------------------------
+-------------------------
+[201] Training cost: 139.35235595703125
+[201] Validation accuracy: 0.9170999825000763
+[201] Validation cross-entropy: 0.28787991404533386
+[201] Validation log-likelihood: -84.95481491088867
+[201] Inference accuracy: 0.3398999869823456
+[201] Inference cross-entropy: 2.198909282684326
+[201] Test accuracy: 0.9078999757766724
+-------------------------
+-------------------------
+[202] Training cost: 139.34495697021484
+[202] Validation accuracy: 0.9184999763965607
+[202] Validation cross-entropy: 0.2834782302379608
+[202] Validation log-likelihood: -84.4539566040039
+[202] Inference accuracy: 0.36550000309944153
+[202] Inference cross-entropy: 2.190715789794922
+[202] Test accuracy: 0.9094999730587006
+-------------------------
+-------------------------
+[203] Training cost: 139.31259155273438
+[203] Validation accuracy: 0.9189999997615814
+[203] Validation cross-entropy: 0.2821842357516289
+[203] Validation log-likelihood: -84.79311752319336
+[203] Inference accuracy: 0.3628999888896942
+[203] Inference cross-entropy: 2.1987346410751343
+[203] Test accuracy: 0.9077999889850616
+-------------------------
+-------------------------
+[204] Training cost: 139.28472595214845
+[204] Validation accuracy: 0.9186999797821045
+[204] Validation cross-entropy: 0.28611187636852264
+[204] Validation log-likelihood: -84.35367965698242
+[204] Inference accuracy: 0.36139997839927673
+[204] Inference cross-entropy: 2.2030826807022095
+[204] Test accuracy: 0.9085999727249146
+-------------------------
+-------------------------
+[205] Training cost: 139.140771484375
+[205] Validation accuracy: 0.91839998960495
+[205] Validation cross-entropy: 0.28077828884124756
+[205] Validation log-likelihood: -84.44508361816406
+[205] Inference accuracy: 0.3579999953508377
+[205] Inference cross-entropy: 2.1918582916259766
+[205] Test accuracy: 0.9088999927043915
+-------------------------
+-------------------------
+[206] Training cost: 139.14231872558594
+[206] Validation accuracy: 0.9174999892711639
+[206] Validation cross-entropy: 0.2871556878089905
+[206] Validation log-likelihood: -83.89632034301758
+[206] Inference accuracy: 0.3716999888420105
+[206] Inference cross-entropy: 2.192953586578369
+[206] Test accuracy: 0.9097999632358551
+-------------------------
+-------------------------
+[207] Training cost: 139.09125823974608
+[207] Validation accuracy: 0.9175999760627747
+[207] Validation cross-entropy: 0.28289368003606796
+[207] Validation log-likelihood: -84.24049758911133
+[207] Inference accuracy: 0.3666999936103821
+[207] Inference cross-entropy: 2.2007004022598267
+[207] Test accuracy: 0.9092999696731567
+-------------------------
+-------------------------
+[208] Training cost: 139.0631088256836
+[208] Validation accuracy: 0.9138999581336975
+[208] Validation cross-entropy: 0.29828914999961853
+[208] Validation log-likelihood: -84.56539154052734
+[208] Inference accuracy: 0.3557000011205673
+[208] Inference cross-entropy: 2.191274046897888
+[208] Test accuracy: 0.9051999747753143
+-------------------------
+-------------------------
+[209] Training cost: 138.95323181152344
+[209] Validation accuracy: 0.9152999818325043
+[209] Validation cross-entropy: 0.2900516390800476
+[209] Validation log-likelihood: -84.06727600097656
+[209] Inference accuracy: 0.37449999153614044
+[209] Inference cross-entropy: 2.1779584884643555
+[209] Test accuracy: 0.9069999754428864
+-------------------------
+-------------------------
+[210] Training cost: 138.9012664794922
+[210] Validation accuracy: 0.9183999598026276
+[210] Validation cross-entropy: 0.28543858230113983
+[210] Validation log-likelihood: -83.97251510620117
+[210] Inference accuracy: 0.3511999845504761
+[210] Inference cross-entropy: 2.1959179639816284
+[210] Test accuracy: 0.9105999767780304
+-------------------------
+-------------------------
+[211] Training cost: 138.88222961425782
+[211] Validation accuracy: 0.916299968957901
+[211] Validation cross-entropy: 0.2896929234266281
+[211] Validation log-likelihood: -83.7232894897461
+[211] Inference accuracy: 0.35669998824596405
+[211] Inference cross-entropy: 2.1956326961517334
+[211] Test accuracy: 0.9066999852657318
+-------------------------
+-------------------------
+[212] Training cost: 138.90713500976562
+[212] Validation accuracy: 0.9188999533653259
+[212] Validation cross-entropy: 0.2881058156490326
+[212] Validation log-likelihood: -83.91020202636719
+[212] Inference accuracy: 0.397599995136261
+[212] Inference cross-entropy: 2.1729772090911865
+[212] Test accuracy: 0.90829998254776
+-------------------------
+-------------------------
+[213] Training cost: 138.86514892578126
+[213] Validation accuracy: 0.9156999588012695
+[213] Validation cross-entropy: 0.29186443984508514
+[213] Validation log-likelihood: -84.00753784179688
+[213] Inference accuracy: 0.3690999895334244
+[213] Inference cross-entropy: 2.191425323486328
+[213] Test accuracy: 0.9072999656200409
+-------------------------
+-------------------------
+[214] Training cost: 138.75575408935546
+[214] Validation accuracy: 0.9170999825000763
+[214] Validation cross-entropy: 0.2885371744632721
+[214] Validation log-likelihood: -83.66958236694336
+[214] Inference accuracy: 0.377499982714653
+[214] Inference cross-entropy: 2.183676600456238
+[214] Test accuracy: 0.9078999757766724
+-------------------------
+-------------------------
+[215] Training cost: 138.75919036865236
+[215] Validation accuracy: 0.9182999730110168
+[215] Validation cross-entropy: 0.2869735360145569
+[215] Validation log-likelihood: -84.16183090209961
+[215] Inference accuracy: 0.40609997510910034
+[215] Inference cross-entropy: 2.1719974279403687
+[215] Test accuracy: 0.9085999727249146
+-------------------------
+-------------------------
+[216] Training cost: 138.65218658447264
+[216] Validation accuracy: 0.9190999567508698
+[216] Validation cross-entropy: 0.28421418368816376
+[216] Validation log-likelihood: -83.52595901489258
+[216] Inference accuracy: 0.4148999899625778
+[216] Inference cross-entropy: 2.175688624382019
+[216] Test accuracy: 0.9109999537467957
+-------------------------
+-------------------------
+[217] Training cost: 138.60042419433594
+[217] Validation accuracy: 0.9183999598026276
+[217] Validation cross-entropy: 0.284557580947876
+[217] Validation log-likelihood: -83.60829544067383
+[217] Inference accuracy: 0.3993999809026718
+[217] Inference cross-entropy: 2.17789363861084
+[217] Test accuracy: 0.9105999767780304
+-------------------------
+-------------------------
+[218] Training cost: 138.54363250732422
+[218] Validation accuracy: 0.9157999753952026
+[218] Validation cross-entropy: 0.28795231133699417
+[218] Validation log-likelihood: -83.57622909545898
+[218] Inference accuracy: 0.38659998774528503
+[218] Inference cross-entropy: 2.1821309328079224
+[218] Test accuracy: 0.9075999855995178
+-------------------------
+-------------------------
+[219] Training cost: 138.49860229492188
+[219] Validation accuracy: 0.9188999831676483
+[219] Validation cross-entropy: 0.2851760536432266
+[219] Validation log-likelihood: -83.9344711303711
+[219] Inference accuracy: 0.3531000018119812
+[219] Inference cross-entropy: 2.1943068504333496
+[219] Test accuracy: 0.9127999842166901
+-------------------------
+-------------------------
+[220] Training cost: 138.64533386230468
+[220] Validation accuracy: 0.9172999858856201
+[220] Validation cross-entropy: 0.2826979234814644
+[220] Validation log-likelihood: -83.35202026367188
+[220] Inference accuracy: 0.3409999907016754
+[220] Inference cross-entropy: 2.1980814933776855
+[220] Test accuracy: 0.9097999632358551
+-------------------------
+-------------------------
+[221] Training cost: 138.49209594726562
+[221] Validation accuracy: 0.9193999767303467
+[221] Validation cross-entropy: 0.28292687237262726
+[221] Validation log-likelihood: -84.15435028076172
+[221] Inference accuracy: 0.36809998750686646
+[221] Inference cross-entropy: 2.18059504032135
+[221] Test accuracy: 0.9095999598503113
+-------------------------
+-------------------------
+[222] Training cost: 138.42086029052734
+[222] Validation accuracy: 0.9196999669075012
+[222] Validation cross-entropy: 0.2830453887581825
+[222] Validation log-likelihood: -83.37182998657227
+[222] Inference accuracy: 0.35899998247623444
+[222] Inference cross-entropy: 2.1919548511505127
+[222] Test accuracy: 0.9099999666213989
+-------------------------
+-------------------------
+[223] Training cost: 138.3667953491211
+[223] Validation accuracy: 0.9148999750614166
+[223] Validation cross-entropy: 0.28920847177505493
+[223] Validation log-likelihood: -83.16902160644531
+[223] Inference accuracy: 0.3788999915122986
+[223] Inference cross-entropy: 2.1706762313842773
+[223] Test accuracy: 0.9060999751091003
+-------------------------
+-------------------------
+[224] Training cost: 138.20718231201172
+[224] Validation accuracy: 0.9158999919891357
+[224] Validation cross-entropy: 0.2927682399749756
+[224] Validation log-likelihood: -83.27774047851562
+[224] Inference accuracy: 0.3732999861240387
+[224] Inference cross-entropy: 2.1827266216278076
+[224] Test accuracy: 0.9086999893188477
+-------------------------
+-------------------------
+[225] Training cost: 138.23313598632814
+[225] Validation accuracy: 0.9175999760627747
+[225] Validation cross-entropy: 0.2822905704379082
+[225] Validation log-likelihood: -83.3254623413086
+[225] Inference accuracy: 0.38119998574256897
+[225] Inference cross-entropy: 2.177414894104004
+[225] Test accuracy: 0.909199982881546
+-------------------------
+-------------------------
+[226] Training cost: 138.1999725341797
+[226] Validation accuracy: 0.9182999730110168
+[226] Validation cross-entropy: 0.28318867087364197
+[226] Validation log-likelihood: -82.85622024536133
+[226] Inference accuracy: 0.37289999425411224
+[226] Inference cross-entropy: 2.1703920364379883
+[226] Test accuracy: 0.9096999764442444
+-------------------------
+-------------------------
+[227] Training cost: 138.17414093017578
+[227] Validation accuracy: 0.9190999865531921
+[227] Validation cross-entropy: 0.284742034971714
+[227] Validation log-likelihood: -83.35757064819336
+[227] Inference accuracy: 0.3723999857902527
+[227] Inference cross-entropy: 2.190728783607483
+[227] Test accuracy: 0.9084999859333038
+-------------------------
+-------------------------
+[228] Training cost: 138.1180206298828
+[228] Validation accuracy: 0.9170999526977539
+[228] Validation cross-entropy: 0.28816738724708557
+[228] Validation log-likelihood: -82.90280532836914
+[228] Inference accuracy: 0.35999998450279236
+[228] Inference cross-entropy: 2.191988229751587
+[228] Test accuracy: 0.9089999794960022
+-------------------------
+-------------------------
+[229] Training cost: 138.1167984008789
+[229] Validation accuracy: 0.9169999659061432
+[229] Validation cross-entropy: 0.283452071249485
+[229] Validation log-likelihood: -83.18792724609375
+[229] Inference accuracy: 0.3458999991416931
+[229] Inference cross-entropy: 2.183239459991455
+[229] Test accuracy: 0.9082999527454376
+-------------------------
+-------------------------
+[230] Training cost: 138.09198455810548
+[230] Validation accuracy: 0.9197999536991119
+[230] Validation cross-entropy: 0.2786613330245018
+[230] Validation log-likelihood: -82.81546401977539
+[230] Inference accuracy: 0.3392000049352646
+[230] Inference cross-entropy: 2.181333303451538
+[230] Test accuracy: 0.9129000008106232
+-------------------------
+-------------------------
+[231] Training cost: 138.093798828125
+[231] Validation accuracy: 0.9167999625205994
+[231] Validation cross-entropy: 0.2907852232456207
+[231] Validation log-likelihood: -82.94782257080078
+[231] Inference accuracy: 0.3276999890804291
+[231] Inference cross-entropy: 2.192227602005005
+[231] Test accuracy: 0.9070999622344971
+-------------------------
+-------------------------
+[232] Training cost: 138.0334045410156
+[232] Validation accuracy: 0.9178999662399292
+[232] Validation cross-entropy: 0.2828011214733124
+[232] Validation log-likelihood: -83.15558242797852
+[232] Inference accuracy: 0.3325999975204468
+[232] Inference cross-entropy: 2.1997902393341064
+[232] Test accuracy: 0.9094999730587006
+-------------------------
+-------------------------
+[233] Training cost: 137.9470016479492
+[233] Validation accuracy: 0.9209999740123749
+[233] Validation cross-entropy: 0.28360623121261597
+[233] Validation log-likelihood: -82.79398345947266
+[233] Inference accuracy: 0.3491999953985214
+[233] Inference cross-entropy: 2.1896594762802124
+[233] Test accuracy: 0.9085999727249146
+-------------------------
+-------------------------
+[234] Training cost: 137.8920700073242
+[234] Validation accuracy: 0.9174999594688416
+[234] Validation cross-entropy: 0.28575241565704346
+[234] Validation log-likelihood: -82.6872787475586
+[234] Inference accuracy: 0.3271999955177307
+[234] Inference cross-entropy: 2.2013893127441406
+[234] Test accuracy: 0.9077999889850616
+-------------------------
+-------------------------
+[235] Training cost: 137.8664321899414
+[235] Validation accuracy: 0.920799970626831
+[235] Validation cross-entropy: 0.2822127863764763
+[235] Validation log-likelihood: -82.68019104003906
+[235] Inference accuracy: 0.3317999839782715
+[235] Inference cross-entropy: 2.1910287141799927
+[235] Test accuracy: 0.9112999737262726
+-------------------------
+-------------------------
+[236] Training cost: 137.77559509277344
+[236] Validation accuracy: 0.9179999828338623
+[236] Validation cross-entropy: 0.2815544977784157
+[236] Validation log-likelihood: -82.62899017333984
+[236] Inference accuracy: 0.314099982380867
+[236] Inference cross-entropy: 2.1903685331344604
+[236] Test accuracy: 0.9097999632358551
+-------------------------
+-------------------------
+[237] Training cost: 137.79938049316405
+[237] Validation accuracy: 0.9197999835014343
+[237] Validation cross-entropy: 0.282347209751606
+[237] Validation log-likelihood: -82.49834060668945
+[237] Inference accuracy: 0.3536999970674515
+[237] Inference cross-entropy: 2.182021737098694
+[237] Test accuracy: 0.9100999534130096
+-------------------------
+-------------------------
+[238] Training cost: 137.73158111572266
+[238] Validation accuracy: 0.9200999736785889
+[238] Validation cross-entropy: 0.2764045521616936
+[238] Validation log-likelihood: -82.5025749206543
+[238] Inference accuracy: 0.34579998254776
+[238] Inference cross-entropy: 2.1884148120880127
+[238] Test accuracy: 0.9112999737262726
+-------------------------
+-------------------------
+[239] Training cost: 137.7001968383789
+[239] Validation accuracy: 0.9179999828338623
+[239] Validation cross-entropy: 0.28111178427934647
+[239] Validation log-likelihood: -82.46318054199219
+[239] Inference accuracy: 0.3253999948501587
+[239] Inference cross-entropy: 2.188697576522827
+[239] Test accuracy: 0.9092999994754791
+-------------------------
+-------------------------
+[240] Training cost: 137.69300689697266
+[240] Validation accuracy: 0.9194999933242798
+[240] Validation cross-entropy: 0.2802395448088646
+[240] Validation log-likelihood: -82.35054779052734
+[240] Inference accuracy: 0.3385999947786331
+[240] Inference cross-entropy: 2.1860321760177612
+[240] Test accuracy: 0.9101999700069427
+-------------------------
+-------------------------
+[241] Training cost: 137.6208251953125
+[241] Validation accuracy: 0.9188999831676483
+[241] Validation cross-entropy: 0.2779536098241806
+[241] Validation log-likelihood: -82.66758728027344
+[241] Inference accuracy: 0.32509998977184296
+[241] Inference cross-entropy: 2.2026232481002808
+[241] Test accuracy: 0.9094999730587006
+-------------------------
+-------------------------
+[242] Training cost: 137.56194763183595
+[242] Validation accuracy: 0.9208999574184418
+[242] Validation cross-entropy: 0.276704803109169
+[242] Validation log-likelihood: -82.45772933959961
+[242] Inference accuracy: 0.30409999191761017
+[242] Inference cross-entropy: 2.1921688318252563
+[242] Test accuracy: 0.9116999804973602
+-------------------------
+-------------------------
+[243] Training cost: 137.5767074584961
+[243] Validation accuracy: 0.91839998960495
+[243] Validation cross-entropy: 0.2807243540883064
+[243] Validation log-likelihood: -82.33960723876953
+[243] Inference accuracy: 0.326899990439415
+[243] Inference cross-entropy: 2.190036416053772
+[243] Test accuracy: 0.9120999872684479
+-------------------------
+-------------------------
+[244] Training cost: 137.47809448242188
+[244] Validation accuracy: 0.9186999499797821
+[244] Validation cross-entropy: 0.28143956512212753
+[244] Validation log-likelihood: -82.11270523071289
+[244] Inference accuracy: 0.3140999972820282
+[244] Inference cross-entropy: 2.1923680305480957
+[244] Test accuracy: 0.9109999537467957
+-------------------------
+-------------------------
+[245] Training cost: 137.44561004638672
+[245] Validation accuracy: 0.919899970293045
+[245] Validation cross-entropy: 0.27540237456560135
+[245] Validation log-likelihood: -82.26061248779297
+[245] Inference accuracy: 0.32329998910427094
+[245] Inference cross-entropy: 2.1830071210861206
+[245] Test accuracy: 0.9098999798297882
+-------------------------
+-------------------------
+[246] Training cost: 137.41073608398438
+[246] Validation accuracy: 0.9193999767303467
+[246] Validation cross-entropy: 0.27860425412654877
+[246] Validation log-likelihood: -82.59930038452148
+[246] Inference accuracy: 0.35249999165534973
+[246] Inference cross-entropy: 2.1744959354400635
+[246] Test accuracy: 0.9113999605178833
+-------------------------
+-------------------------
+[247] Training cost: 137.39406127929686
+[247] Validation accuracy: 0.9199000000953674
+[247] Validation cross-entropy: 0.2801640257239342
+[247] Validation log-likelihood: -82.51922225952148
+[247] Inference accuracy: 0.32330000400543213
+[247] Inference cross-entropy: 2.1887987852096558
+[247] Test accuracy: 0.9110999703407288
+-------------------------
+-------------------------
+[248] Training cost: 137.5156509399414
+[248] Validation accuracy: 0.9208000004291534
+[248] Validation cross-entropy: 0.2763547748327255
+[248] Validation log-likelihood: -82.28841400146484
+[248] Inference accuracy: 0.31699998676776886
+[248] Inference cross-entropy: 2.200711727142334
+[248] Test accuracy: 0.9114999771118164
+-------------------------
+-------------------------
+[249] Training cost: 137.3542465209961
+[249] Validation accuracy: 0.9208999574184418
+[249] Validation cross-entropy: 0.28095996379852295
+[249] Validation log-likelihood: -82.4075927734375
+[249] Inference accuracy: 0.3139999806880951
+[249] Inference cross-entropy: 2.1916309595108032
+[249] Test accuracy: 0.9120000004768372
+-------------------------
+-------------------------
+[250] Training cost: 137.27846069335936
+[250] Validation accuracy: 0.9208999574184418
+[250] Validation cross-entropy: 0.27516552060842514
+[250] Validation log-likelihood: -82.12351608276367
+[250] Inference accuracy: 0.3349999785423279
+[250] Inference cross-entropy: 2.175415873527527
+[250] Test accuracy: 0.9120999574661255
+-------------------------
+-------------------------
+[251] Training cost: 137.2756774902344
+[251] Validation accuracy: 0.9202999770641327
+[251] Validation cross-entropy: 0.2752225175499916
+[251] Validation log-likelihood: -82.09104537963867
+[251] Inference accuracy: 0.3279999941587448
+[251] Inference cross-entropy: 2.188988447189331
+[251] Test accuracy: 0.9119999706745148
+-------------------------
+-------------------------
+[252] Training cost: 137.2049118041992
+[252] Validation accuracy: 0.9203999638557434
+[252] Validation cross-entropy: 0.28412219136953354
+[252] Validation log-likelihood: -82.47763061523438
+[252] Inference accuracy: 0.3222000002861023
+[252] Inference cross-entropy: 2.1831533908843994
+[252] Test accuracy: 0.9097999632358551
+-------------------------
+-------------------------
+[253] Training cost: 137.19463958740235
+[253] Validation accuracy: 0.9182999730110168
+[253] Validation cross-entropy: 0.2796124145388603
+[253] Validation log-likelihood: -81.69649124145508
+[253] Inference accuracy: 0.32569998502731323
+[253] Inference cross-entropy: 2.1873048543930054
+[253] Test accuracy: 0.9106999933719635
+-------------------------
+-------------------------
+[254] Training cost: 137.19759063720704
+[254] Validation accuracy: 0.9175999760627747
+[254] Validation cross-entropy: 0.2763027399778366
+[254] Validation log-likelihood: -82.19638442993164
+[254] Inference accuracy: 0.31839999556541443
+[254] Inference cross-entropy: 2.1909738779067993
+[254] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[255] Training cost: 137.1934783935547
+[255] Validation accuracy: 0.9184999763965607
+[255] Validation cross-entropy: 0.28644222021102905
+[255] Validation log-likelihood: -81.7994384765625
+[255] Inference accuracy: 0.3138999938964844
+[255] Inference cross-entropy: 2.1875561475753784
+[255] Test accuracy: 0.9115999639034271
+-------------------------
+-------------------------
+[256] Training cost: 137.06129760742186
+[256] Validation accuracy: 0.9191999733448029
+[256] Validation cross-entropy: 0.2760847508907318
+[256] Validation log-likelihood: -82.21271896362305
+[256] Inference accuracy: 0.32189998030662537
+[256] Inference cross-entropy: 2.193335771560669
+[256] Test accuracy: 0.9110999703407288
+-------------------------
+-------------------------
+[257] Training cost: 137.04815673828125
+[257] Validation accuracy: 0.918099969625473
+[257] Validation cross-entropy: 0.2801354452967644
+[257] Validation log-likelihood: -81.83359909057617
+[257] Inference accuracy: 0.31839999556541443
+[257] Inference cross-entropy: 2.185624599456787
+[257] Test accuracy: 0.9096999764442444
+-------------------------
+-------------------------
+[258] Training cost: 137.00191192626954
+[258] Validation accuracy: 0.9196999669075012
+[258] Validation cross-entropy: 0.27782587707042694
+[258] Validation log-likelihood: -81.67541885375977
+[258] Inference accuracy: 0.3246999979019165
+[258] Inference cross-entropy: 2.181100010871887
+[258] Test accuracy: 0.9116999804973602
+-------------------------
+-------------------------
+[259] Training cost: 137.05382080078124
+[259] Validation accuracy: 0.9191999733448029
+[259] Validation cross-entropy: 0.2765043005347252
+[259] Validation log-likelihood: -82.25586318969727
+[259] Inference accuracy: 0.2992999851703644
+[259] Inference cross-entropy: 2.2000652551651
+[259] Test accuracy: 0.9117999970912933
+-------------------------
+-------------------------
+[260] Training cost: 136.99938201904297
+[260] Validation accuracy: 0.9201999604701996
+[260] Validation cross-entropy: 0.2779763340950012
+[260] Validation log-likelihood: -82.03292083740234
+[260] Inference accuracy: 0.3019999861717224
+[260] Inference cross-entropy: 2.1962095499038696
+[260] Test accuracy: 0.9120000004768372
+-------------------------
+-------------------------
+[261] Training cost: 137.00149993896486
+[261] Validation accuracy: 0.9209999740123749
+[261] Validation cross-entropy: 0.27759282290935516
+[261] Validation log-likelihood: -81.71013641357422
+[261] Inference accuracy: 0.3158999979496002
+[261] Inference cross-entropy: 2.1881974935531616
+[261] Test accuracy: 0.9123999774456024
+-------------------------
+-------------------------
+[262] Training cost: 136.87528381347656
+[262] Validation accuracy: 0.9205999672412872
+[262] Validation cross-entropy: 0.27623653411865234
+[262] Validation log-likelihood: -81.45402145385742
+[262] Inference accuracy: 0.33389998972415924
+[262] Inference cross-entropy: 2.1792346239089966
+[262] Test accuracy: 0.9120999872684479
+-------------------------
+-------------------------
+[263] Training cost: 136.86446533203124
+[263] Validation accuracy: 0.9205999970436096
+[263] Validation cross-entropy: 0.2787296995520592
+[263] Validation log-likelihood: -81.91524505615234
+[263] Inference accuracy: 0.3156999796628952
+[263] Inference cross-entropy: 2.189834713935852
+[263] Test accuracy: 0.9110999703407288
+-------------------------
+-------------------------
+[264] Training cost: 136.79919891357423
+[264] Validation accuracy: 0.9212999939918518
+[264] Validation cross-entropy: 0.27475930750370026
+[264] Validation log-likelihood: -81.80251693725586
+[264] Inference accuracy: 0.3199999928474426
+[264] Inference cross-entropy: 2.1892372369766235
+[264] Test accuracy: 0.9131999611854553
+-------------------------
+-------------------------
+[265] Training cost: 136.9299743652344
+[265] Validation accuracy: 0.9141999781131744
+[265] Validation cross-entropy: 0.284911185503006
+[265] Validation log-likelihood: -81.44612884521484
+[265] Inference accuracy: 0.32249999046325684
+[265] Inference cross-entropy: 2.165070652961731
+[265] Test accuracy: 0.910099983215332
+-------------------------
+-------------------------
+[266] Training cost: 136.7912384033203
+[266] Validation accuracy: 0.9202999770641327
+[266] Validation cross-entropy: 0.2758198231458664
+[266] Validation log-likelihood: -81.42518615722656
+[266] Inference accuracy: 0.3214999884366989
+[266] Inference cross-entropy: 2.178786277770996
+[266] Test accuracy: 0.9134999811649323
+-------------------------
+-------------------------
+[267] Training cost: 136.74065246582032
+[267] Validation accuracy: 0.918099969625473
+[267] Validation cross-entropy: 0.285032294690609
+[267] Validation log-likelihood: -81.55706024169922
+[267] Inference accuracy: 0.3154999911785126
+[267] Inference cross-entropy: 2.1821706295013428
+[267] Test accuracy: 0.9098999798297882
+-------------------------
+-------------------------
+[268] Training cost: 136.7711669921875
+[268] Validation accuracy: 0.9156000018119812
+[268] Validation cross-entropy: 0.28232481330633163
+[268] Validation log-likelihood: -81.9923210144043
+[268] Inference accuracy: 0.30809998512268066
+[268] Inference cross-entropy: 2.182600736618042
+[268] Test accuracy: 0.9090999662876129
+-------------------------
+-------------------------
+[269] Training cost: 136.8195037841797
+[269] Validation accuracy: 0.9216999709606171
+[269] Validation cross-entropy: 0.2747662290930748
+[269] Validation log-likelihood: -81.7027702331543
+[269] Inference accuracy: 0.2938999980688095
+[269] Inference cross-entropy: 2.175448179244995
+[269] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[270] Training cost: 136.66444702148436
+[270] Validation accuracy: 0.9205999970436096
+[270] Validation cross-entropy: 0.27468498796224594
+[270] Validation log-likelihood: -81.50259399414062
+[270] Inference accuracy: 0.2733999937772751
+[270] Inference cross-entropy: 2.1947332620620728
+[270] Test accuracy: 0.9121999740600586
+-------------------------
+-------------------------
+[271] Training cost: 136.67921295166016
+[271] Validation accuracy: 0.9186999499797821
+[271] Validation cross-entropy: 0.27458585798740387
+[271] Validation log-likelihood: -81.52926635742188
+[271] Inference accuracy: 0.3156999945640564
+[271] Inference cross-entropy: 2.1757285594940186
+[271] Test accuracy: 0.9123999774456024
+-------------------------
+-------------------------
+[272] Training cost: 136.60887145996094
+[272] Validation accuracy: 0.9203999936580658
+[272] Validation cross-entropy: 0.27569422870874405
+[272] Validation log-likelihood: -81.50123977661133
+[272] Inference accuracy: 0.336899995803833
+[272] Inference cross-entropy: 2.1596150398254395
+[272] Test accuracy: 0.9120999872684479
+-------------------------
+-------------------------
+[273] Training cost: 136.60793914794922
+[273] Validation accuracy: 0.9196999967098236
+[273] Validation cross-entropy: 0.2746272161602974
+[273] Validation log-likelihood: -80.98986053466797
+[273] Inference accuracy: 0.30969999730587006
+[273] Inference cross-entropy: 2.1786928176879883
+[273] Test accuracy: 0.911799967288971
+-------------------------
+-------------------------
+[274] Training cost: 136.5175521850586
+[274] Validation accuracy: 0.9211999773979187
+[274] Validation cross-entropy: 0.2724901959300041
+[274] Validation log-likelihood: -81.20171356201172
+[274] Inference accuracy: 0.2995999902486801
+[274] Inference cross-entropy: 2.1634907722473145
+[274] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[275] Training cost: 136.5699203491211
+[275] Validation accuracy: 0.9190999865531921
+[275] Validation cross-entropy: 0.2751777321100235
+[275] Validation log-likelihood: -81.28917694091797
+[275] Inference accuracy: 0.3165999799966812
+[275] Inference cross-entropy: 2.1929270029067993
+[275] Test accuracy: 0.911899983882904
+-------------------------
+-------------------------
+[276] Training cost: 136.47225189208984
+[276] Validation accuracy: 0.9208999574184418
+[276] Validation cross-entropy: 0.27459051460027695
+[276] Validation log-likelihood: -81.27763366699219
+[276] Inference accuracy: 0.30329999327659607
+[276] Inference cross-entropy: 2.184098243713379
+[276] Test accuracy: 0.9135999977588654
+-------------------------
+-------------------------
+[277] Training cost: 136.41158142089844
+[277] Validation accuracy: 0.9214999675750732
+[277] Validation cross-entropy: 0.2771652713418007
+[277] Validation log-likelihood: -81.1067008972168
+[277] Inference accuracy: 0.3132999986410141
+[277] Inference cross-entropy: 2.1717149019241333
+[277] Test accuracy: 0.911899983882904
+-------------------------
+-------------------------
+[278] Training cost: 136.45125427246094
+[278] Validation accuracy: 0.9197999536991119
+[278] Validation cross-entropy: 0.28029292076826096
+[278] Validation log-likelihood: -81.15623092651367
+[278] Inference accuracy: 0.28869999945163727
+[278] Inference cross-entropy: 2.2051398754119873
+[278] Test accuracy: 0.911799967288971
+-------------------------
+-------------------------
+[279] Training cost: 136.49976654052733
+[279] Validation accuracy: 0.9222999513149261
+[279] Validation cross-entropy: 0.2776441052556038
+[279] Validation log-likelihood: -80.97936248779297
+[279] Inference accuracy: 0.3075999915599823
+[279] Inference cross-entropy: 2.1633903980255127
+[279] Test accuracy: 0.9134999811649323
+-------------------------
+-------------------------
+[280] Training cost: 136.40472869873048
+[280] Validation accuracy: 0.9217999875545502
+[280] Validation cross-entropy: 0.27426864951848984
+[280] Validation log-likelihood: -81.14664459228516
+[280] Inference accuracy: 0.2856999933719635
+[280] Inference cross-entropy: 2.1846275329589844
+[280] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[281] Training cost: 136.34176635742188
+[281] Validation accuracy: 0.9186999797821045
+[281] Validation cross-entropy: 0.2787443920969963
+[281] Validation log-likelihood: -81.30001449584961
+[281] Inference accuracy: 0.29680000245571136
+[281] Inference cross-entropy: 2.1795780658721924
+[281] Test accuracy: 0.9101999700069427
+-------------------------
+-------------------------
+[282] Training cost: 136.27210693359376
+[282] Validation accuracy: 0.9215999841690063
+[282] Validation cross-entropy: 0.27701274305582047
+[282] Validation log-likelihood: -81.28400421142578
+[282] Inference accuracy: 0.3025999963283539
+[282] Inference cross-entropy: 2.1704355478286743
+[282] Test accuracy: 0.914900004863739
+-------------------------
+-------------------------
+[283] Training cost: 136.30399475097656
+[283] Validation accuracy: 0.9191999733448029
+[283] Validation cross-entropy: 0.2738748639822006
+[283] Validation log-likelihood: -81.2305679321289
+[283] Inference accuracy: 0.2613999992609024
+[283] Inference cross-entropy: 2.204716920852661
+[283] Test accuracy: 0.9118999540805817
+-------------------------
+-------------------------
+[284] Training cost: 136.26348724365235
+[284] Validation accuracy: 0.9217999875545502
+[284] Validation cross-entropy: 0.27308935672044754
+[284] Validation log-likelihood: -80.79741668701172
+[284] Inference accuracy: 0.28849999606609344
+[284] Inference cross-entropy: 2.189818024635315
+[284] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[285] Training cost: 136.2581756591797
+[285] Validation accuracy: 0.9130999743938446
+[285] Validation cross-entropy: 0.2907561659812927
+[285] Validation log-likelihood: -80.57987213134766
+[285] Inference accuracy: 0.278999999165535
+[285] Inference cross-entropy: 2.191204786300659
+[285] Test accuracy: 0.9078999757766724
+-------------------------
+-------------------------
+[286] Training cost: 136.25385284423828
+[286] Validation accuracy: 0.9215999841690063
+[286] Validation cross-entropy: 0.2731604650616646
+[286] Validation log-likelihood: -81.15263366699219
+[286] Inference accuracy: 0.287200003862381
+[286] Inference cross-entropy: 2.1958569288253784
+[286] Test accuracy: 0.9142999947071075
+-------------------------
+-------------------------
+[287] Training cost: 136.2042709350586
+[287] Validation accuracy: 0.9202999770641327
+[287] Validation cross-entropy: 0.2742554545402527
+[287] Validation log-likelihood: -81.37632369995117
+[287] Inference accuracy: 0.31109999120235443
+[287] Inference cross-entropy: 2.1765633821487427
+[287] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[288] Training cost: 136.12982177734375
+[288] Validation accuracy: 0.920799970626831
+[288] Validation cross-entropy: 0.27150384336709976
+[288] Validation log-likelihood: -81.01306915283203
+[288] Inference accuracy: 0.29739999771118164
+[288] Inference cross-entropy: 2.1789140701293945
+[288] Test accuracy: 0.9138999879360199
+-------------------------
+-------------------------
+[289] Training cost: 136.19219512939452
+[289] Validation accuracy: 0.9221999645233154
+[289] Validation cross-entropy: 0.27089250832796097
+[289] Validation log-likelihood: -80.83081817626953
+[289] Inference accuracy: 0.29179999232292175
+[289] Inference cross-entropy: 2.1894880533218384
+[289] Test accuracy: 0.9137999713420868
+-------------------------
+-------------------------
+[290] Training cost: 136.14464416503907
+[290] Validation accuracy: 0.9231999814510345
+[290] Validation cross-entropy: 0.2653711885213852
+[290] Validation log-likelihood: -80.85197448730469
+[290] Inference accuracy: 0.30169999599456787
+[290] Inference cross-entropy: 2.1672075986862183
+[290] Test accuracy: 0.9148999750614166
+-------------------------
+-------------------------
+[291] Training cost: 136.11908264160155
+[291] Validation accuracy: 0.9231999814510345
+[291] Validation cross-entropy: 0.2648768052458763
+[291] Validation log-likelihood: -80.70883560180664
+[291] Inference accuracy: 0.2740999907255173
+[291] Inference cross-entropy: 2.1856911182403564
+[291] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[292] Training cost: 136.10932312011718
+[292] Validation accuracy: 0.9204999804496765
+[292] Validation cross-entropy: 0.2737172916531563
+[292] Validation log-likelihood: -80.54886245727539
+[292] Inference accuracy: 0.26109999418258667
+[292] Inference cross-entropy: 2.1873501539230347
+[292] Test accuracy: 0.9116999804973602
+-------------------------
+-------------------------
+[293] Training cost: 136.06920318603517
+[293] Validation accuracy: 0.9217999875545502
+[293] Validation cross-entropy: 0.27331867814064026
+[293] Validation log-likelihood: -80.8853988647461
+[293] Inference accuracy: 0.26429998874664307
+[293] Inference cross-entropy: 2.192094087600708
+[293] Test accuracy: 0.9127999842166901
+-------------------------
+-------------------------
+[294] Training cost: 136.05353546142578
+[294] Validation accuracy: 0.9200999736785889
+[294] Validation cross-entropy: 0.27685564011335373
+[294] Validation log-likelihood: -80.47562026977539
+[294] Inference accuracy: 0.28189998865127563
+[294] Inference cross-entropy: 2.1927430629730225
+[294] Test accuracy: 0.9130999743938446
+-------------------------
+-------------------------
+[295] Training cost: 135.98384704589844
+[295] Validation accuracy: 0.918099969625473
+[295] Validation cross-entropy: 0.28543423116207123
+[295] Validation log-likelihood: -81.05134582519531
+[295] Inference accuracy: 0.23969998955726624
+[295] Inference cross-entropy: 2.2079672813415527
+[295] Test accuracy: 0.9102999866008759
+-------------------------
+-------------------------
+[296] Training cost: 136.04025268554688
+[296] Validation accuracy: 0.919299989938736
+[296] Validation cross-entropy: 0.28533248603343964
+[296] Validation log-likelihood: -80.8251838684082
+[296] Inference accuracy: 0.2838999927043915
+[296] Inference cross-entropy: 2.192124366760254
+[296] Test accuracy: 0.9115999937057495
+-------------------------
+-------------------------
+[297] Training cost: 135.9708999633789
+[297] Validation accuracy: 0.9205999672412872
+[297] Validation cross-entropy: 0.27862900495529175
+[297] Validation log-likelihood: -80.67494583129883
+[297] Inference accuracy: 0.2824999988079071
+[297] Inference cross-entropy: 2.195379614830017
+[297] Test accuracy: 0.9150999784469604
+-------------------------
+-------------------------
+[298] Training cost: 135.88350372314454
+[298] Validation accuracy: 0.9186999797821045
+[298] Validation cross-entropy: 0.2799477130174637
+[298] Validation log-likelihood: -80.59347152709961
+[298] Inference accuracy: 0.2920999974012375
+[298] Inference cross-entropy: 2.185296416282654
+[298] Test accuracy: 0.9133999645709991
+-------------------------
+-------------------------
+[299] Training cost: 135.88355255126953
+[299] Validation accuracy: 0.9208999872207642
+[299] Validation cross-entropy: 0.275835745036602
+[299] Validation log-likelihood: -80.5894660949707
+[299] Inference accuracy: 0.28299999237060547
+[299] Inference cross-entropy: 2.192569375038147
+[299] Test accuracy: 0.9128999710083008
+-------------------------
+-------------------------
+[300] Training cost: 135.86021881103517
+[300] Validation accuracy: 0.9210000038146973
+[300] Validation cross-entropy: 0.27671775966882706
+[300] Validation log-likelihood: -80.26884460449219
+[300] Inference accuracy: 0.28039999306201935
+[300] Inference cross-entropy: 2.1949771642684937
+[300] Test accuracy: 0.9142999649047852
+-------------------------
+-------------------------
+[301] Training cost: 135.81875457763672
+[301] Validation accuracy: 0.9205999672412872
+[301] Validation cross-entropy: 0.27153608202934265
+[301] Validation log-likelihood: -80.46727752685547
+[301] Inference accuracy: 0.25199999660253525
+[301] Inference cross-entropy: 2.215794563293457
+[301] Test accuracy: 0.9130999743938446
+-------------------------
+-------------------------
+[302] Training cost: 135.80453796386718
+[302] Validation accuracy: 0.9220999777317047
+[302] Validation cross-entropy: 0.2743930518627167
+[302] Validation log-likelihood: -80.46673583984375
+[302] Inference accuracy: 0.28299999237060547
+[302] Inference cross-entropy: 2.1832584142684937
+[302] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[303] Training cost: 135.76922302246095
+[303] Validation accuracy: 0.9209999740123749
+[303] Validation cross-entropy: 0.2743382304906845
+[303] Validation log-likelihood: -80.72805786132812
+[303] Inference accuracy: 0.2597000002861023
+[303] Inference cross-entropy: 2.2144968509674072
+[303] Test accuracy: 0.9125999510288239
+-------------------------
+-------------------------
+[304] Training cost: 135.87982635498048
+[304] Validation accuracy: 0.9197999835014343
+[304] Validation cross-entropy: 0.2760302573442459
+[304] Validation log-likelihood: -80.2142562866211
+[304] Inference accuracy: 0.25759999454021454
+[304] Inference cross-entropy: 2.2063411474227905
+[304] Test accuracy: 0.9138000011444092
+-------------------------
+-------------------------
+[305] Training cost: 135.83106079101563
+[305] Validation accuracy: 0.9181999862194061
+[305] Validation cross-entropy: 0.27861228585243225
+[305] Validation log-likelihood: -80.8895263671875
+[305] Inference accuracy: 0.2621999979019165
+[305] Inference cross-entropy: 2.19362473487854
+[305] Test accuracy: 0.9107999801635742
+-------------------------
+-------------------------
+[306] Training cost: 135.72529296875
+[306] Validation accuracy: 0.9210999608039856
+[306] Validation cross-entropy: 0.27473603934049606
+[306] Validation log-likelihood: -80.3840217590332
+[306] Inference accuracy: 0.24379999190568924
+[306] Inference cross-entropy: 2.2179408073425293
+[306] Test accuracy: 0.9149999618530273
+-------------------------
+-------------------------
+[307] Training cost: 135.66248779296876
+[307] Validation accuracy: 0.917199969291687
+[307] Validation cross-entropy: 0.2795721963047981
+[307] Validation log-likelihood: -80.1257438659668
+[307] Inference accuracy: 0.2840999960899353
+[307] Inference cross-entropy: 2.1744176149368286
+[307] Test accuracy: 0.9103999733924866
+-------------------------
+-------------------------
+[308] Training cost: 135.71914825439453
+[308] Validation accuracy: 0.9202999770641327
+[308] Validation cross-entropy: 0.2774448022246361
+[308] Validation log-likelihood: -80.27305603027344
+[308] Inference accuracy: 0.2646999955177307
+[308] Inference cross-entropy: 2.1972625255584717
+[308] Test accuracy: 0.9134999811649323
+-------------------------
+-------------------------
+[309] Training cost: 135.64757232666017
+[309] Validation accuracy: 0.9222999811172485
+[309] Validation cross-entropy: 0.2722443491220474
+[309] Validation log-likelihood: -80.6136703491211
+[309] Inference accuracy: 0.26350000500679016
+[309] Inference cross-entropy: 2.199460744857788
+[309] Test accuracy: 0.9139999747276306
+-------------------------
+-------------------------
+[310] Training cost: 135.57791595458986
+[310] Validation accuracy: 0.9174999892711639
+[310] Validation cross-entropy: 0.28022685647010803
+[310] Validation log-likelihood: -80.27606201171875
+[310] Inference accuracy: 0.30719998478889465
+[310] Inference cross-entropy: 2.178177237510681
+[310] Test accuracy: 0.9111999571323395
+-------------------------
+-------------------------
+[311] Training cost: 135.5795654296875
+[311] Validation accuracy: 0.9234999716281891
+[311] Validation cross-entropy: 0.272360235452652
+[311] Validation log-likelihood: -80.12751388549805
+[311] Inference accuracy: 0.2830999940633774
+[311] Inference cross-entropy: 2.194766879081726
+[311] Test accuracy: 0.9134999811649323
+-------------------------
+-------------------------
+[312] Training cost: 135.56255340576172
+[312] Validation accuracy: 0.9222999513149261
+[312] Validation cross-entropy: 0.26999086886644363
+[312] Validation log-likelihood: -80.5257453918457
+[312] Inference accuracy: 0.2540999948978424
+[312] Inference cross-entropy: 2.21451199054718
+[312] Test accuracy: 0.9142999649047852
+-------------------------
+-------------------------
+[313] Training cost: 135.5080551147461
+[313] Validation accuracy: 0.9205999672412872
+[313] Validation cross-entropy: 0.2780952602624893
+[313] Validation log-likelihood: -80.3679313659668
+[313] Inference accuracy: 0.23469999432563782
+[313] Inference cross-entropy: 2.238216996192932
+[313] Test accuracy: 0.9120999872684479
+-------------------------
+-------------------------
+[314] Training cost: 135.515087890625
+[314] Validation accuracy: 0.9209999740123749
+[314] Validation cross-entropy: 0.27542439103126526
+[314] Validation log-likelihood: -80.1573257446289
+[314] Inference accuracy: 0.2785999923944473
+[314] Inference cross-entropy: 2.18730890750885
+[314] Test accuracy: 0.9138999879360199
+-------------------------
+-------------------------
+[315] Training cost: 135.5292724609375
+[315] Validation accuracy: 0.919299989938736
+[315] Validation cross-entropy: 0.2770829275250435
+[315] Validation log-likelihood: -80.3483772277832
+[315] Inference accuracy: 0.2659999877214432
+[315] Inference cross-entropy: 2.1969006061553955
+[315] Test accuracy: 0.9123999774456024
+-------------------------
+-------------------------
+[316] Training cost: 135.4521011352539
+[316] Validation accuracy: 0.9219999611377716
+[316] Validation cross-entropy: 0.27107372134923935
+[316] Validation log-likelihood: -79.78045272827148
+[316] Inference accuracy: 0.23809999227523804
+[316] Inference cross-entropy: 2.2128132581710815
+[316] Test accuracy: 0.9146999716758728
+-------------------------
+-------------------------
+[317] Training cost: 135.41503295898437
+[317] Validation accuracy: 0.9204999804496765
+[317] Validation cross-entropy: 0.27656135708093643
+[317] Validation log-likelihood: -80.17890167236328
+[317] Inference accuracy: 0.26079998910427094
+[317] Inference cross-entropy: 2.2273327112197876
+[317] Test accuracy: 0.9114999771118164
+-------------------------
+-------------------------
+[318] Training cost: 135.42955780029297
+[318] Validation accuracy: 0.9220999777317047
+[318] Validation cross-entropy: 0.27141760289669037
+[318] Validation log-likelihood: -80.45910263061523
+[318] Inference accuracy: 0.23729999363422394
+[318] Inference cross-entropy: 2.2276368141174316
+[318] Test accuracy: 0.9145999848842621
+-------------------------
+-------------------------
+[319] Training cost: 135.3904800415039
+[319] Validation accuracy: 0.9236999750137329
+[319] Validation cross-entropy: 0.26936348527669907
+[319] Validation log-likelihood: -79.83305740356445
+[319] Inference accuracy: 0.24249999225139618
+[319] Inference cross-entropy: 2.2269803285598755
+[319] Test accuracy: 0.9153999984264374
+-------------------------
+-------------------------
+[320] Training cost: 135.30006408691406
+[320] Validation accuracy: 0.9231999814510345
+[320] Validation cross-entropy: 0.27100127935409546
+[320] Validation log-likelihood: -80.06706237792969
+[320] Inference accuracy: 0.2538999915122986
+[320] Inference cross-entropy: 2.206494927406311
+[320] Test accuracy: 0.9164999723434448
+-------------------------
+-------------------------
+[321] Training cost: 135.28531799316406
+[321] Validation accuracy: 0.9227999746799469
+[321] Validation cross-entropy: 0.27116840332746506
+[321] Validation log-likelihood: -79.90305709838867
+[321] Inference accuracy: 0.25429999828338623
+[321] Inference cross-entropy: 2.212398052215576
+[321] Test accuracy: 0.9142999649047852
+-------------------------
+-------------------------
+[322] Training cost: 135.3381576538086
+[322] Validation accuracy: 0.9227999746799469
+[322] Validation cross-entropy: 0.27103009074926376
+[322] Validation log-likelihood: -80.02009582519531
+[322] Inference accuracy: 0.2466999888420105
+[322] Inference cross-entropy: 2.2181586027145386
+[322] Test accuracy: 0.9151999950408936
+-------------------------
+-------------------------
+[323] Training cost: 135.37704315185547
+[323] Validation accuracy: 0.9235999584197998
+[323] Validation cross-entropy: 0.26844705641269684
+[323] Validation log-likelihood: -80.13941955566406
+[323] Inference accuracy: 0.2458999902009964
+[323] Inference cross-entropy: 2.2379086017608643
+[323] Test accuracy: 0.9148999750614166
+-------------------------
+-------------------------
+[324] Training cost: 135.23401947021483
+[324] Validation accuracy: 0.9237999618053436
+[324] Validation cross-entropy: 0.2707609459757805
+[324] Validation log-likelihood: -79.93263626098633
+[324] Inference accuracy: 0.258899986743927
+[324] Inference cross-entropy: 2.2124664783477783
+[324] Test accuracy: 0.9148999750614166
+-------------------------
+-------------------------
+[325] Training cost: 135.32772827148438
+[325] Validation accuracy: 0.9205999672412872
+[325] Validation cross-entropy: 0.27227412909269333
+[325] Validation log-likelihood: -79.70843887329102
+[325] Inference accuracy: 0.2800999879837036
+[325] Inference cross-entropy: 2.202608346939087
+[325] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[326] Training cost: 135.2115951538086
+[326] Validation accuracy: 0.9186999797821045
+[326] Validation cross-entropy: 0.2793617248535156
+[326] Validation log-likelihood: -79.59847640991211
+[326] Inference accuracy: 0.23729999363422394
+[326] Inference cross-entropy: 2.2257617712020874
+[326] Test accuracy: 0.9113999903202057
+-------------------------
+-------------------------
+[327] Training cost: 135.1739761352539
+[327] Validation accuracy: 0.9231999516487122
+[327] Validation cross-entropy: 0.27249589562416077
+[327] Validation log-likelihood: -79.86736679077148
+[327] Inference accuracy: 0.2654999941587448
+[327] Inference cross-entropy: 2.2068406343460083
+[327] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[328] Training cost: 135.1692886352539
+[328] Validation accuracy: 0.9227999746799469
+[328] Validation cross-entropy: 0.26845840364694595
+[328] Validation log-likelihood: -79.99158096313477
+[328] Inference accuracy: 0.24779999256134033
+[328] Inference cross-entropy: 2.2364120483398438
+[328] Test accuracy: 0.9146999716758728
+-------------------------
+-------------------------
+[329] Training cost: 135.12376861572267
+[329] Validation accuracy: 0.921999990940094
+[329] Validation cross-entropy: 0.275873139500618
+[329] Validation log-likelihood: -79.70003509521484
+[329] Inference accuracy: 0.26399998366832733
+[329] Inference cross-entropy: 2.223335862159729
+[329] Test accuracy: 0.9149999916553497
+-------------------------
+-------------------------
+[330] Training cost: 135.09587707519532
+[330] Validation accuracy: 0.919299989938736
+[330] Validation cross-entropy: 0.2733624130487442
+[330] Validation log-likelihood: -79.80815505981445
+[330] Inference accuracy: 0.22749999165534973
+[330] Inference cross-entropy: 2.2401106357574463
+[330] Test accuracy: 0.9125999808311462
+-------------------------
+-------------------------
+[331] Training cost: 135.14200134277343
+[331] Validation accuracy: 0.9222999811172485
+[331] Validation cross-entropy: 0.2775062918663025
+[331] Validation log-likelihood: -79.92079544067383
+[331] Inference accuracy: 0.25119999051094055
+[331] Inference cross-entropy: 2.2399656772613525
+[331] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[332] Training cost: 135.05059051513672
+[332] Validation accuracy: 0.9165999889373779
+[332] Validation cross-entropy: 0.28419435769319534
+[332] Validation log-likelihood: -79.75447082519531
+[332] Inference accuracy: 0.24729999899864197
+[332] Inference cross-entropy: 2.2334877252578735
+[332] Test accuracy: 0.9097999930381775
+-------------------------
+-------------------------
+[333] Training cost: 135.0853256225586
+[333] Validation accuracy: 0.9227999746799469
+[333] Validation cross-entropy: 0.27131084352731705
+[333] Validation log-likelihood: -79.76900100708008
+[333] Inference accuracy: 0.2782000005245209
+[333] Inference cross-entropy: 2.2088940143585205
+[333] Test accuracy: 0.9142999649047852
+-------------------------
+-------------------------
+[334] Training cost: 135.08761901855468
+[334] Validation accuracy: 0.9204999804496765
+[334] Validation cross-entropy: 0.2755993455648422
+[334] Validation log-likelihood: -79.55990600585938
+[334] Inference accuracy: 0.2539999932050705
+[334] Inference cross-entropy: 2.229960083961487
+[334] Test accuracy: 0.9120999872684479
+-------------------------
+-------------------------
+[335] Training cost: 135.00845031738282
+[335] Validation accuracy: 0.9240999817848206
+[335] Validation cross-entropy: 0.2659743055701256
+[335] Validation log-likelihood: -79.7378044128418
+[335] Inference accuracy: 0.24069999903440475
+[335] Inference cross-entropy: 2.238663911819458
+[335] Test accuracy: 0.9152999818325043
+-------------------------
+-------------------------
+[336] Training cost: 134.895263671875
+[336] Validation accuracy: 0.9223999679088593
+[336] Validation cross-entropy: 0.2669716030359268
+[336] Validation log-likelihood: -79.76201629638672
+[336] Inference accuracy: 0.24939998984336853
+[336] Inference cross-entropy: 2.256511092185974
+[336] Test accuracy: 0.9152999818325043
+-------------------------
+-------------------------
+[337] Training cost: 134.93974914550782
+[337] Validation accuracy: 0.9227999746799469
+[337] Validation cross-entropy: 0.2699846476316452
+[337] Validation log-likelihood: -79.74419784545898
+[337] Inference accuracy: 0.23729999363422394
+[337] Inference cross-entropy: 2.2507251501083374
+[337] Test accuracy: 0.9158999919891357
+-------------------------
+-------------------------
+[338] Training cost: 134.909765625
+[338] Validation accuracy: 0.9224999845027924
+[338] Validation cross-entropy: 0.2729693502187729
+[338] Validation log-likelihood: -79.2962532043457
+[338] Inference accuracy: 0.24559999257326126
+[338] Inference cross-entropy: 2.264072895050049
+[338] Test accuracy: 0.9132999777793884
+-------------------------
+-------------------------
+[339] Training cost: 134.87906951904296
+[339] Validation accuracy: 0.9239999651908875
+[339] Validation cross-entropy: 0.266929566860199
+[339] Validation log-likelihood: -79.8437271118164
+[339] Inference accuracy: 0.23509999364614487
+[339] Inference cross-entropy: 2.24804425239563
+[339] Test accuracy: 0.9157999753952026
+-------------------------
+-------------------------
+[340] Training cost: 134.91903839111328
+[340] Validation accuracy: 0.92249995470047
+[340] Validation cross-entropy: 0.27017737179994583
+[340] Validation log-likelihood: -79.83009719848633
+[340] Inference accuracy: 0.20779999345541
+[340] Inference cross-entropy: 2.2724201679229736
+[340] Test accuracy: 0.9142999649047852
+-------------------------
+-------------------------
+[341] Training cost: 134.8887680053711
+[341] Validation accuracy: 0.9214999675750732
+[341] Validation cross-entropy: 0.2693730518221855
+[341] Validation log-likelihood: -79.03644180297852
+[341] Inference accuracy: 0.24449998885393143
+[341] Inference cross-entropy: 2.2707163095474243
+[341] Test accuracy: 0.9149999916553497
+-------------------------
+-------------------------
+[342] Training cost: 134.92188262939453
+[342] Validation accuracy: 0.9238999783992767
+[342] Validation cross-entropy: 0.2709467262029648
+[342] Validation log-likelihood: -79.81217193603516
+[342] Inference accuracy: 0.23479999601840973
+[342] Inference cross-entropy: 2.2667174339294434
+[342] Test accuracy: 0.9151999950408936
+-------------------------
+-------------------------
+[343] Training cost: 134.89287261962892
+[343] Validation accuracy: 0.9232999682426453
+[343] Validation cross-entropy: 0.2712318226695061
+[343] Validation log-likelihood: -79.51583099365234
+[343] Inference accuracy: 0.2572999894618988
+[343] Inference cross-entropy: 2.22919762134552
+[343] Test accuracy: 0.9139999747276306
+-------------------------
+-------------------------
+[344] Training cost: 134.81634979248048
+[344] Validation accuracy: 0.9224999845027924
+[344] Validation cross-entropy: 0.2737986296415329
+[344] Validation log-likelihood: -79.36953735351562
+[344] Inference accuracy: 0.2434999942779541
+[344] Inference cross-entropy: 2.279272437095642
+[344] Test accuracy: 0.9149999618530273
+-------------------------
+-------------------------
+[345] Training cost: 134.8187271118164
+[345] Validation accuracy: 0.920799970626831
+[345] Validation cross-entropy: 0.27612343430519104
+[345] Validation log-likelihood: -79.4971694946289
+[345] Inference accuracy: 0.2475000023841858
+[345] Inference cross-entropy: 2.265083074569702
+[345] Test accuracy: 0.9141999781131744
+-------------------------
+-------------------------
+[346] Training cost: 134.7119934082031
+[346] Validation accuracy: 0.9218999743461609
+[346] Validation cross-entropy: 0.27179767936468124
+[346] Validation log-likelihood: -79.57645034790039
+[346] Inference accuracy: 0.23549999296665192
+[346] Inference cross-entropy: 2.2712655067443848
+[346] Test accuracy: 0.9145999848842621
+-------------------------
+-------------------------
+[347] Training cost: 134.8261291503906
+[347] Validation accuracy: 0.9218999743461609
+[347] Validation cross-entropy: 0.27529072016477585
+[347] Validation log-likelihood: -79.65671157836914
+[347] Inference accuracy: 0.25359999388456345
+[347] Inference cross-entropy: 2.2395702600479126
+[347] Test accuracy: 0.9142999947071075
+-------------------------
+-------------------------
+[348] Training cost: 134.71912689208983
+[348] Validation accuracy: 0.9257999658584595
+[348] Validation cross-entropy: 0.26686349511146545
+[348] Validation log-likelihood: -79.29935455322266
+[348] Inference accuracy: 0.23879998922348022
+[348] Inference cross-entropy: 2.294528603553772
+[348] Test accuracy: 0.9172999858856201
+-------------------------
+-------------------------
+[349] Training cost: 134.6816177368164
+[349] Validation accuracy: 0.9210999608039856
+[349] Validation cross-entropy: 0.27460774034261703
+[349] Validation log-likelihood: -79.50329208374023
+[349] Inference accuracy: 0.234499990940094
+[349] Inference cross-entropy: 2.2652838230133057
+[349] Test accuracy: 0.9150999784469604
+-------------------------
+-------------------------
+[350] Training cost: 134.7026794433594
+[350] Validation accuracy: 0.9208999872207642
+[350] Validation cross-entropy: 0.2733023315668106
+[350] Validation log-likelihood: -79.79676055908203
+[350] Inference accuracy: 0.23149999231100082
+[350] Inference cross-entropy: 2.264274477958679
+[350] Test accuracy: 0.9143999814987183
+-------------------------
+-------------------------
+[351] Training cost: 134.55219573974608
+[351] Validation accuracy: 0.9220999777317047
+[351] Validation cross-entropy: 0.27295931428670883
+[351] Validation log-likelihood: -79.43099212646484
+[351] Inference accuracy: 0.24159999191761017
+[351] Inference cross-entropy: 2.277484893798828
+[351] Test accuracy: 0.9146999716758728
+-------------------------
+-------------------------
+[352] Training cost: 134.59181518554686
+[352] Validation accuracy: 0.9235999584197998
+[352] Validation cross-entropy: 0.26834188401699066
+[352] Validation log-likelihood: -79.18813705444336
+[352] Inference accuracy: 0.2491999939084053
+[352] Inference cross-entropy: 2.2570817470550537
+[352] Test accuracy: 0.9160999655723572
+-------------------------
+-------------------------
+[353] Training cost: 134.5668502807617
+[353] Validation accuracy: 0.9243999719619751
+[353] Validation cross-entropy: 0.2694000154733658
+[353] Validation log-likelihood: -79.26033782958984
+[353] Inference accuracy: 0.24089999496936798
+[353] Inference cross-entropy: 2.303937077522278
+[353] Test accuracy: 0.9156999588012695
+-------------------------
+-------------------------
+[354] Training cost: 134.59578552246094
+[354] Validation accuracy: 0.9211999773979187
+[354] Validation cross-entropy: 0.27259448915719986
+[354] Validation log-likelihood: -79.24898147583008
+[354] Inference accuracy: 0.24299999326467514
+[354] Inference cross-entropy: 2.2936344146728516
+[354] Test accuracy: 0.9140999913215637
+-------------------------
+-------------------------
+[355] Training cost: 134.6117385864258
+[355] Validation accuracy: 0.9217999875545502
+[355] Validation cross-entropy: 0.27345120161771774
+[355] Validation log-likelihood: -79.0114860534668
+[355] Inference accuracy: 0.2459999918937683
+[355] Inference cross-entropy: 2.264002203941345
+[355] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[356] Training cost: 134.58651733398438
+[356] Validation accuracy: 0.9214999675750732
+[356] Validation cross-entropy: 0.2705111429095268
+[356] Validation log-likelihood: -79.54075622558594
+[356] Inference accuracy: 0.24289999157190323
+[356] Inference cross-entropy: 2.2841291427612305
+[356] Test accuracy: 0.9142999947071075
+-------------------------
+-------------------------
+[357] Training cost: 134.60657958984376
+[357] Validation accuracy: 0.9254999756813049
+[357] Validation cross-entropy: 0.2662121281027794
+[357] Validation log-likelihood: -79.15374374389648
+[357] Inference accuracy: 0.25509998947381973
+[357] Inference cross-entropy: 2.271948456764221
+[357] Test accuracy: 0.915399968624115
+-------------------------
+-------------------------
+[358] Training cost: 134.51932220458986
+[358] Validation accuracy: 0.9251999855041504
+[358] Validation cross-entropy: 0.2651830092072487
+[358] Validation log-likelihood: -79.28545379638672
+[358] Inference accuracy: 0.25439999997615814
+[358] Inference cross-entropy: 2.294517993927002
+[358] Test accuracy: 0.9166999757289886
+-------------------------
+-------------------------
+[359] Training cost: 134.45386810302733
+[359] Validation accuracy: 0.9211999773979187
+[359] Validation cross-entropy: 0.27516304701566696
+[359] Validation log-likelihood: -79.03210830688477
+[359] Inference accuracy: 0.23479999601840973
+[359] Inference cross-entropy: 2.2903228998184204
+[359] Test accuracy: 0.9140999615192413
+-------------------------
+-------------------------
+[360] Training cost: 134.44138946533204
+[360] Validation accuracy: 0.9259999692440033
+[360] Validation cross-entropy: 0.263635516166687
+[360] Validation log-likelihood: -79.34088134765625
+[360] Inference accuracy: 0.23959998786449432
+[360] Inference cross-entropy: 2.284188389778137
+[360] Test accuracy: 0.9165000021457672
+-------------------------
+-------------------------
+[361] Training cost: 134.40102996826172
+[361] Validation accuracy: 0.923799991607666
+[361] Validation cross-entropy: 0.2688578590750694
+[361] Validation log-likelihood: -79.23198318481445
+[361] Inference accuracy: 0.2304999977350235
+[361] Inference cross-entropy: 2.283429741859436
+[361] Test accuracy: 0.915399968624115
+-------------------------
+-------------------------
+[362] Training cost: 134.43243713378905
+[362] Validation accuracy: 0.9232999980449677
+[362] Validation cross-entropy: 0.27105309069156647
+[362] Validation log-likelihood: -79.59249114990234
+[362] Inference accuracy: 0.2833999842405319
+[362] Inference cross-entropy: 2.2309603691101074
+[362] Test accuracy: 0.914499968290329
+-------------------------
+-------------------------
+[363] Training cost: 134.4797164916992
+[363] Validation accuracy: 0.9240999817848206
+[363] Validation cross-entropy: 0.2670004144310951
+[363] Validation log-likelihood: -78.99645614624023
+[363] Inference accuracy: 0.234499990940094
+[363] Inference cross-entropy: 2.332265615463257
+[363] Test accuracy: 0.9154999852180481
+-------------------------
+-------------------------
+[364] Training cost: 134.3699188232422
+[364] Validation accuracy: 0.9190999865531921
+[364] Validation cross-entropy: 0.27860522270202637
+[364] Validation log-likelihood: -79.16135025024414
+[364] Inference accuracy: 0.25429999083280563
+[364] Inference cross-entropy: 2.2752420902252197
+[364] Test accuracy: 0.9103999733924866
+-------------------------
+-------------------------
+[365] Training cost: 134.35548706054686
+[365] Validation accuracy: 0.924299955368042
+[365] Validation cross-entropy: 0.26819345355033875
+[365] Validation log-likelihood: -79.06780624389648
+[365] Inference accuracy: 0.2336999997496605
+[365] Inference cross-entropy: 2.311439871788025
+[365] Test accuracy: 0.9150999784469604
+-------------------------
+-------------------------
+[366] Training cost: 134.3775390625
+[366] Validation accuracy: 0.9191999733448029
+[366] Validation cross-entropy: 0.28145868331193924
+[366] Validation log-likelihood: -79.1383171081543
+[366] Inference accuracy: 0.2433999925851822
+[366] Inference cross-entropy: 2.311702609062195
+[366] Test accuracy: 0.9116999804973602
+-------------------------
+-------------------------
+[367] Training cost: 134.3405563354492
+[367] Validation accuracy: 0.9212999939918518
+[367] Validation cross-entropy: 0.27385783940553665
+[367] Validation log-likelihood: -79.14813613891602
+[367] Inference accuracy: 0.2621999979019165
+[367] Inference cross-entropy: 2.2724138498306274
+[367] Test accuracy: 0.9154999852180481
+-------------------------
+-------------------------
+[368] Training cost: 134.33428955078125
+[368] Validation accuracy: 0.9227999746799469
+[368] Validation cross-entropy: 0.2730117589235306
+[368] Validation log-likelihood: -78.84883499145508
+[368] Inference accuracy: 0.2573999911546707
+[368] Inference cross-entropy: 2.2832465171813965
+[368] Test accuracy: 0.9159999489784241
+-------------------------
+-------------------------
+[369] Training cost: 134.28912506103515
+[369] Validation accuracy: 0.9208999872207642
+[369] Validation cross-entropy: 0.2742549479007721
+[369] Validation log-likelihood: -79.25829315185547
+[369] Inference accuracy: 0.2501999959349632
+[369] Inference cross-entropy: 2.3060189485549927
+[369] Test accuracy: 0.9131999909877777
+-------------------------
+-------------------------
+[370] Training cost: 134.19582824707032
+[370] Validation accuracy: 0.9208999872207642
+[370] Validation cross-entropy: 0.27657146751880646
+[370] Validation log-likelihood: -78.90564727783203
+[370] Inference accuracy: 0.2524999976158142
+[370] Inference cross-entropy: 2.3055073022842407
+[370] Test accuracy: 0.9125999808311462
+-------------------------
+-------------------------
+[371] Training cost: 134.2509323120117
+[371] Validation accuracy: 0.9224999845027924
+[371] Validation cross-entropy: 0.270368292927742
+[371] Validation log-likelihood: -78.76099395751953
+[371] Inference accuracy: 0.23099999129772186
+[371] Inference cross-entropy: 2.316541910171509
+[371] Test accuracy: 0.9133999943733215
+-------------------------
+-------------------------
+[372] Training cost: 134.19751739501953
+[372] Validation accuracy: 0.9223999679088593
+[372] Validation cross-entropy: 0.2705088034272194
+[372] Validation log-likelihood: -79.00062561035156
+[372] Inference accuracy: 0.24479999393224716
+[372] Inference cross-entropy: 2.2993850708007812
+[372] Test accuracy: 0.9175999760627747
+-------------------------
+-------------------------
+[373] Training cost: 134.15990753173827
+[373] Validation accuracy: 0.9241999685764313
+[373] Validation cross-entropy: 0.26720770448446274
+[373] Validation log-likelihood: -78.62265396118164
+[373] Inference accuracy: 0.2336999922990799
+[373] Inference cross-entropy: 2.3461414575576782
+[373] Test accuracy: 0.9154999852180481
+-------------------------
+-------------------------
+[374] Training cost: 134.17132263183595
+[374] Validation accuracy: 0.9242999851703644
+[374] Validation cross-entropy: 0.265423983335495
+[374] Validation log-likelihood: -78.88224029541016
+[374] Inference accuracy: 0.23439998924732208
+[374] Inference cross-entropy: 2.317313075065613
+[374] Test accuracy: 0.9159999787807465
+-------------------------
+-------------------------
+[375] Training cost: 134.2107711791992
+[375] Validation accuracy: 0.9259999692440033
+[375] Validation cross-entropy: 0.26430901885032654
+[375] Validation log-likelihood: -78.85851287841797
+[375] Inference accuracy: 0.2313999980688095
+[375] Inference cross-entropy: 2.3180696964263916
+[375] Test accuracy: 0.9188999831676483
+-------------------------
+-------------------------
+[376] Training cost: 134.16446685791016
+[376] Validation accuracy: 0.9244999885559082
+[376] Validation cross-entropy: 0.2694845125079155
+[376] Validation log-likelihood: -79.6064567565918
+[376] Inference accuracy: 0.24479999393224716
+[376] Inference cross-entropy: 2.3136892318725586
+[376] Test accuracy: 0.9174999892711639
+-------------------------
+-------------------------
+[377] Training cost: 134.29639892578126
+[377] Validation accuracy: 0.9235999584197998
+[377] Validation cross-entropy: 0.2681238725781441
+[377] Validation log-likelihood: -78.75782012939453
+[377] Inference accuracy: 0.22449999302625656
+[377] Inference cross-entropy: 2.333751082420349
+[377] Test accuracy: 0.9166999757289886
+-------------------------
+-------------------------
+[378] Training cost: 134.2653060913086
+[378] Validation accuracy: 0.9209999740123749
+[378] Validation cross-entropy: 0.27471526712179184
+[378] Validation log-likelihood: -79.12104034423828
+[378] Inference accuracy: 0.24739999324083328
+[378] Inference cross-entropy: 2.322147846221924
+[378] Test accuracy: 0.9157999753952026
+-------------------------
+-------------------------
+[379] Training cost: 134.11870574951172
+[379] Validation accuracy: 0.9249999821186066
+[379] Validation cross-entropy: 0.26988422125577927
+[379] Validation log-likelihood: -78.7144546508789
+[379] Inference accuracy: 0.24949999898672104
+[379] Inference cross-entropy: 2.324249744415283
+[379] Test accuracy: 0.9175999760627747
+-------------------------
+-------------------------
+[380] Training cost: 134.0908233642578
+[380] Validation accuracy: 0.9248999655246735
+[380] Validation cross-entropy: 0.2683855816721916
+[380] Validation log-likelihood: -78.69805526733398
+[380] Inference accuracy: 0.22219999134540558
+[380] Inference cross-entropy: 2.366769790649414
+[380] Test accuracy: 0.9167999923229218
+-------------------------
+-------------------------
+[381] Training cost: 134.11783905029296
+[381] Validation accuracy: 0.927299976348877
+[381] Validation cross-entropy: 0.261965736746788
+[381] Validation log-likelihood: -78.81111907958984
+[381] Inference accuracy: 0.23829998821020126
+[381] Inference cross-entropy: 2.318695306777954
+[381] Test accuracy: 0.9201999604701996
+-------------------------
+-------------------------
+[382] Training cost: 134.09642333984374
+[382] Validation accuracy: 0.9239999651908875
+[382] Validation cross-entropy: 0.2678549960255623
+[382] Validation log-likelihood: -78.7364273071289
+[382] Inference accuracy: 0.2337999939918518
+[382] Inference cross-entropy: 2.3336490392684937
+[382] Test accuracy: 0.9173999726772308
+-------------------------
+-------------------------
+[383] Training cost: 134.01294708251953
+[383] Validation accuracy: 0.9263999760150909
+[383] Validation cross-entropy: 0.2645072117447853
+[383] Validation log-likelihood: -78.93279647827148
+[383] Inference accuracy: 0.23819999396800995
+[383] Inference cross-entropy: 2.3279664516448975
+[383] Test accuracy: 0.9190999567508698
+-------------------------
+-------------------------
+[384] Training cost: 133.99805145263673
+[384] Validation accuracy: 0.9238999783992767
+[384] Validation cross-entropy: 0.2678173705935478
+[384] Validation log-likelihood: -78.74344635009766
+[384] Inference accuracy: 0.22049999237060547
+[384] Inference cross-entropy: 2.374255657196045
+[384] Test accuracy: 0.918099969625473
+-------------------------
+-------------------------
+[385] Training cost: 133.95407257080078
+[385] Validation accuracy: 0.9250999689102173
+[385] Validation cross-entropy: 0.27215931564569473
+[385] Validation log-likelihood: -78.59334182739258
+[385] Inference accuracy: 0.2312999963760376
+[385] Inference cross-entropy: 2.344183087348938
+[385] Test accuracy: 0.9171999990940094
+-------------------------
+-------------------------
+[386] Training cost: 133.96170806884766
+[386] Validation accuracy: 0.9232999682426453
+[386] Validation cross-entropy: 0.27462270110845566
+[386] Validation log-likelihood: -78.71326446533203
+[386] Inference accuracy: 0.2321999967098236
+[386] Inference cross-entropy: 2.3133273124694824
+[386] Test accuracy: 0.9158999621868134
+-------------------------
+-------------------------
+[387] Training cost: 133.9456344604492
+[387] Validation accuracy: 0.9227999746799469
+[387] Validation cross-entropy: 0.274949848651886
+[387] Validation log-likelihood: -78.71923446655273
+[387] Inference accuracy: 0.23639999330043793
+[387] Inference cross-entropy: 2.321711778640747
+[387] Test accuracy: 0.9161999821662903
+-------------------------
+-------------------------
+[388] Training cost: 133.96318511962892
+[388] Validation accuracy: 0.9240999519824982
+[388] Validation cross-entropy: 0.2714400812983513
+[388] Validation log-likelihood: -78.35757064819336
+[388] Inference accuracy: 0.22539999336004257
+[388] Inference cross-entropy: 2.3577502965927124
+[388] Test accuracy: 0.9140999615192413
+-------------------------
+-------------------------
+[389] Training cost: 133.91512603759764
+[389] Validation accuracy: 0.9215999841690063
+[389] Validation cross-entropy: 0.2702934518456459
+[389] Validation log-likelihood: -78.57622528076172
+[389] Inference accuracy: 0.23359999060630798
+[389] Inference cross-entropy: 2.3058637380599976
+[389] Test accuracy: 0.9167999625205994
+-------------------------
+-------------------------
+[390] Training cost: 133.8833755493164
+[390] Validation accuracy: 0.9230999648571014
+[390] Validation cross-entropy: 0.27113528549671173
+[390] Validation log-likelihood: -78.70184326171875
+[390] Inference accuracy: 0.22209998965263367
+[390] Inference cross-entropy: 2.350048065185547
+[390] Test accuracy: 0.9140999615192413
+-------------------------
+-------------------------
+[391] Training cost: 133.96853485107422
+[391] Validation accuracy: 0.9273999631404877
+[391] Validation cross-entropy: 0.260454460978508
+[391] Validation log-likelihood: -78.37641906738281
+[391] Inference accuracy: 0.22679999470710754
+[391] Inference cross-entropy: 2.373980164527893
+[391] Test accuracy: 0.918099969625473
+-------------------------
+-------------------------
+[392] Training cost: 133.91722106933594
+[392] Validation accuracy: 0.9251999855041504
+[392] Validation cross-entropy: 0.26423467695713043
+[392] Validation log-likelihood: -78.49607467651367
+[392] Inference accuracy: 0.22909999638795853
+[392] Inference cross-entropy: 2.3636876344680786
+[392] Test accuracy: 0.9182999730110168
+-------------------------
+-------------------------
+[393] Training cost: 133.90410461425782
+[393] Validation accuracy: 0.9234999716281891
+[393] Validation cross-entropy: 0.2698456645011902
+[393] Validation log-likelihood: -78.77123641967773
+[393] Inference accuracy: 0.21409999579191208
+[393] Inference cross-entropy: 2.3540151119232178
+[393] Test accuracy: 0.9160999655723572
+-------------------------
+-------------------------
+[394] Training cost: 133.8931854248047
+[394] Validation accuracy: 0.9256999790668488
+[394] Validation cross-entropy: 0.26103509217500687
+[394] Validation log-likelihood: -78.5064697265625
+[394] Inference accuracy: 0.22679999470710754
+[394] Inference cross-entropy: 2.340675115585327
+[394] Test accuracy: 0.9202999770641327
+-------------------------
+-------------------------
+[395] Training cost: 133.88816833496094
+[395] Validation accuracy: 0.9222999811172485
+[395] Validation cross-entropy: 0.2720045819878578
+[395] Validation log-likelihood: -78.29797744750977
+[395] Inference accuracy: 0.23099999129772186
+[395] Inference cross-entropy: 2.346643805503845
+[395] Test accuracy: 0.9146999716758728
+-------------------------
+-------------------------
+[396] Training cost: 133.79448394775392
+[396] Validation accuracy: 0.9251999855041504
+[396] Validation cross-entropy: 0.2677171230316162
+[396] Validation log-likelihood: -78.36555480957031
+[396] Inference accuracy: 0.22459999471902847
+[396] Inference cross-entropy: 2.375868797302246
+[396] Test accuracy: 0.9191999733448029
+-------------------------
+-------------------------
+[397] Training cost: 133.78713684082032
+[397] Validation accuracy: 0.92289999127388
+[397] Validation cross-entropy: 0.27181047201156616
+[397] Validation log-likelihood: -78.70830917358398
+[397] Inference accuracy: 0.22049999982118607
+[397] Inference cross-entropy: 2.3849788904190063
+[397] Test accuracy: 0.9163999855518341
+-------------------------
+-------------------------
+[398] Training cost: 133.75589904785156
+[398] Validation accuracy: 0.9248999953269958
+[398] Validation cross-entropy: 0.26796456426382065
+[398] Validation log-likelihood: -78.42038345336914
+[398] Inference accuracy: 0.2157999947667122
+[398] Inference cross-entropy: 2.379010558128357
+[398] Test accuracy: 0.9149999618530273
+-------------------------
+-------------------------
+[399] Training cost: 133.73837890625
+[399] Validation accuracy: 0.9221999645233154
+[399] Validation cross-entropy: 0.26892121881246567
+[399] Validation log-likelihood: -78.26031112670898
+[399] Inference accuracy: 0.2288999930024147
+[399] Inference cross-entropy: 2.3438698053359985
+[399] Test accuracy: 0.9179999828338623
+-------------------------
+-------------------------
+[400] Training cost: 133.68399810791016
+[400] Validation accuracy: 0.9218999743461609
+[400] Validation cross-entropy: 0.272532694041729
+[400] Validation log-likelihood: -78.39141464233398
+[400] Inference accuracy: 0.21849999576807022
+[400] Inference cross-entropy: 2.3718968629837036
+[400] Test accuracy: 0.916299968957901
+-------------------------
+-------------------------
+[401] Training cost: 133.71772155761718
+[401] Validation accuracy: 0.9287000000476837
+[401] Validation cross-entropy: 0.257216177880764
+[401] Validation log-likelihood: -78.31603240966797
+[401] Inference accuracy: 0.24619999527931213
+[401] Inference cross-entropy: 2.334681510925293
+[401] Test accuracy: 0.9203999638557434
+-------------------------
+-------------------------
+[402] Training cost: 133.68825988769532
+[402] Validation accuracy: 0.9227999746799469
+[402] Validation cross-entropy: 0.26776285469532013
+[402] Validation log-likelihood: -78.33806610107422
+[402] Inference accuracy: 0.20659998804330826
+[402] Inference cross-entropy: 2.407427191734314
+[402] Test accuracy: 0.916299968957901
+-------------------------
+-------------------------
+[403] Training cost: 133.67232818603514
+[403] Validation accuracy: 0.9262999594211578
+[403] Validation cross-entropy: 0.26380325853824615
+[403] Validation log-likelihood: -78.69778823852539
+[403] Inference accuracy: 0.23389999568462372
+[403] Inference cross-entropy: 2.3393417596817017
+[403] Test accuracy: 0.9175999760627747
+-------------------------
+-------------------------
+[404] Training cost: 133.66833953857423
+[404] Validation accuracy: 0.9226999580860138
+[404] Validation cross-entropy: 0.2696300148963928
+[404] Validation log-likelihood: -78.6800422668457
+[404] Inference accuracy: 0.22129999101161957
+[404] Inference cross-entropy: 2.36514151096344
+[404] Test accuracy: 0.9156999886035919
+-------------------------
+-------------------------
+[405] Training cost: 133.67367095947264
+[405] Validation accuracy: 0.9265999794006348
+[405] Validation cross-entropy: 0.26278192549943924
+[405] Validation log-likelihood: -78.3433609008789
+[405] Inference accuracy: 0.2378999963402748
+[405] Inference cross-entropy: 2.338024616241455
+[405] Test accuracy: 0.9195999801158905
+-------------------------
+-------------------------
+[406] Training cost: 133.74486694335937
+[406] Validation accuracy: 0.9259999692440033
+[406] Validation cross-entropy: 0.26771330088377
+[406] Validation log-likelihood: -78.72434616088867
+[406] Inference accuracy: 0.23019999265670776
+[406] Inference cross-entropy: 2.350770354270935
+[406] Test accuracy: 0.9184999763965607
+-------------------------
+-------------------------
+[407] Training cost: 133.64437866210938
+[407] Validation accuracy: 0.9238999485969543
+[407] Validation cross-entropy: 0.2715623304247856
+[407] Validation log-likelihood: -78.85803985595703
+[407] Inference accuracy: 0.2296999916434288
+[407] Inference cross-entropy: 2.3343753814697266
+[407] Test accuracy: 0.9162999987602234
+-------------------------
+-------------------------
+[408] Training cost: 133.62892456054686
+[408] Validation accuracy: 0.9250999689102173
+[408] Validation cross-entropy: 0.26691295951604843
+[408] Validation log-likelihood: -78.37457275390625
+[408] Inference accuracy: 0.22579999268054962
+[408] Inference cross-entropy: 2.3755069971084595
+[408] Test accuracy: 0.9184999763965607
+-------------------------
+-------------------------
+[409] Training cost: 133.65786590576172
+[409] Validation accuracy: 0.9230999648571014
+[409] Validation cross-entropy: 0.2699877992272377
+[409] Validation log-likelihood: -78.48714828491211
+[409] Inference accuracy: 0.22999999672174454
+[409] Inference cross-entropy: 2.3912867307662964
+[409] Test accuracy: 0.9175999760627747
+-------------------------
+-------------------------
+[410] Training cost: 133.565234375
+[410] Validation accuracy: 0.9216999709606171
+[410] Validation cross-entropy: 0.2746266573667526
+[410] Validation log-likelihood: -78.44965362548828
+[410] Inference accuracy: 0.22789999097585678
+[410] Inference cross-entropy: 2.3777363300323486
+[410] Test accuracy: 0.9140999615192413
+-------------------------
+-------------------------
+[411] Training cost: 133.57958526611327
+[411] Validation accuracy: 0.9238999783992767
+[411] Validation cross-entropy: 0.27092763781547546
+[411] Validation log-likelihood: -78.31936645507812
+[411] Inference accuracy: 0.23319999128580093
+[411] Inference cross-entropy: 2.3832539319992065
+[411] Test accuracy: 0.9186999797821045
+-------------------------
+-------------------------
+[412] Training cost: 133.4959243774414
+[412] Validation accuracy: 0.9249999821186066
+[412] Validation cross-entropy: 0.26609159260988235
+[412] Validation log-likelihood: -78.20503234863281
+[412] Inference accuracy: 0.21239999681711197
+[412] Inference cross-entropy: 2.382541060447693
+[412] Test accuracy: 0.920799970626831
+-------------------------
+-------------------------
+[413] Training cost: 133.5348876953125
+[413] Validation accuracy: 0.9225999712944031
+[413] Validation cross-entropy: 0.27019891887903214
+[413] Validation log-likelihood: -78.41952133178711
+[413] Inference accuracy: 0.2013999968767166
+[413] Inference cross-entropy: 2.4113775491714478
+[413] Test accuracy: 0.9199999570846558
+-------------------------
+-------------------------
+[414] Training cost: 133.55392456054688
+[414] Validation accuracy: 0.9242999851703644
+[414] Validation cross-entropy: 0.2651207521557808
+[414] Validation log-likelihood: -78.19651412963867
+[414] Inference accuracy: 0.22849999368190765
+[414] Inference cross-entropy: 2.369925379753113
+[414] Test accuracy: 0.9211999773979187
+-------------------------
+-------------------------
+[415] Training cost: 133.5026412963867
+[415] Validation accuracy: 0.9241999685764313
+[415] Validation cross-entropy: 0.2734536826610565
+[415] Validation log-likelihood: -78.42044067382812
+[415] Inference accuracy: 0.2165999934077263
+[415] Inference cross-entropy: 2.3664122819900513
+[415] Test accuracy: 0.9147999882698059
+-------------------------
+-------------------------
+[416] Training cost: 133.4947494506836
+[416] Validation accuracy: 0.9245999753475189
+[416] Validation cross-entropy: 0.27275441586971283
+[416] Validation log-likelihood: -78.14274597167969
+[416] Inference accuracy: 0.20549999177455902
+[416] Inference cross-entropy: 2.407215714454651
+[416] Test accuracy: 0.9186999797821045
+-------------------------
+-------------------------
+[417] Training cost: 133.4553985595703
+[417] Validation accuracy: 0.9241999685764313
+[417] Validation cross-entropy: 0.26850708574056625
+[417] Validation log-likelihood: -78.04486083984375
+[417] Inference accuracy: 0.22199999541044235
+[417] Inference cross-entropy: 2.375006079673767
+[417] Test accuracy: 0.9185999631881714
+-------------------------
+-------------------------
+[418] Training cost: 133.44037322998048
+[418] Validation accuracy: 0.9236999750137329
+[418] Validation cross-entropy: 0.26806240528821945
+[418] Validation log-likelihood: -77.9531135559082
+[418] Inference accuracy: 0.2272999957203865
+[418] Inference cross-entropy: 2.3682334423065186
+[418] Test accuracy: 0.9193999767303467
+-------------------------
+-------------------------
+[419] Training cost: 133.42599487304688
+[419] Validation accuracy: 0.9217999577522278
+[419] Validation cross-entropy: 0.27884165942668915
+[419] Validation log-likelihood: -78.2977066040039
+[419] Inference accuracy: 0.23989999294281006
+[419] Inference cross-entropy: 2.3544329404830933
+[419] Test accuracy: 0.9129999577999115
+-------------------------
+-------------------------
+[420] Training cost: 133.4406951904297
+[420] Validation accuracy: 0.92289999127388
+[420] Validation cross-entropy: 0.27357952296733856
+[420] Validation log-likelihood: -78.37164688110352
+[420] Inference accuracy: 0.23719999939203262
+[420] Inference cross-entropy: 2.3907597064971924
+[420] Test accuracy: 0.916299968957901
+-------------------------
+-------------------------
+[421] Training cost: 133.41629943847656
+[421] Validation accuracy: 0.9243999719619751
+[421] Validation cross-entropy: 0.26789259165525436
+[421] Validation log-likelihood: -77.95872116088867
+[421] Inference accuracy: 0.22749999910593033
+[421] Inference cross-entropy: 2.3715137243270874
+[421] Test accuracy: 0.9172999858856201
+-------------------------
+-------------------------
+[422] Training cost: 133.4069854736328
+[422] Validation accuracy: 0.9264999628067017
+[422] Validation cross-entropy: 0.2630728557705879
+[422] Validation log-likelihood: -78.06470108032227
+[422] Inference accuracy: 0.2296999916434288
+[422] Inference cross-entropy: 2.3749701976776123
+[422] Test accuracy: 0.918999969959259
+-------------------------
+-------------------------
+[423] Training cost: 133.41252593994142
+[423] Validation accuracy: 0.9250999689102173
+[423] Validation cross-entropy: 0.2640918642282486
+[423] Validation log-likelihood: -77.88349533081055
+[423] Inference accuracy: 0.22929999232292175
+[423] Inference cross-entropy: 2.38614821434021
+[423] Test accuracy: 0.9182999730110168
+-------------------------
+-------------------------
+[424] Training cost: 133.3836410522461
+[424] Validation accuracy: 0.9259999692440033
+[424] Validation cross-entropy: 0.2654595673084259
+[424] Validation log-likelihood: -78.52602767944336
+[424] Inference accuracy: 0.21899998933076859
+[424] Inference cross-entropy: 2.395691990852356
+[424] Test accuracy: 0.9199999570846558
+-------------------------
+-------------------------
+[425] Training cost: 133.33399658203126
+[425] Validation accuracy: 0.9245999753475189
+[425] Validation cross-entropy: 0.2673524096608162
+[425] Validation log-likelihood: -77.90813064575195
+[425] Inference accuracy: 0.20589999109506607
+[425] Inference cross-entropy: 2.4015166759490967
+[425] Test accuracy: 0.9183999598026276
+-------------------------
+-------------------------
+[426] Training cost: 133.33011627197266
+[426] Validation accuracy: 0.9253999590873718
+[426] Validation cross-entropy: 0.26039566844701767
+[426] Validation log-likelihood: -77.99585342407227
+[426] Inference accuracy: 0.2166999951004982
+[426] Inference cross-entropy: 2.4155925512313843
+[426] Test accuracy: 0.9202999770641327
+-------------------------
+-------------------------
+[427] Training cost: 133.32241668701172
+[427] Validation accuracy: 0.9263999760150909
+[427] Validation cross-entropy: 0.26172854006290436
+[427] Validation log-likelihood: -78.4914321899414
+[427] Inference accuracy: 0.22049999982118607
+[427] Inference cross-entropy: 2.386490225791931
+[427] Test accuracy: 0.9208999872207642
+-------------------------
+-------------------------
+[428] Training cost: 133.3576400756836
+[428] Validation accuracy: 0.9249999821186066
+[428] Validation cross-entropy: 0.2667076215147972
+[428] Validation log-likelihood: -78.03163528442383
+[428] Inference accuracy: 0.24089998751878738
+[428] Inference cross-entropy: 2.3818591833114624
+[428] Test accuracy: 0.9179999828338623
+-------------------------
+-------------------------
+[429] Training cost: 133.2606689453125
+[429] Validation accuracy: 0.9267999827861786
+[429] Validation cross-entropy: 0.26166483759880066
+[429] Validation log-likelihood: -77.99118041992188
+[429] Inference accuracy: 0.2521999925374985
+[429] Inference cross-entropy: 2.360352396965027
+[429] Test accuracy: 0.9203999936580658
+-------------------------
+-------------------------
+[430] Training cost: 133.24877471923827
+[430] Validation accuracy: 0.9255999624729156
+[430] Validation cross-entropy: 0.2630227953195572
+[430] Validation log-likelihood: -77.99507141113281
+[430] Inference accuracy: 0.2320999950170517
+[430] Inference cross-entropy: 2.424938440322876
+[430] Test accuracy: 0.9216999709606171
+-------------------------
+-------------------------
+[431] Training cost: 133.3057434082031
+[431] Validation accuracy: 0.9240999519824982
+[431] Validation cross-entropy: 0.27200525254011154
+[431] Validation log-likelihood: -77.98872756958008
+[431] Inference accuracy: 0.23900000005960464
+[431] Inference cross-entropy: 2.3689136505126953
+[431] Test accuracy: 0.9158999621868134
+-------------------------
+-------------------------
+[432] Training cost: 133.22436981201173
+[432] Validation accuracy: 0.9235999882221222
+[432] Validation cross-entropy: 0.2705414742231369
+[432] Validation log-likelihood: -78.19305419921875
+[432] Inference accuracy: 0.22119999676942825
+[432] Inference cross-entropy: 2.4149129390716553
+[432] Test accuracy: 0.9181999862194061
+-------------------------
+-------------------------
+[433] Training cost: 133.2548400878906
+[433] Validation accuracy: 0.9261999726295471
+[433] Validation cross-entropy: 0.26842818409204483
+[433] Validation log-likelihood: -78.09222793579102
+[433] Inference accuracy: 0.2303999960422516
+[433] Inference cross-entropy: 2.3924394845962524
+[433] Test accuracy: 0.9190999567508698
+-------------------------
+-------------------------
+[434] Training cost: 133.22991638183595
+[434] Validation accuracy: 0.9232999682426453
+[434] Validation cross-entropy: 0.27818500250577927
+[434] Validation log-likelihood: -78.32966995239258
+[434] Inference accuracy: 0.2174999937415123
+[434] Inference cross-entropy: 2.423655152320862
+[434] Test accuracy: 0.9166999757289886
+-------------------------
+-------------------------
+[435] Training cost: 133.19985961914062
+[435] Validation accuracy: 0.9236999750137329
+[435] Validation cross-entropy: 0.2734832242131233
+[435] Validation log-likelihood: -78.05931091308594
+[435] Inference accuracy: 0.21599999070167542
+[435] Inference cross-entropy: 2.401016116142273
+[435] Test accuracy: 0.918099969625473
+-------------------------
+-------------------------
+[436] Training cost: 133.17770233154297
+[436] Validation accuracy: 0.9243999719619751
+[436] Validation cross-entropy: 0.2688506171107292
+[436] Validation log-likelihood: -77.99852752685547
+[436] Inference accuracy: 0.23329999297857285
+[436] Inference cross-entropy: 2.4056217670440674
+[436] Test accuracy: 0.9184999763965607
+-------------------------
+-------------------------
+[437] Training cost: 133.27637939453126
+[437] Validation accuracy: 0.9271999597549438
+[437] Validation cross-entropy: 0.26033954322338104
+[437] Validation log-likelihood: -77.82003402709961
+[437] Inference accuracy: 0.21249999105930328
+[437] Inference cross-entropy: 2.436091899871826
+[437] Test accuracy: 0.9203999936580658
+-------------------------
+-------------------------
+[438] Training cost: 133.23512420654296
+[438] Validation accuracy: 0.9247999787330627
+[438] Validation cross-entropy: 0.26766058057546616
+[438] Validation log-likelihood: -78.20080184936523
+[438] Inference accuracy: 0.23739999532699585
+[438] Inference cross-entropy: 2.392152190208435
+[438] Test accuracy: 0.9176999926567078
+-------------------------
+-------------------------
+[439] Training cost: 133.16778259277345
+[439] Validation accuracy: 0.9231999814510345
+[439] Validation cross-entropy: 0.27525168657302856
+[439] Validation log-likelihood: -78.25505447387695
+[439] Inference accuracy: 0.25380000472068787
+[439] Inference cross-entropy: 2.374579071998596
+[439] Test accuracy: 0.9154999554157257
+-------------------------
+-------------------------
+[440] Training cost: 133.1307403564453
+[440] Validation accuracy: 0.9251999855041504
+[440] Validation cross-entropy: 0.2704731523990631
+[440] Validation log-likelihood: -77.70096969604492
+[440] Inference accuracy: 0.22459999471902847
+[440] Inference cross-entropy: 2.406123995780945
+[440] Test accuracy: 0.9199000000953674
+-------------------------
+-------------------------
+[441] Training cost: 133.1278533935547
+[441] Validation accuracy: 0.9243999719619751
+[441] Validation cross-entropy: 0.2675556242465973
+[441] Validation log-likelihood: -77.7213020324707
+[441] Inference accuracy: 0.2174999937415123
+[441] Inference cross-entropy: 2.445590615272522
+[441] Test accuracy: 0.9186999797821045
+-------------------------
+-------------------------
+[442] Training cost: 133.0625473022461
+[442] Validation accuracy: 0.9288999736309052
+[442] Validation cross-entropy: 0.25769682228565216
+[442] Validation log-likelihood: -77.74633407592773
+[442] Inference accuracy: 0.2256999984383583
+[442] Inference cross-entropy: 2.426494002342224
+[442] Test accuracy: 0.9224999845027924
+-------------------------
+-------------------------
+[443] Training cost: 133.05382232666017
+[443] Validation accuracy: 0.9233999848365784
+[443] Validation cross-entropy: 0.26613984256982803
+[443] Validation log-likelihood: -77.72706985473633
+[443] Inference accuracy: 0.21359999477863312
+[443] Inference cross-entropy: 2.442073702812195
+[443] Test accuracy: 0.9210999608039856
+-------------------------
+-------------------------
+[444] Training cost: 133.11305389404296
+[444] Validation accuracy: 0.9239999949932098
+[444] Validation cross-entropy: 0.26624835282564163
+[444] Validation log-likelihood: -77.59747314453125
+[444] Inference accuracy: 0.21929999440908432
+[444] Inference cross-entropy: 2.4053170680999756
+[444] Test accuracy: 0.9191999733448029
+-------------------------
+-------------------------
+[445] Training cost: 133.12670440673827
+[445] Validation accuracy: 0.9244999587535858
+[445] Validation cross-entropy: 0.2707570418715477
+[445] Validation log-likelihood: -77.89613723754883
+[445] Inference accuracy: 0.20759999752044678
+[445] Inference cross-entropy: 2.435970664024353
+[445] Test accuracy: 0.9181999564170837
+-------------------------
+-------------------------
+[446] Training cost: 133.042431640625
+[446] Validation accuracy: 0.9208999872207642
+[446] Validation cross-entropy: 0.2809657007455826
+[446] Validation log-likelihood: -78.25790405273438
+[446] Inference accuracy: 0.2019999921321869
+[446] Inference cross-entropy: 2.4434913396835327
+[446] Test accuracy: 0.914000004529953
+-------------------------
+-------------------------
+[447] Training cost: 133.11261291503905
+[447] Validation accuracy: 0.9232999682426453
+[447] Validation cross-entropy: 0.27135877311229706
+[447] Validation log-likelihood: -77.88756561279297
+[447] Inference accuracy: 0.22339999675750732
+[447] Inference cross-entropy: 2.4260473251342773
+[447] Test accuracy: 0.914499968290329
+-------------------------
+-------------------------
+[448] Training cost: 133.0054962158203
+[448] Validation accuracy: 0.9230999946594238
+[448] Validation cross-entropy: 0.27523864805698395
+[448] Validation log-likelihood: -77.88764953613281
+[448] Inference accuracy: 0.21049999445676804
+[448] Inference cross-entropy: 2.4521321058273315
+[448] Test accuracy: 0.9170999825000763
+-------------------------
+-------------------------
+[449] Training cost: 132.97928314208986
+[449] Validation accuracy: 0.9268999695777893
+[449] Validation cross-entropy: 0.2649233564734459
+[449] Validation log-likelihood: -78.01155471801758
+[449] Inference accuracy: 0.22349999845027924
+[449] Inference cross-entropy: 2.3970061540603638
+[449] Test accuracy: 0.9208999872207642
+-------------------------
+-------------------------
+[450] Training cost: 132.95331573486328
+[450] Validation accuracy: 0.9247999489307404
+[450] Validation cross-entropy: 0.2652242034673691
+[450] Validation log-likelihood: -78.03576278686523
+[450] Inference accuracy: 0.22789999097585678
+[450] Inference cross-entropy: 2.426563262939453
+[450] Test accuracy: 0.920799970626831
+-------------------------
+-------------------------
+[451] Training cost: 132.9985336303711
+[451] Validation accuracy: 0.9253999590873718
+[451] Validation cross-entropy: 0.26615989208221436
+[451] Validation log-likelihood: -77.51376342773438
+[451] Inference accuracy: 0.21949999034404755
+[451] Inference cross-entropy: 2.446702003479004
+[451] Test accuracy: 0.9213999807834625
+-------------------------
+-------------------------
+[452] Training cost: 132.9387420654297
+[452] Validation accuracy: 0.9256999790668488
+[452] Validation cross-entropy: 0.2694665640592575
+[452] Validation log-likelihood: -77.77550888061523
+[452] Inference accuracy: 0.2214999943971634
+[452] Inference cross-entropy: 2.416043519973755
+[452] Test accuracy: 0.9179999828338623
+-------------------------
+-------------------------
+[453] Training cost: 132.9909225463867
+[453] Validation accuracy: 0.9229999780654907
+[453] Validation cross-entropy: 0.2765152230858803
+[453] Validation log-likelihood: -77.88006973266602
+[453] Inference accuracy: 0.22949999570846558
+[453] Inference cross-entropy: 2.432559370994568
+[453] Test accuracy: 0.9190999567508698
+-------------------------
+-------------------------
+[454] Training cost: 133.01319274902343
+[454] Validation accuracy: 0.9273999631404877
+[454] Validation cross-entropy: 0.26044679433107376
+[454] Validation log-likelihood: -77.77885437011719
+[454] Inference accuracy: 0.22289999574422836
+[454] Inference cross-entropy: 2.4140424728393555
+[454] Test accuracy: 0.9224999845027924
+-------------------------
+-------------------------
+[455] Training cost: 132.96844787597655
+[455] Validation accuracy: 0.923799991607666
+[455] Validation cross-entropy: 0.27573152631521225
+[455] Validation log-likelihood: -77.70148849487305
+[455] Inference accuracy: 0.2093999981880188
+[455] Inference cross-entropy: 2.42071795463562
+[455] Test accuracy: 0.9185999631881714
+-------------------------
+-------------------------
+[456] Training cost: 132.9228958129883
+[456] Validation accuracy: 0.9259999692440033
+[456] Validation cross-entropy: 0.26342763751745224
+[456] Validation log-likelihood: -77.45242309570312
+[456] Inference accuracy: 0.21359999477863312
+[456] Inference cross-entropy: 2.4706114530563354
+[456] Test accuracy: 0.919899970293045
+-------------------------
+-------------------------
+[457] Training cost: 132.91512908935547
+[457] Validation accuracy: 0.9267999529838562
+[457] Validation cross-entropy: 0.265164777636528
+[457] Validation log-likelihood: -77.55656433105469
+[457] Inference accuracy: 0.2247999906539917
+[457] Inference cross-entropy: 2.432102918624878
+[457] Test accuracy: 0.9222999811172485
+-------------------------
+-------------------------
+[458] Training cost: 132.86326751708984
+[458] Validation accuracy: 0.9230999648571014
+[458] Validation cross-entropy: 0.27091023325920105
+[458] Validation log-likelihood: -77.81781387329102
+[458] Inference accuracy: 0.23089998960494995
+[458] Inference cross-entropy: 2.431062340736389
+[458] Test accuracy: 0.9188999831676483
+-------------------------
+-------------------------
+[459] Training cost: 132.8591522216797
+[459] Validation accuracy: 0.9248999953269958
+[459] Validation cross-entropy: 0.2676222398877144
+[459] Validation log-likelihood: -77.51621627807617
+[459] Inference accuracy: 0.21509999781847
+[459] Inference cross-entropy: 2.464927315711975
+[459] Test accuracy: 0.9203999936580658
+-------------------------
+-------------------------
+[460] Training cost: 132.8104675292969
+[460] Validation accuracy: 0.9232999682426453
+[460] Validation cross-entropy: 0.27269767969846725
+[460] Validation log-likelihood: -77.48111724853516
+[460] Inference accuracy: 0.206899993121624
+[460] Inference cross-entropy: 2.464433431625366
+[460] Test accuracy: 0.9192999601364136
+-------------------------
+-------------------------
+[461] Training cost: 132.85207824707032
+[461] Validation accuracy: 0.9266999661922455
+[461] Validation cross-entropy: 0.2654288411140442
+[461] Validation log-likelihood: -77.90682601928711
+[461] Inference accuracy: 0.23649999499320984
+[461] Inference cross-entropy: 2.414446234703064
+[461] Test accuracy: 0.9206999838352203
+-------------------------
+-------------------------
+[462] Training cost: 132.8871597290039
+[462] Validation accuracy: 0.9255999624729156
+[462] Validation cross-entropy: 0.26180580258369446
+[462] Validation log-likelihood: -77.61845397949219
+[462] Inference accuracy: 0.22269999235868454
+[462] Inference cross-entropy: 2.4528814554214478
+[462] Test accuracy: 0.919899970293045
+-------------------------
+-------------------------
+[463] Training cost: 132.85928955078126
+[463] Validation accuracy: 0.9284999668598175
+[463] Validation cross-entropy: 0.26019391417503357
+[463] Validation log-likelihood: -77.66309356689453
+[463] Inference accuracy: 0.21139999479055405
+[463] Inference cross-entropy: 2.4303689002990723
+[463] Test accuracy: 0.9221999943256378
+-------------------------
+-------------------------
+[464] Training cost: 132.78264770507812
+[464] Validation accuracy: 0.9265999794006348
+[464] Validation cross-entropy: 0.27223512530326843
+[464] Validation log-likelihood: -77.38314056396484
+[464] Inference accuracy: 0.20799998939037323
+[464] Inference cross-entropy: 2.4465194940567017
+[464] Test accuracy: 0.9175999760627747
+-------------------------
+-------------------------
+[465] Training cost: 132.84112396240235
+[465] Validation accuracy: 0.9257999956607819
+[465] Validation cross-entropy: 0.26704327017068863
+[465] Validation log-likelihood: -77.48246002197266
+[465] Inference accuracy: 0.21239999681711197
+[465] Inference cross-entropy: 2.471146583557129
+[465] Test accuracy: 0.9199999570846558
+-------------------------
+-------------------------
+[466] Training cost: 132.80399322509766
+[466] Validation accuracy: 0.9254999756813049
+[466] Validation cross-entropy: 0.2688038498163223
+[466] Validation log-likelihood: -77.54731369018555
+[466] Inference accuracy: 0.22109999507665634
+[466] Inference cross-entropy: 2.450632333755493
+[466] Test accuracy: 0.9170999526977539
+-------------------------
+-------------------------
+[467] Training cost: 132.85018310546874
+[467] Validation accuracy: 0.92289999127388
+[467] Validation cross-entropy: 0.27723608911037445
+[467] Validation log-likelihood: -77.27584838867188
+[467] Inference accuracy: 0.22619999945163727
+[467] Inference cross-entropy: 2.4382636547088623
+[467] Test accuracy: 0.9173999726772308
+-------------------------
+-------------------------
+[468] Training cost: 132.7869842529297
+[468] Validation accuracy: 0.927299976348877
+[468] Validation cross-entropy: 0.26205820590257645
+[468] Validation log-likelihood: -77.55092239379883
+[468] Inference accuracy: 0.2207999899983406
+[468] Inference cross-entropy: 2.44756543636322
+[468] Test accuracy: 0.9194999635219574
+-------------------------
+-------------------------
+[469] Training cost: 132.7086959838867
+[469] Validation accuracy: 0.9262999892234802
+[469] Validation cross-entropy: 0.2719104662537575
+[469] Validation log-likelihood: -77.56019592285156
+[469] Inference accuracy: 0.2175999954342842
+[469] Inference cross-entropy: 2.4415652751922607
+[469] Test accuracy: 0.917199969291687
+-------------------------
+-------------------------
+[470] Training cost: 132.71874237060547
+[470] Validation accuracy: 0.9267999827861786
+[470] Validation cross-entropy: 0.2651733011007309
+[470] Validation log-likelihood: -77.22039413452148
+[470] Inference accuracy: 0.21619999408721924
+[470] Inference cross-entropy: 2.457110047340393
+[470] Test accuracy: 0.9193999767303467
+-------------------------
+-------------------------
+[471] Training cost: 132.6882293701172
+[471] Validation accuracy: 0.9231999814510345
+[471] Validation cross-entropy: 0.27802909165620804
+[471] Validation log-likelihood: -77.40333938598633
+[471] Inference accuracy: 0.2125999927520752
+[471] Inference cross-entropy: 2.459241271018982
+[471] Test accuracy: 0.9156999886035919
+-------------------------
+-------------------------
+[472] Training cost: 132.6414001464844
+[472] Validation accuracy: 0.9258999824523926
+[472] Validation cross-entropy: 0.26567627489566803
+[472] Validation log-likelihood: -77.39197540283203
+[472] Inference accuracy: 0.2378999888896942
+[472] Inference cross-entropy: 2.413089394569397
+[472] Test accuracy: 0.9184999763965607
+-------------------------
+-------------------------
+[473] Training cost: 132.6790344238281
+[473] Validation accuracy: 0.9252999722957611
+[473] Validation cross-entropy: 0.2707071304321289
+[473] Validation log-likelihood: -77.4212532043457
+[473] Inference accuracy: 0.24079999327659607
+[473] Inference cross-entropy: 2.4300808906555176
+[473] Test accuracy: 0.9182999730110168
+-------------------------
+-------------------------
+[474] Training cost: 132.71361236572267
+[474] Validation accuracy: 0.9259999692440033
+[474] Validation cross-entropy: 0.26479092240333557
+[474] Validation log-likelihood: -77.3433837890625
+[474] Inference accuracy: 0.2239999920129776
+[474] Inference cross-entropy: 2.4295687675476074
+[474] Test accuracy: 0.9196999669075012
+-------------------------
+-------------------------
+[475] Training cost: 132.7031494140625
+[475] Validation accuracy: 0.9249999821186066
+[475] Validation cross-entropy: 0.2682988718152046
+[475] Validation log-likelihood: -77.38978958129883
+[475] Inference accuracy: 0.23119999468326569
+[475] Inference cross-entropy: 2.424486994743347
+[475] Test accuracy: 0.9184999763965607
+-------------------------
+-------------------------
+[476] Training cost: 132.65765380859375
+[476] Validation accuracy: 0.923799991607666
+[476] Validation cross-entropy: 0.27288611978292465
+[476] Validation log-likelihood: -77.50019454956055
+[476] Inference accuracy: 0.22669999301433563
+[476] Inference cross-entropy: 2.4948692321777344
+[476] Test accuracy: 0.9174999892711639
+-------------------------
+-------------------------
+[477] Training cost: 132.6610107421875
+[477] Validation accuracy: 0.9271999597549438
+[477] Validation cross-entropy: 0.2631126940250397
+[477] Validation log-likelihood: -77.41753387451172
+[477] Inference accuracy: 0.23229999095201492
+[477] Inference cross-entropy: 2.444469451904297
+[477] Test accuracy: 0.9212999939918518
+-------------------------
+-------------------------
+[478] Training cost: 132.76846771240236
+[478] Validation accuracy: 0.9276999533176422
+[478] Validation cross-entropy: 0.2621265798807144
+[478] Validation log-likelihood: -77.75540924072266
+[478] Inference accuracy: 0.2078000009059906
+[478] Inference cross-entropy: 2.4624693393707275
+[478] Test accuracy: 0.9202999770641327
+-------------------------
+-------------------------
+[479] Training cost: 132.65667572021485
+[479] Validation accuracy: 0.9262999594211578
+[479] Validation cross-entropy: 0.2630728930234909
+[479] Validation log-likelihood: -77.40572738647461
+[479] Inference accuracy: 0.20759999752044678
+[479] Inference cross-entropy: 2.4517834186553955
+[479] Test accuracy: 0.920699954032898
+-------------------------
+-------------------------
+[480] Training cost: 132.63473052978514
+[480] Validation accuracy: 0.9265999794006348
+[480] Validation cross-entropy: 0.25915831327438354
+[480] Validation log-likelihood: -77.60848999023438
+[480] Inference accuracy: 0.20359999686479568
+[480] Inference cross-entropy: 2.472540020942688
+[480] Test accuracy: 0.9202999770641327
+-------------------------
+-------------------------
+[481] Training cost: 132.6347625732422
+[481] Validation accuracy: 0.9199999868869781
+[481] Validation cross-entropy: 0.27961310744285583
+[481] Validation log-likelihood: -77.17886734008789
+[481] Inference accuracy: 0.20709999650716782
+[481] Inference cross-entropy: 2.457507014274597
+[481] Test accuracy: 0.9150999784469604
+-------------------------
+-------------------------
+[482] Training cost: 132.67372436523436
+[482] Validation accuracy: 0.9274999797344208
+[482] Validation cross-entropy: 0.26737283170223236
+[482] Validation log-likelihood: -77.61791610717773
+[482] Inference accuracy: 0.22269999235868454
+[482] Inference cross-entropy: 2.4608489274978638
+[482] Test accuracy: 0.9177999794483185
+-------------------------
+-------------------------
+[483] Training cost: 132.6200210571289
+[483] Validation accuracy: 0.925199955701828
+[483] Validation cross-entropy: 0.27009280025959015
+[483] Validation log-likelihood: -77.36273574829102
+[483] Inference accuracy: 0.2215999886393547
+[483] Inference cross-entropy: 2.4648561477661133
+[483] Test accuracy: 0.9176999628543854
+-------------------------
+-------------------------
+[484] Training cost: 132.54820556640624
+[484] Validation accuracy: 0.9244999587535858
+[484] Validation cross-entropy: 0.27250702679157257
+[484] Validation log-likelihood: -77.42947387695312
+[484] Inference accuracy: 0.23179999738931656
+[484] Inference cross-entropy: 2.470412015914917
+[484] Test accuracy: 0.9190999567508698
+-------------------------
+-------------------------
+[485] Training cost: 132.58450469970703
+[485] Validation accuracy: 0.9244999885559082
+[485] Validation cross-entropy: 0.272492490708828
+[485] Validation log-likelihood: -77.4889030456543
+[485] Inference accuracy: 0.23799999058246613
+[485] Inference cross-entropy: 2.4392205476760864
+[485] Test accuracy: 0.9176999926567078
+-------------------------
+-------------------------
+[486] Training cost: 132.58597106933593
+[486] Validation accuracy: 0.9267999827861786
+[486] Validation cross-entropy: 0.2645327225327492
+[486] Validation log-likelihood: -77.25447082519531
+[486] Inference accuracy: 0.2190999984741211
+[486] Inference cross-entropy: 2.4538493156433105
+[486] Test accuracy: 0.9185999631881714
+-------------------------
+-------------------------
+[487] Training cost: 132.50885009765625
+[487] Validation accuracy: 0.925199955701828
+[487] Validation cross-entropy: 0.27000606060028076
+[487] Validation log-likelihood: -77.64514923095703
+[487] Inference accuracy: 0.21769999712705612
+[487] Inference cross-entropy: 2.4724730253219604
+[487] Test accuracy: 0.9186999797821045
+-------------------------
+-------------------------
+[488] Training cost: 132.6018493652344
+[488] Validation accuracy: 0.9271999895572662
+[488] Validation cross-entropy: 0.26199956983327866
+[488] Validation log-likelihood: -77.08780670166016
+[488] Inference accuracy: 0.2029999941587448
+[488] Inference cross-entropy: 2.48750376701355
+[488] Test accuracy: 0.9218999743461609
+-------------------------
+-------------------------
+[489] Training cost: 132.56075134277344
+[489] Validation accuracy: 0.9256999790668488
+[489] Validation cross-entropy: 0.26630715280771255
+[489] Validation log-likelihood: -77.24559783935547
+[489] Inference accuracy: 0.2240999937057495
+[489] Inference cross-entropy: 2.438453793525696
+[489] Test accuracy: 0.9205999672412872
+-------------------------
+-------------------------
+[490] Training cost: 132.54376220703125
+[490] Validation accuracy: 0.9262999892234802
+[490] Validation cross-entropy: 0.26976051181554794
+[490] Validation log-likelihood: -77.37166595458984
+[490] Inference accuracy: 0.2206999957561493
+[490] Inference cross-entropy: 2.480961322784424
+[490] Test accuracy: 0.9186999797821045
+-------------------------
+-------------------------
+[491] Training cost: 132.45809631347657
+[491] Validation accuracy: 0.9273999929428101
+[491] Validation cross-entropy: 0.25922951847314835
+[491] Validation log-likelihood: -77.04016494750977
+[491] Inference accuracy: 0.22209999710321426
+[491] Inference cross-entropy: 2.502861976623535
+[491] Test accuracy: 0.921999990940094
+-------------------------
+-------------------------
+[492] Training cost: 132.45618133544923
+[492] Validation accuracy: 0.9247999787330627
+[492] Validation cross-entropy: 0.275187723338604
+[492] Validation log-likelihood: -77.30896377563477
+[492] Inference accuracy: 0.22549999505281448
+[492] Inference cross-entropy: 2.4649579524993896
+[492] Test accuracy: 0.9175999760627747
+-------------------------
+-------------------------
+[493] Training cost: 132.46167755126953
+[493] Validation accuracy: 0.9261999726295471
+[493] Validation cross-entropy: 0.2618429511785507
+[493] Validation log-likelihood: -77.62654113769531
+[493] Inference accuracy: 0.22349999099969864
+[493] Inference cross-entropy: 2.466490626335144
+[493] Test accuracy: 0.9209999740123749
+-------------------------
+-------------------------
+[494] Training cost: 132.45675201416014
+[494] Validation accuracy: 0.9274999797344208
+[494] Validation cross-entropy: 0.2635214477777481
+[494] Validation log-likelihood: -77.56413650512695
+[494] Inference accuracy: 0.2110999897122383
+[494] Inference cross-entropy: 2.4791202545166016
+[494] Test accuracy: 0.921999990940094
+-------------------------
+-------------------------
+[495] Training cost: 132.49370422363282
+[495] Validation accuracy: 0.9255999624729156
+[495] Validation cross-entropy: 0.26778922975063324
+[495] Validation log-likelihood: -77.37173461914062
+[495] Inference accuracy: 0.22089999169111252
+[495] Inference cross-entropy: 2.4803818464279175
+[495] Test accuracy: 0.9195999801158905
+-------------------------
+-------------------------
+[496] Training cost: 132.42781524658204
+[496] Validation accuracy: 0.9254999756813049
+[496] Validation cross-entropy: 0.26469631493091583
+[496] Validation log-likelihood: -77.06307983398438
+[496] Inference accuracy: 0.21539999544620514
+[496] Inference cross-entropy: 2.4692535400390625
+[496] Test accuracy: 0.9208999574184418
+-------------------------
+-------------------------
+[497] Training cost: 132.45672302246095
+[497] Validation accuracy: 0.9199999868869781
+[497] Validation cross-entropy: 0.28860536962747574
+[497] Validation log-likelihood: -77.13136672973633
+[497] Inference accuracy: 0.2264999970793724
+[497] Inference cross-entropy: 2.4875102043151855
+[497] Test accuracy: 0.916299968957901
+-------------------------

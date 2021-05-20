@@ -7,22 +7,8 @@ from torch.utils.data import DataLoader
 import torch.optim
 import torch.nn as nn
 import utils
-from m2 import M2
-import matplotlib.pyplot as plt
+from blended_reparam import M2
 
-def plot_images(X, Y, num_img, fig_str=''):
-    Y = np.argmax(Y, 1)
-    digits = np.unique(Y)
-    M = num_img
-    dim = int(np.sqrt(X.shape[1]))
-
-    fig, axs = plt.subplots(len(digits), M, figsize=(2*10,2*M))
-
-    for i,d in enumerate(digits):
-        for j in range(M):
-            axs[i,j].imshow(X[Y==d][j].reshape((dim,dim)))
-            axs[i,j].axis('off')
-    fig.savefig('./plots/m2_'+fig_str+'.png')
 
 class MNIST(Dataset):
 
@@ -67,57 +53,30 @@ def train(  model, optimizer, device,
     return train_loss / num_iters
 
 
-def evaluate(model, device, loader_valid, epoch):
+def evaluate(model, device, loader_valid):
 
     num_iters = len(loader_valid)
     acc = 0
     loss = 0
-    ml = 0
+    inf_acc = 0
+    inf_loss = 0
+    ll = 0
     loader_valid = iter(loader_valid)
-    x_rec = []
-    y_rec = []
-    x_orig = []
 
     for its in range(num_iters):
         
         x, y = loader_valid.next()
         x, y = x.to(device), y.to(device)
         with torch.no_grad():
-            loss_its, acc_its, ml_its, x_its = model.predict(x, y, compute_ml=True)
+            loss_its, acc_its, inf_loss_its, inf_acc_its, ll_its = model.predict(x, y)
         
         loss += loss_its.item()
         acc += acc_its.item()
-        ml += ml_its
-        x_rec.append(x_its.cpu().numpy())
-        x_orig.append(x.cpu().numpy())
-        y_rec.append(y.cpu().numpy())
+        inf_loss += inf_loss_its.item()
+        inf_acc += inf_acc_its.item()
+        ll += ll_its.item()
 
-    x_rec = np.concatenate(x_rec, 0)
-    x_orig = np.concatenate(x_orig, 0)
-    y_rec = np.concatenate(y_rec, 0)
-    if epoch % 10 == 0:
-        plot_images(x_orig, y_rec, 5, fig_str=str(epoch)+'_orig')
-        plot_images(x_rec, y_rec, 5, fig_str=str(epoch)+'_rec')
-    
-    # #compute marginal likelihood if loader_train is passed
-    # if loader_train:
-    #     loader_train = iter(loader_train)
-    #     num_iters = len(loader_train)
-    #     marginal_likelihood = 0
-    #     for its in range(num_iters):
-    #         x, y = loader_train.next()
-    #         x, y = x.to(device), y.to(device)
-    #         with torch.no_grad():
-    #             loss_its, acc_its, ml_its = model.predict(x, y, compute_ml = True)
-
-    #         marginal_likelihood += ml.item()
-    
-    # if not loader_train:
-    #     return loss / num_iters, acc / num_iters
-    # else:
-    #     return loss / num_iters, acc / num_iters, marginal_likelihood
-
-    return loss / num_iters, acc / num_iters, ml.item()
+    return loss / num_iters, acc / num_iters, inf_loss / num_iters, inf_acc / num_iters, ll / num_iters
 
 
 if __name__ == '__main__':
@@ -125,7 +84,7 @@ if __name__ == '__main__':
     ## Experiment Parameters ##
 
     num_lab = 100           #Number of labelled examples (total)
-    num_batches = 100       #Number of minibatches in a single epoch
+    num_batches = 10       #Number of minibatches in a single epoch
     dim_z = 100              #Dimensionality of latent variable (z)
     epochs = 1001           #Number of epochs through the full dataset
     learning_rate = 3e-4    #Learning rate of ADAM
@@ -133,6 +92,7 @@ if __name__ == '__main__':
     num_workers = 4
     stop_iter = 50
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print("Training on", device)
     print_every = 1
     chkpt_str = datetime.now().strftime('%b%d_%H-%M-%S')
 
@@ -207,12 +167,13 @@ if __name__ == '__main__':
                             loader_ulab, loader_lab)
 
         if np.isnan(train_loss):
-            chkpt = torch.load('./checkpoints/best_val_acc.pt')
+            chkpt = torch.load('./checkpoints/best_val_acc_'+chkpt_str+'.pt')
             model.load_state_dict(chkpt['model'])
             optimizer.load_state_dict(chkpt['optimizer'])
 
         model.eval()
-        valid_loss, valid_acc, marginal_likelihood = evaluate(model, device, loader_valid, epoch)
+        valid_loss, valid_acc, inf_loss, inf_acc, ll = evaluate(model, device, loader_valid)
+        valid_losst, valid_acct, inf_losst, inf_acct, llt = evaluate(model, device, loader_test)
         model.train()
 
         # stop_iter_count += 1
@@ -231,7 +192,10 @@ if __name__ == '__main__':
                                     ['Training', 'cost', train_loss],
                                     ['Validation', 'accuracy', valid_acc],
                                     ['Validation', 'cross-entropy', valid_loss],
-                                    ['Training', 'Marginal Likelihood', marginal_likelihood] )       
+                                    ['Validation', 'log-likelihood', ll],
+                                    ['Inference', 'accuracy', inf_acc],
+                                    ['Inference', 'cross-entropy', inf_loss],
+                                    ['Test', 'accuracy', valid_acct])       
 
             
     

@@ -2,14 +2,15 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import utils
+import numpy as np
 
-class M2(nn.Module):
+class Blended(nn.Module):
 
     def __init__(   self,
                     device, gamma,
                     num_batches, batch_size,
                     dim_x=28*28, dim_z=100, dim_y=10):
-        super(M2, self).__init__()
+        super(Blended, self).__init__()
 
         self.device = device
 
@@ -22,6 +23,7 @@ class M2(nn.Module):
         self.num_batches = num_batches
         self.batch_size = batch_size
 
+        self.epochs = 0
         # self.theta_g = nn.Sequential(nn.Linear(dim_z+dim_y, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
         #                              nn.Linear(500, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
         #                              nn.Linear(500, dim_x))
@@ -33,6 +35,10 @@ class M2(nn.Module):
         # self.phi_y = nn.Sequential(nn.Linear(dim_x, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
         #                            nn.Linear(500, 500), nn.BatchNorm1d(500, affine=True), nn.ReLU(inplace=True),
         #                            nn.Linear(500, dim_y))
+        self.theta_d = nn.Sequential(nn.Linear(dim_x, 500), nn.ReLU(inplace=True),
+                                     nn.Linear(500, 500), nn.ReLU(inplace=True),
+                                     nn.Linear(500, dim_y))
+
 
         self.theta_g = nn.Sequential(nn.Linear(dim_z+dim_y, 500), nn.ReLU(inplace=True),
                                      nn.Linear(500, 500), nn.ReLU(inplace=True),
@@ -54,6 +60,7 @@ class M2(nn.Module):
         
         ## LABELLED PART ##
         # self.eval()
+        
 
         # Binarize labelled images
         with torch.no_grad():
@@ -83,10 +90,44 @@ class M2(nn.Module):
         L_l = L_l.sum()
 
         # Discriminator term
-        ypred_l_logits = self.phi_y(x_l)
-        D_l = - F.cross_entropy(ypred_l_logits, y_l.argmax(1), reduction='none')
-        D_l = D_l.sum()   
+        # ypred_l_logits = self.phi_y(x_l)
+        ypred_l_disriminative_logits = self.theta_d(x_l)
+
+        D_l = - F.cross_entropy(ypred_l_disriminative_logits, y_l.argmax(1), reduction='none')
         
+        D_l = D_l.sum()  
+
+        ## PRIOR PART ##
+        
+        L_prior = 0.
+        if self.epochs > 20:
+            for i,weight in enumerate(self.theta_d):
+                if 'Linear' in str(weight.type):
+                    alpha = 0.1
+                    lambda_d = (1-alpha)/(alpha)
+                    flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
+                    flattened_mean = torch.cat([self.phi_y[i].weight.reshape((-1,)), self.phi_y[i].bias.reshape((-1,))], dim=0)
+                    flattened_sigma_sq = (torch.ones(flattened_mean.size()) / lambda_d ).to(self.device)
+                    flattened_log_sigma_sq = torch.log(flattened_sigma_sq)
+                    L_prior += utils.normal_logpdf(flattened_weight, flattened_mean, flattened_log_sigma_sq).sum()
+                    # d = flattened_weight.shape[0]
+                    # L_prior += (d/2)*np.log(lambda_d) + utils.stdnormal_logpdf(np.sqrt(lambda_d)*(flattened_weight - flattened_mean)).sum()
+        
+        for i,weight in enumerate(self.theta_g):
+            if 'Linear' in str(weight.type):
+                flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
+                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+
+        for i,weight in enumerate(self.phi_z):
+            if 'Linear' in str(weight.type):
+                flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
+                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+        for i,weight in enumerate(self.phi_y):
+            if 'Linear' in str(weight.type):
+                flattened_weight = torch.cat([weight.weight.reshape((-1,)), weight.bias.reshape((-1,))], dim=0)
+                L_prior += utils.stdnormal_logpdf(flattened_weight).sum()
+ 
+        # print(L_prior)
         
         
         ## UNLABELLED PART ##
@@ -146,10 +187,14 @@ class M2(nn.Module):
 
 
         # Compute L(x, y) in Eq (4)
-        L_tot = L_l + self.gamma * D_l + L_u
-        loss = - L_tot / self.batch_size
+        L_tot = L_l +  D_l + L_u 
+        # print(L_tot)
+        L_tot = (L_tot*self.num_batches + L_prior)
+        # print(L_prior)
+        # print('###',L_tot)
+        loss = - L_tot / (self.batch_size*self.num_batches)
 
-
+        self.epochs += 1
         return loss 
 
     def _draw_sample(self, mu, log_sigma_sq):
@@ -165,7 +210,6 @@ class M2(nn.Module):
         log_prior_y = - F.cross_entropy(y_prior, y_l.argmax(1), reduction='none')
 
         log_lik =  utils.bernoulli_logpdf(x_l, px_mu)
-
         # log_prior_z = utils.stdnormal_logpdf(z_sample)
         log_prior_z = utils.gaussian_marg(qz_mu, qz_log_sigma_sq)
         
@@ -177,51 +221,25 @@ class M2(nn.Module):
 
         return log_prior_y + log_lik.sum(1) + log_prior_z.sum(1) - log_post_z.sum(1)
 
-    def predict(self, x, y, compute_ml = False):
+    def predict(self, x, y):
 
-        ypred_logits = self.phi_y(x)
+        ypred_logits = self.theta_d(x)
         cross_entropy_loss = F.cross_entropy(ypred_logits, y.argmax(1))
         acc = (ypred_logits.argmax(1) == y.argmax(1)).float().mean()
 
-        if compute_ml:
-            
-            S = 64
-            ypred_logits = self.phi_y(x)
-            ypred = F.softmax(ypred_logits, 1)
-            
-            ypredsamples = torch.multinomial(ypred, S , replacement=True).to(self.device)
+        yinf_logits = self.phi_y(x)
+        inf_cross_entropy_loss = F.cross_entropy(yinf_logits, y.argmax(1))
+        inf_acc = (yinf_logits.argmax(1) == y.argmax(1)).float().mean()
 
-            ml = 0.
-            
-            for i in range(S):
-                y_sample = F.one_hot(ypredsamples[:,i].reshape(-1,), num_classes = self.dim_y).float()
-                
-                #distribution for q_z
-                qz_param = self.phi_z(torch.cat([x, y_sample], dim=1))
-                qz_mu = qz_param[:, :self.dim_z]
-                qz_log_sigma_sq = qz_param[:, self.dim_z:]
-                
+        qz_l_param = self.phi_z(torch.cat([x, y], dim=1))
+        qz_l_mu = qz_l_param[:, :self.dim_z]
+        qz_l_log_sigma_sq = qz_l_param[:, self.dim_z:]
+        # Sample from z posterior
+        z_l_sample = self._draw_sample(qz_l_mu, qz_l_log_sigma_sq)
+        px_l_param = self.theta_g(torch.cat([z_l_sample, y], dim=1))
+        px_l_mu = torch.sigmoid(px_l_param)
+        ll = utils.bernoulli_logpdf(x, px_l_mu).sum(1).mean()
 
+        return cross_entropy_loss, acc, inf_cross_entropy_loss, inf_acc, ll
 
-                z_sample = self._draw_sample(qz_mu, qz_log_sigma_sq)
-                #distribution p(x|y,z)
-                px_param = self.theta_g(torch.cat([z_sample, y_sample], dim=1))
-                px_mu = torch.sigmoid(px_param)
-                
-                
-                log_lik =  utils.bernoulli_logpdf(x, px_mu).sum()
-                log_prior_z = utils.stdnormal_logpdf(z_sample).sum()
-                prior_y = 1/self.dim_y
-
-                log_posterior_z = utils.normal_logpdf(z_sample, qz_mu, qz_log_sigma_sq).sum()
-                log_posterior_y = - F.cross_entropy(ypred, ypredsamples[:,i], reduction='none').sum()
-                
-                ml += prior_y*(torch.exp(log_lik) *  torch.exp(log_prior_z) / (torch.exp(log_posterior_z) * torch.exp(log_posterior_y) ))
-                # print(log_lik +  log_prior_z - log_posterior_z - log_posterior_y)
-                
-
-
-        if not compute_ml:
-            return cross_entropy_loss, acc, torch.bernoulli(px_mu)
-        else:
-            return cross_entropy_loss, acc, ml, torch.bernoulli(px_mu)
+    
